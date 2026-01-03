@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 564444863ea646348b9511ee1631ac3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7169180126180420952
+    second: HOUNDOOM_0
+  - first:
+      213: -3081090882979577014
+    second: HOUNDOOM_1
+  - first:
+      213: 1587370866200286459
+    second: HOUNDOOM_2
+  - first:
+      213: 4190855802631655468
+    second: HOUNDOOM_3
+  - first:
+      213: -1331920652351769737
+    second: HOUNDOOM_4
+  - first:
+      213: -4770417104717604849
+    second: HOUNDOOM_5
+  - first:
+      213: -8996323139307266957
+    second: HOUNDOOM_6
+  - first:
+      213: 12219540428937121
+    second: HOUNDOOM_7
+  - first:
+      213: -681285924153505307
+    second: HOUNDOOM_8
+  - first:
+      213: -1089782386639635098
+    second: HOUNDOOM_9
+  - first:
+      213: -5646994525757071890
+    second: HOUNDOOM_10
+  - first:
+      213: -5167328383324852075
+    second: HOUNDOOM_11
+  - first:
+      213: -6946288549628257934
+    second: HOUNDOOM_12
+  - first:
+      213: -7717013497971960564
+    second: HOUNDOOM_13
+  - first:
+      213: -2123282976857140181
+    second: HOUNDOOM_14
+  - first:
+      213: -5922865740216642568
+    second: HOUNDOOM_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HOUNDOOM_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 195
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2d930c8a4f18c90800000000000000
+      internalID: -7169180126180420952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 193
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43ce4f8a24cd35d0800000000000000
+      internalID: -3081090882979577014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 195
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf41cae7469770610800000000000000
+      internalID: 1587370866200286459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 193
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c209ebcf529e82a30800000000000000
+      internalID: 4190855802631655468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 131
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773f0973931148de0800000000000000
+      internalID: -1331920652351769737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 129
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f081cd20be21ccdb0800000000000000
+      internalID: -4770417104717604849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 131
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c96f4f4c3a62380800000000000000
+      internalID: -8996323139307266957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 129
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7d5967b996b2000800000000000000
+      internalID: 12219540428937121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e94b54cf069b86f0800000000000000
+      internalID: -681285924153505307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dfdd971b050e0f0800000000000000
+      internalID: -1089782386639635098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_10
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 67
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed9cabd568d1a1b0800000000000000
+      internalID: -5646994525757071890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590f02a8636f948b0800000000000000
+      internalID: -5167328383324852075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2795b0cfd53d99f90800000000000000
+      internalID: -6946288549628257934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c059c7e2c19a7e490800000000000000
+      internalID: -7717013497971960564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 3
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24dbc6d1659882e0800000000000000
+      internalID: -2123282976857140181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOUNDOOM_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f35e0e6df0cdcda0800000000000000
+      internalID: -5922865740216642568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HOUNDOOM_0: -7169180126180420952
+      HOUNDOOM_1: -3081090882979577014
+      HOUNDOOM_10: -5646994525757071890
+      HOUNDOOM_11: -5167328383324852075
+      HOUNDOOM_12: -6946288549628257934
+      HOUNDOOM_13: -7717013497971960564
+      HOUNDOOM_14: -2123282976857140181
+      HOUNDOOM_15: -5922865740216642568
+      HOUNDOOM_2: 1587370866200286459
+      HOUNDOOM_3: 4190855802631655468
+      HOUNDOOM_4: -1331920652351769737
+      HOUNDOOM_5: -4770417104717604849
+      HOUNDOOM_6: -8996323139307266957
+      HOUNDOOM_7: 12219540428937121
+      HOUNDOOM_8: -681285924153505307
+      HOUNDOOM_9: -1089782386639635098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

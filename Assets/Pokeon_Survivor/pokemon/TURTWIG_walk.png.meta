@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 21eefa0aea255dd479b59a7112fdb000
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5174326972486629181
+    second: TURTWIG_walk_0
+  - first:
+      213: -418530448611292174
+    second: TURTWIG_walk_1
+  - first:
+      213: 7656457998822003379
+    second: TURTWIG_walk_2
+  - first:
+      213: -7546521735110115780
+    second: TURTWIG_walk_3
+  - first:
+      213: 7846003179278452699
+    second: TURTWIG_walk_4
+  - first:
+      213: -3535942803056946602
+    second: TURTWIG_walk_5
+  - first:
+      213: -4937238376375013025
+    second: TURTWIG_walk_6
+  - first:
+      213: 9053060018422894104
+    second: TURTWIG_walk_7
+  - first:
+      213: -9222388884737231367
+    second: TURTWIG_walk_8
+  - first:
+      213: 3477662050499069072
+    second: TURTWIG_walk_9
+  - first:
+      213: 808158474819708053
+    second: TURTWIG_walk_10
+  - first:
+      213: -3993375347677231494
+    second: TURTWIG_walk_11
+  - first:
+      213: -2792068528616717409
+    second: TURTWIG_walk_12
+  - first:
+      213: -7720299828781676216
+    second: TURTWIG_walk_13
+  - first:
+      213: -7448274499248605069
+    second: TURTWIG_walk_14
+  - first:
+      213: 2185853823162073392
+    second: TURTWIG_walk_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TURTWIG_walk_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 195
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8463588091138b0800000000000000
+      internalID: -5174326972486629181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 193
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbc6d246c4113af0800000000000000
+      internalID: -418530448611292174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 195
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2db79fbf3314a60800000000000000
+      internalID: 7656457998822003379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 193
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e3ff0177e554790800000000000000
+      internalID: -7546521735110115780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 131
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd74a77525a92ec60800000000000000
+      internalID: 7846003179278452699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 129
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65211bd31cecdeec0800000000000000
+      internalID: -3535942803056946602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_6
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 131
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51bdb4fad76b7bb0800000000000000
+      internalID: -4937238376375013025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 129
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e43602f1ee2ad70800000000000000
+      internalID: 9053060018422894104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 67
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5f9b0fb2e730080800000000000000
+      internalID: -9222388884737231367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 65
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0948ad0a533234030800000000000000
+      internalID: 3477662050499069072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 67
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594a9ddd9d7273b00800000000000000
+      internalID: 808158474819708053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 65
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7685e2774ea498c0800000000000000
+      internalID: -3993375347677231494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93c04b57749049d0800000000000000
+      internalID: -2792068528616717409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84985f9a53cfbd490800000000000000
+      internalID: -7720299828781676216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378bfaa3ec962a890800000000000000
+      internalID: -7448274499248605069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TURTWIG_walk_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03141849876b55e10800000000000000
+      internalID: 2185853823162073392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TURTWIG_walk_0: -5174326972486629181
+      TURTWIG_walk_1: -418530448611292174
+      TURTWIG_walk_10: 808158474819708053
+      TURTWIG_walk_11: -3993375347677231494
+      TURTWIG_walk_12: -2792068528616717409
+      TURTWIG_walk_13: -7720299828781676216
+      TURTWIG_walk_14: -7448274499248605069
+      TURTWIG_walk_15: 2185853823162073392
+      TURTWIG_walk_2: 7656457998822003379
+      TURTWIG_walk_3: -7546521735110115780
+      TURTWIG_walk_4: 7846003179278452699
+      TURTWIG_walk_5: -3535942803056946602
+      TURTWIG_walk_6: -4937238376375013025
+      TURTWIG_walk_7: 9053060018422894104
+      TURTWIG_walk_8: -9222388884737231367
+      TURTWIG_walk_9: 3477662050499069072
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

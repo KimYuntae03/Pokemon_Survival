@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 6919379d0b91a8d40894f075e16994d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9040673328300066828
+    second: GIRATINA_0
+  - first:
+      213: -8970591703519237520
+    second: GIRATINA_1
+  - first:
+      213: -7479963738391384082
+    second: GIRATINA_2
+  - first:
+      213: -8545246014613000474
+    second: GIRATINA_3
+  - first:
+      213: 2438161953978288565
+    second: GIRATINA_4
+  - first:
+      213: -4671590809678965609
+    second: GIRATINA_5
+  - first:
+      213: 6686711373415476309
+    second: GIRATINA_6
+  - first:
+      213: 5524460299195037751
+    second: GIRATINA_7
+  - first:
+      213: 7465305955756591553
+    second: GIRATINA_8
+  - first:
+      213: -3608246156382679191
+    second: GIRATINA_9
+  - first:
+      213: 6175840059839113354
+    second: GIRATINA_10
+  - first:
+      213: 1482169649222404740
+    second: GIRATINA_11
+  - first:
+      213: 8590167072195032131
+    second: GIRATINA_12
+  - first:
+      213: -2382874633149029099
+    second: GIRATINA_13
+  - first:
+      213: 5528653621998023400
+    second: GIRATINA_14
+  - first:
+      213: -3353006935253753307
+    second: GIRATINA_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GIRATINA_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 387
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f77358e183198280800000000000000
+      internalID: -9040673328300066828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 385
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a6ba6bf5e028380800000000000000
+      internalID: -8970591703519237520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefe0684c94d13890800000000000000
+      internalID: -7479963738391384082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 385
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee6bac3600396980800000000000000
+      internalID: -8545246014613000474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 259
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b98fb3116716d120800000000000000
+      internalID: 2438161953978288565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_5
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 257
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7941b15e8ec2b2fb0800000000000000
+      internalID: -4671590809678965609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 259
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c6efff098fbcc50800000000000000
+      internalID: 6686711373415476309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 257
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738b44d4f53daac40800000000000000
+      internalID: 5524460299195037751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 131
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9ca70c6381a9760800000000000000
+      internalID: 7465305955756591553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 129
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f44a2fc3fecedc0800000000000000
+      internalID: -3608246156382679191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_10
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 131
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88665c30ddf4b550800000000000000
+      internalID: 6175840059839113354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 129
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a44ce6179b19410800000000000000
+      internalID: 1482169649222404740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34431738077663770800000000000000
+      internalID: 8590167072195032131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515ecda65245eeed0800000000000000
+      internalID: -2382874633149029099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_14
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e27e595d29b9bc40800000000000000
+      internalID: 5528653621998023400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIRATINA_15
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52267c615f9b771d0800000000000000
+      internalID: -3353006935253753307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GIRATINA_0: -9040673328300066828
+      GIRATINA_1: -8970591703519237520
+      GIRATINA_10: 6175840059839113354
+      GIRATINA_11: 1482169649222404740
+      GIRATINA_12: 8590167072195032131
+      GIRATINA_13: -2382874633149029099
+      GIRATINA_14: 5528653621998023400
+      GIRATINA_15: -3353006935253753307
+      GIRATINA_2: -7479963738391384082
+      GIRATINA_3: -8545246014613000474
+      GIRATINA_4: 2438161953978288565
+      GIRATINA_5: -4671590809678965609
+      GIRATINA_6: 6686711373415476309
+      GIRATINA_7: 5524460299195037751
+      GIRATINA_8: 7465305955756591553
+      GIRATINA_9: -3608246156382679191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
