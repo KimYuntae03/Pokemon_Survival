@@ -64,4 +64,12 @@ public class Enemy : MonoBehaviour
         // 이동 후 튕김 방지
         rigid.linearVelocity = Vector2.zero;
     }
+
+    void OnEnable() // 풀에서 꺼내져서 활성화될 때마다 실행됨
+    {
+        GameObject player = GameObject.FindWithTag("Player"); 
+        if (player != null) {
+            target = player.GetComponent<Rigidbody2D>();
+        }
+    }
 }
