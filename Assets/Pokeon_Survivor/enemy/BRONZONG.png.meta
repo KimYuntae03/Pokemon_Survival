@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: e93c4b47e22b62b408bed41fd1662675
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -296409856703260751
+    second: BRONZONG_0
+  - first:
+      213: 7262350774101443084
+    second: BRONZONG_1
+  - first:
+      213: -4837818631576456430
+    second: BRONZONG_2
+  - first:
+      213: 708875145066143364
+    second: BRONZONG_3
+  - first:
+      213: -2373706049348296851
+    second: BRONZONG_4
+  - first:
+      213: -3721619841289312922
+    second: BRONZONG_5
+  - first:
+      213: 3203282336483685302
+    second: BRONZONG_6
+  - first:
+      213: 2802188916640365498
+    second: BRONZONG_7
+  - first:
+      213: 357515498516494225
+    second: BRONZONG_8
+  - first:
+      213: -492565526044405355
+    second: BRONZONG_9
+  - first:
+      213: -6801890931712367774
+    second: BRONZONG_10
+  - first:
+      213: -8487766565692171247
+    second: BRONZONG_11
+  - first:
+      213: 2147228592999818589
+    second: BRONZONG_12
+  - first:
+      213: -4897458222837308631
+    second: BRONZONG_13
+  - first:
+      213: 636620285479281999
+    second: BRONZONG_14
+  - first:
+      213: 843045751085408070
+    second: BRONZONG_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BRONZONG_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 197
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b717474ec0f2ebf0800000000000000
+      internalID: -296409856703260751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 195
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02899c2d8d09c460800000000000000
+      internalID: 7262350774101443084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 197
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2137e11269d9cdcb0800000000000000
+      internalID: -4837818631576456430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 195
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e55cb403e66d900800000000000000
+      internalID: 708875145066143364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 133
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f166face6ee0fd0800000000000000
+      internalID: -2373706049348296851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 131
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665a7eae8762a5cc0800000000000000
+      internalID: -3721619841289312922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 133
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3b4653058547c20800000000000000
+      internalID: 3203282336483685302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 131
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbb2e919ff53e620800000000000000
+      internalID: 2802188916640365498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 69
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197b5c2a37626f400800000000000000
+      internalID: 357515498516494225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 67
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5911587834e0a29f0800000000000000
+      internalID: -492565526044405355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 69
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263655e4c34da91a0800000000000000
+      internalID: -6801890931712367774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 67
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c1b735745653a80800000000000000
+      internalID: -8487766565692171247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55e051670d7ccd10800000000000000
+      internalID: 2147228592999818589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 3
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9236775b1bbb80cb0800000000000000
+      internalID: -4897458222837308631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_14
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45ecc4d6cab5d800800000000000000
+      internalID: 636620285479281999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRONZONG_15
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 3
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f19dad4a913bb00800000000000000
+      internalID: 843045751085408070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BRONZONG_0: -296409856703260751
+      BRONZONG_1: 7262350774101443084
+      BRONZONG_10: -6801890931712367774
+      BRONZONG_11: -8487766565692171247
+      BRONZONG_12: 2147228592999818589
+      BRONZONG_13: -4897458222837308631
+      BRONZONG_14: 636620285479281999
+      BRONZONG_15: 843045751085408070
+      BRONZONG_2: -4837818631576456430
+      BRONZONG_3: 708875145066143364
+      BRONZONG_4: -2373706049348296851
+      BRONZONG_5: -3721619841289312922
+      BRONZONG_6: 3203282336483685302
+      BRONZONG_7: 2802188916640365498
+      BRONZONG_8: 357515498516494225
+      BRONZONG_9: -492565526044405355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

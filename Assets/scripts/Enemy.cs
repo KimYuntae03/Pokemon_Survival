@@ -1,17 +1,23 @@
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public float speed;
+    public float health;
+    public float maxHealth;
+    public RuntimeAnimatorController[] animCon;
     public Rigidbody2D target; //enemy들이 추적할 타겟
-    bool isLive = true;
+    bool isLive;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
+    Animator anim;
 
     void Awake() // Awake는 객체가 생성될때 실행됨
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate() //물리적 이동이 아닌 
@@ -71,5 +77,16 @@ public class Enemy : MonoBehaviour
         if (player != null) {
             target = player.GetComponent<Rigidbody2D>();
         }
+        isLive = true;
+        health = maxHealth; //죽어서 리스폰된 enemy의 체력을 max로 초기화
+        
+    }
+    
+    public void Init(SpawnData data)
+    {
+        anim.runtimeAnimatorController = animCon[data.spriteType];
+        speed = data.speed;
+        maxHealth = data.health;
+        health = data.health;
     }
 }
