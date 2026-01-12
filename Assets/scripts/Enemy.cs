@@ -89,4 +89,27 @@ public class Enemy : MonoBehaviour
         maxHealth = data.health;
         health = data.health;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Bullet 태그를 단 오브젝트와 충동하지 않으면 그냥 return(enemy와 Bullet의 충돌여부 확인)
+        if(!collision.CompareTag("Bullet"))
+            return;
+        //설정한 Bullet의 damage만큼을 enemy의 health에서 빼서 남은 hp계산
+        health -= collision.GetComponent<Bullet>().damage;
+
+        if(health > 0)
+        {
+            
+        }
+        else 
+        {
+            Dead();
+        }
+    }
+
+    void Dead()
+    {
+        gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
+    }
 }
