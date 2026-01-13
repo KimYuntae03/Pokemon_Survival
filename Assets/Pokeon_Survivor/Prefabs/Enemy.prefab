@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6252674009852558081}
   - component: {fileID: 8082191827814491534}
   - component: {fileID: 2189073121909758617}
+  - component: {fileID: -7768833218840761428}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -203,6 +204,19 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 268f487907f7ea14eabe7fac333e959b, type: 2}
   - {fileID: 9100000, guid: 221c1e7e9b8c79e478cbb1e9f3ccc273, type: 2}
   target: {fileID: 0}
+  expPrefabId: 2
+--- !u!114 &-7768833218840761428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3288261962235434155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bd7fd663003b746a2a9ac58d41539b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_Hit
 --- !u!1 &5145441718535246925
 GameObject:
   m_ObjectHideFlags: 0

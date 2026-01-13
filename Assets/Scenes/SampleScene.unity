@@ -1380,6 +1380,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 3288261962235434155, guid: f7634a8c0421f5d43aec206d5d9faf16, type: 3}
   - {fileID: 5462467204441570806, guid: dc59705931ba99f41a2ce7eb8230211a, type: 3}
+  - {fileID: 7150397901694433770, guid: 43735b96250c9464989fbd6ed5d47ae3, type: 3}
 --- !u!1 &1791558291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   pool: {fileID: 1672493794}
+  player: {fileID: 762689882}
   gameTime: 0
   maxGameTime: 20
 --- !u!4 &1887020725
@@ -1521,11 +1523,11 @@ MonoBehaviour:
   spawnData:
   - spriteType: 0
     spawnTime: 0.7
-    health: 10
+    health: 100
     speed: 1.8
   - spriteType: 1
     spawnTime: 0.6
-    health: 15
+    health: 100
     speed: 2.3
   - spriteType: 2
     spawnTime: 0.6
@@ -1533,7 +1535,7 @@ MonoBehaviour:
     speed: 2
   - spriteType: 3
     spawnTime: 1
-    health: 20
+    health: 100
     speed: 1.5
   spawnPoint:
   - {fileID: 77136870}
@@ -1599,8 +1601,8 @@ MonoBehaviour:
   id: 0
   prefabId: 1
   damage: 10
-  count: 2
-  speed: -200
+  count: 1
+  speed: -150
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public RuntimeAnimatorController[] animCon;
     public Rigidbody2D target; //enemy들이 추적할 타겟
     bool isLive;
+    public int expPrefabId = 2;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     Animator anim;
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
+    
 
     void FixedUpdate() //물리적 이동이 아닌 
     {
@@ -98,6 +100,10 @@ public class Enemy : MonoBehaviour
         //설정한 Bullet의 damage만큼을 enemy의 health에서 빼서 남은 hp계산
         health -= collision.GetComponent<Bullet>().damage;
 
+
+        if (GetComponent<enemy_Hit>() != null) { //피격시 번쩍임 효과
+            GetComponent<enemy_Hit>().OnHit();
+        }
         if(health > 0)
         {
             
@@ -110,6 +116,9 @@ public class Enemy : MonoBehaviour
 
     void Dead()
     {
+        GameObject exp = GameManager.instance.pool.Get(expPrefabId);//풀 메니저에서 Exp가져옴
+        exp.transform.position = transform.position;//보석 위치를 현재 죽은 몬스터의 위치로 설정
         gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
+        
     }
 }

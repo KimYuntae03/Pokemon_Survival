@@ -1,97 +1,94 @@
 fileFormatVersion: 2
-guid: 1873bf5dd980009468b9e87494deb387
+guid: fbb47bb62fdc18b459b1601fd1081f1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4079046469434059755
-    second: scratchbattle_0
+      213: -4283745300389448015
+    second: PRAS- Rock_0
   - first:
-      213: 6309519868071414825
-    second: scratchbattle_1
+      213: 7230859398447755903
+    second: PRAS- Rock_1
   - first:
-      213: 5787091680162735841
-    second: scratchbattle_2
+      213: -5740131486187079804
+    second: PRAS- Rock_2
   - first:
-      213: -1795599765788130192
-    second: scratchbattle_3
+      213: -7277260805522232396
+    second: PRAS- Rock_3
   - first:
-      213: -1197267754394675224
-    second: scratchbattle_4
+      213: -2080775207061984044
+    second: PRAS- Rock_4
   - first:
-      213: -130745135100307277
-    second: scratchbattle_5
+      213: 7374057975008603266
+    second: PRAS- Rock_5
   - first:
-      213: 5064148900710921205
-    second: scratchbattle_6
+      213: -6080779393244769445
+    second: PRAS- Rock_6
   - first:
-      213: -8287302167809555523
-    second: scratchbattle_7
+      213: 7260948504393458544
+    second: PRAS- Rock_7
   - first:
-      213: -4779076551723887131
-    second: scratchbattle_8
+      213: 6968077282152303928
+    second: PRAS- Rock_8
   - first:
-      213: 2492870887548937209
-    second: scratchbattle_9
+      213: -8642056161507434184
+    second: PRAS- Rock_9
   - first:
-      213: -326128325318932256
-    second: scratchbattle_10
+      213: 7121469905932588187
+    second: PRAS- Rock_10
   - first:
-      213: -4957385528231664180
-    second: scratchbattle_11
+      213: 2870638204520593163
+    second: PRAS- Rock_11
   - first:
-      213: -5315432340483157246
-    second: scratchbattle_12
+      213: -2157791539828549201
+    second: PRAS- Rock_12
   - first:
-      213: -787813420778897759
-    second: scratchbattle_13
+      213: 6160588065330061918
+    second: PRAS- Rock_13
   - first:
-      213: 281462226949668561
-    second: scratchbattle_14
+      213: -1154194511927533413
+    second: PRAS- Rock_14
   - first:
-      213: 5338028446517493389
-    second: scratchbattle_15
+      213: 7000774730965605886
+    second: PRAS- Rock_15
   - first:
-      213: 6001751501186197261
-    second: scratchbattle_16
+      213: 6328522291803420080
+    second: PRAS- Rock_16
   - first:
-      213: 8821435266442767285
-    second: scratchbattle_17
+      213: -3401502802650181905
+    second: PRAS- Rock_17
   - first:
-      213: -215716704127254846
-    second: scratchbattle_18
+      213: -8814621246062702594
+    second: PRAS- Rock_18
   - first:
-      213: 6013316729768634227
-    second: scratchbattle_19
+      213: 5032801645159618381
+    second: PRAS- Rock_19
   - first:
-      213: 3720574082430987152
-    second: scratchbattle_20
+      213: -6893221087699603368
+    second: PRAS- Rock_20
   - first:
-      213: 8917925617215828668
-    second: scratchbattle_21
+      213: -2608242825386029422
+    second: PRAS- Rock_21
   - first:
-      213: 2453234688125291789
-    second: scratchbattle_22
+      213: 5157065245621569533
+    second: PRAS- Rock_22
   - first:
-      213: -5742719788180599497
-    second: scratchbattle_23
+      213: 343618560481393159
+    second: PRAS- Rock_23
   - first:
-      213: 7348772742050330354
-    second: scratchbattle_24
+      213: 1989950729455133684
+    second: PRAS- Rock_24
   - first:
-      213: 6256455234153815098
-    second: scratchbattle_25
+      213: 4429216559511730255
+    second: PRAS- Rock_25
   - first:
-      213: -8106961459362090525
-    second: scratchbattle_26
+      213: -2894815231543415195
+    second: PRAS- Rock_26
   - first:
-      213: -6974927052775752331
-    second: scratchbattle_27
+      213: -2732389255067800719
+    second: PRAS- Rock_27
   - first:
-      213: -4390812241232231821
-    second: scratchbattle_28
-  - first:
-      213: -2688736169747433704
-    second: scratchbattle_29
+      213: 3292641020802098078
+    second: PRAS- Rock_28
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -200,13 +197,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scratchbattle_0
+      name: PRAS- Rock_0
       rect:
         serializedVersion: 2
-        x: 486
-        y: 304
-        width: 16
-        height: 10
+        x: 69
+        y: 1027
+        width: 52
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 514521709d05467c0800000000000000
-      internalID: -4079046469434059755
+      spriteID: 1b6b90678541d84c0800000000000000
+      internalID: -4283745300389448015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_1
+      name: PRAS- Rock_1
       rect:
         serializedVersion: 2
-        x: 502
-        y: 308
-        width: 12
-        height: 8
+        x: 265
+        y: 1027
+        width: 46
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92c8aa704eaef8750800000000000000
-      internalID: 6309519868071414825
+      spriteID: f72f549ef4c295460800000000000000
+      internalID: 7230859398447755903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_2
+      name: PRAS- Rock_2
       rect:
         serializedVersion: 2
-        x: 516
-        y: 308
-        width: 6
-        height: 6
+        x: 459
+        y: 1033
+        width: 42
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e6e7b6c831ef4050800000000000000
-      internalID: 5787091680162735841
+      spriteID: 487b8c963d4f650b0800000000000000
+      internalID: -5740131486187079804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_3
+      name: PRAS- Rock_3
       rect:
         serializedVersion: 2
-        x: 680
-        y: 307
-        width: 14
-        height: 10
+        x: 659
+        y: 1033
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,42 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0748c69c68fb417e0800000000000000
-      internalID: -1795599765788130192
+      spriteID: 4bb69fc9ad9f10b90800000000000000
+      internalID: -7277260805522232396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_4
+      name: PRAS- Rock_4
       rect:
         serializedVersion: 2
-        x: 696
-        y: 313
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e7964e1253726fe0800000000000000
-      internalID: -1197267754394675224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_5
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 296
+        x: 853
+        y: 1037
         width: 22
-        height: 10
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,41 +300,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b85c3a0eff7f2ef0800000000000000
-      internalID: -130745135100307277
+      spriteID: 4dc61ad39f99f13e0800000000000000
+      internalID: -2080775207061984044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_6
+      name: PRAS- Rock_5
       rect:
         serializedVersion: 2
-        x: 466
-        y: 264
-        width: 22
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f33f8c1898774640800000000000000
-      internalID: 5064148900710921205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_7
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 297
-        width: 16
+        x: 89
+        y: 849
+        width: 18
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -369,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db3036d16969dfc80800000000000000
-      internalID: -8287302167809555523
+      spriteID: 28c2689a8aae55660800000000000000
+      internalID: 7374057975008603266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_8
+      name: PRAS- Rock_6
       rect:
         serializedVersion: 2
-        x: 853
-        y: 294
-        width: 10
-        height: 10
+        x: 263
+        y: 835
+        width: 56
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e55914623f4dadb0800000000000000
-      internalID: -4779076551723887131
+      spriteID: b535124fb5bbc9ba0800000000000000
+      internalID: -6080779393244769445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_9
+      name: PRAS- Rock_7
       rect:
         serializedVersion: 2
-        x: 859
-        y: 304
-        width: 8
-        height: 6
+        x: 453
+        y: 829
+        width: 62
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,20 +366,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f3644b4dd4789220800000000000000
-      internalID: 2492870887548937209
+      spriteID: 073a6c0d13214c460800000000000000
+      internalID: 7260948504393458544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_10
+      name: PRAS- Rock_8
       rect:
         serializedVersion: 2
-        x: 84
-        y: 278
-        width: 34
-        height: 18
+        x: 643
+        y: 831
+        width: 60
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,173 +388,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e80c2a140c597bf0800000000000000
-      internalID: -326128325318932256
+      spriteID: 83d4822ae5593b060800000000000000
+      internalID: 6968077282152303928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_11
+      name: PRAS- Rock_9
       rect:
         serializedVersion: 2
-        x: 269
-        y: 276
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc5e61f9024d33bb0800000000000000
-      internalID: -4957385528231664180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_12
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 259
-        width: 30
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 203d0edd27acb36b0800000000000000
-      internalID: -5315432340483157246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_13
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 280
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ae30392edf1115f0800000000000000
-      internalID: -787813420778897759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_14
-      rect:
-        serializedVersion: 2
-        x: 857
-        y: 264
-        width: 34
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1de76077764f7e300800000000000000
-      internalID: 281462226949668561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_15
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 123
-        width: 113
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8efa9b079c741a40800000000000000
-      internalID: 5338028446517493389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_16
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 138
-        width: 66
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d07ee5211318a4350800000000000000
-      internalID: 6001751501186197261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_17
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 123
-        width: 175
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5bbac6903a80c6a70800000000000000
-      internalID: 8821435266442767285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_18
-      rect:
-        serializedVersion: 2
-        x: 405
-        y: 123
-        width: 52
+        x: 843
+        y: 833
+        width: 40
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -611,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce706eecce910df0800000000000000
-      internalID: -215716704127254846
+      spriteID: 831af5c65bf311880800000000000000
+      internalID: -8642056161507434184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_19
+      name: PRAS- Rock_10
       rect:
         serializedVersion: 2
-        x: 456
-        y: 148
-        width: 12
-        height: 9
+        x: 83
+        y: 651
+        width: 28
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -633,20 +432,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 377e5cfa4b7937350800000000000000
-      internalID: 6013316729768634227
+      spriteID: b941fb5f52b84d260800000000000000
+      internalID: 7121469905932588187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_20
+      name: PRAS- Rock_11
       rect:
         serializedVersion: 2
-        x: 459
-        y: 138
-        width: 12
-        height: 9
+        x: 275
+        y: 651
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -655,20 +454,372 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09be2df5a6222a330800000000000000
-      internalID: 3720574082430987152
+      spriteID: b077d1bdc3e86d720800000000000000
+      internalID: 2870638204520593163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scratchbattle_21
+      name: PRAS- Rock_12
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 655
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa91d29e60cfd02e0800000000000000
+      internalID: -2157791539828549201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 653
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e526289843ece7550800000000000000
+      internalID: 6160588065330061918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_14
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 651
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90aad2e43a7bffe0800000000000000
+      internalID: -1154194511927533413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 451
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd5cbfa68fb72160800000000000000
+      internalID: 7000774730965605886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_16
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 445
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b575149e7d63d750800000000000000
+      internalID: 6328522291803420080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_17
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 447
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee4a81193f6bc0d0800000000000000
+      internalID: -3401502802650181905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_18
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 449
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff42d6bdac2ca580800000000000000
+      internalID: -8814621246062702594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_19
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 459
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d479dbc6e6a18d540800000000000000
+      internalID: 5032801645159618381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 267
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850fe6d41fb5650a0800000000000000
+      internalID: -6893221087699603368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_21
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 271
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e87e828f8adcbd0800000000000000
+      internalID: -2608242825386029422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_22
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 257
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df749c08483919740800000000000000
+      internalID: 5157065245621569533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_23
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 269
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a79bb9247c4c400800000000000000
+      internalID: 343618560481393159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_24
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 261
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3e3bd25a9bd9b10800000000000000
+      internalID: 1989950729455133684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_25
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 267
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4879fe6efcb77d30800000000000000
+      internalID: 4429216559511730255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_26
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 259
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ee67162ec83d7d0800000000000000
+      internalID: -2894815231543415195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_27
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 183
+        width: 192
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17be697037a941ad0800000000000000
+      internalID: -2732389255067800719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Rock_28
       rect:
         serializedVersion: 2
         x: 13
-        y: 65
-        width: 189
-        height: 44
+        y: 29
+        width: 178
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,184 +828,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb271838916d2cb70800000000000000
-      internalID: 8917925617215828668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_22
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 65
-        width: 180
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0dcf5873f3ab0220800000000000000
-      internalID: 2453234688125291789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_23
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 5
-        width: 46
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73d83e467c2cd40b0800000000000000
-      internalID: -5742719788180599497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_24
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 8
-        width: 86
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f6bbf89fd51cf560800000000000000
-      internalID: 7348772742050330354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_25
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 4
-        width: 115
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3c1fd823e463d650800000000000000
-      internalID: 6256455234153815098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_26
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 2
-        width: 62
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e1b0f651894e7f80800000000000000
-      internalID: -8106961459362090525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_27
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 34
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57df90ddcc4143f90800000000000000
-      internalID: -6974927052775752331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_28
-      rect:
-        serializedVersion: 2
-        x: 389
-        y: 5
-        width: 118
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3728ae5b783b013c0800000000000000
-      internalID: -4390812241232231821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scratchbattle_29
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 9
-        width: 26
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 817b57bf2b0bfaad0800000000000000
-      internalID: -2688736169747433704
+      spriteID: e93e9c1309fc1bd20800000000000000
+      internalID: 3292641020802098078
       vertices: []
       indices: 
       edges: []
@@ -873,36 +848,35 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scratchbattle_0: -4079046469434059755
-      scratchbattle_1: 6309519868071414825
-      scratchbattle_10: -326128325318932256
-      scratchbattle_11: -4957385528231664180
-      scratchbattle_12: -5315432340483157246
-      scratchbattle_13: -787813420778897759
-      scratchbattle_14: 281462226949668561
-      scratchbattle_15: 5338028446517493389
-      scratchbattle_16: 6001751501186197261
-      scratchbattle_17: 8821435266442767285
-      scratchbattle_18: -215716704127254846
-      scratchbattle_19: 6013316729768634227
-      scratchbattle_2: 5787091680162735841
-      scratchbattle_20: 3720574082430987152
-      scratchbattle_21: 8917925617215828668
-      scratchbattle_22: 2453234688125291789
-      scratchbattle_23: -5742719788180599497
-      scratchbattle_24: 7348772742050330354
-      scratchbattle_25: 6256455234153815098
-      scratchbattle_26: -8106961459362090525
-      scratchbattle_27: -6974927052775752331
-      scratchbattle_28: -4390812241232231821
-      scratchbattle_29: -2688736169747433704
-      scratchbattle_3: -1795599765788130192
-      scratchbattle_4: -1197267754394675224
-      scratchbattle_5: -130745135100307277
-      scratchbattle_6: 5064148900710921205
-      scratchbattle_7: -8287302167809555523
-      scratchbattle_8: -4779076551723887131
-      scratchbattle_9: 2492870887548937209
+      PRAS- Rock_0: -4283745300389448015
+      PRAS- Rock_1: 7230859398447755903
+      PRAS- Rock_10: 7121469905932588187
+      PRAS- Rock_11: 2870638204520593163
+      PRAS- Rock_12: -2157791539828549201
+      PRAS- Rock_13: 6160588065330061918
+      PRAS- Rock_14: -1154194511927533413
+      PRAS- Rock_15: 7000774730965605886
+      PRAS- Rock_16: 6328522291803420080
+      PRAS- Rock_17: -3401502802650181905
+      PRAS- Rock_18: -8814621246062702594
+      PRAS- Rock_19: 5032801645159618381
+      PRAS- Rock_2: -5740131486187079804
+      PRAS- Rock_20: -6893221087699603368
+      PRAS- Rock_21: -2608242825386029422
+      PRAS- Rock_22: 5157065245621569533
+      PRAS- Rock_23: 343618560481393159
+      PRAS- Rock_24: 1989950729455133684
+      PRAS- Rock_25: 4429216559511730255
+      PRAS- Rock_26: -2894815231543415195
+      PRAS- Rock_27: -2732389255067800719
+      PRAS- Rock_28: 3292641020802098078
+      PRAS- Rock_3: -7277260805522232396
+      PRAS- Rock_4: -2080775207061984044
+      PRAS- Rock_5: 7374057975008603266
+      PRAS- Rock_6: -6080779393244769445
+      PRAS- Rock_7: 7260948504393458544
+      PRAS- Rock_8: 6968077282152303928
+      PRAS- Rock_9: -8642056161507434184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
