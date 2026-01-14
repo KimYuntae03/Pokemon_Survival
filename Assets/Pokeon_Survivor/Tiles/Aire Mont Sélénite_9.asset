@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Aire Mont S\xE9l\xE9nite_9"
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
   m_Sprite: {fileID: -804730548297740332, guid: 18061e3c5d140ae4abe01b50d2dfa00f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23921567, g: 0.8235294, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

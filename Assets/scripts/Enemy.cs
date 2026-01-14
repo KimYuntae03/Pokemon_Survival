@@ -14,18 +14,25 @@ public class Enemy : MonoBehaviour
     SpriteRenderer spriter;
     Animator anim;
 
+    enemy_Hit hitScript; //enemy_Hit참조(피격시 넉백 적용하려고)
+    
     void Awake() // Awake는 객체가 생성될때 실행됨
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        hitScript = GetComponent<enemy_Hit>();
     }
     
 
-    void FixedUpdate() //물리적 이동이 아닌 
+    void FixedUpdate()
     {
+        if (target == null) {
+            GameObject player = GameObject.FindWithTag("Player");
+        if (player != null) target = player.GetComponent<Rigidbody2D>();
+        }
 
-        if (!isLive) return;
+        if (!isLive || (hitScript != null && hitScript.isKnockback)) return;
 
          Vector2 dirVec = target.position - rigid.position;
         //방향은 (타켓위치 - 나(적)의위치)를 정규화 한것임
@@ -100,16 +107,15 @@ public class Enemy : MonoBehaviour
         //설정한 Bullet의 damage만큼을 enemy의 health에서 빼서 남은 hp계산
         health -= collision.GetComponent<Bullet>().damage;
 
-
-        if (GetComponent<enemy_Hit>() != null) { //피격시 번쩍임 효과
-            GetComponent<enemy_Hit>().OnHit();
-        }
         if(health > 0)
         {
-            
+            if (hitScript != null) { 
+                hitScript.OnHit();
+            }
         }
         else 
-        {
+        {   
+            isLive = false;
             Dead();
         }
     }
