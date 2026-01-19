@@ -43,7 +43,8 @@ public class Item : MonoBehaviour
     {
         // 플레이어와 부딪히면 획득 처리
         if (collision.CompareTag("Player"))
-        {
+        {   
+            GameManager.instance.GetExp(); //경험치와 레벨UI 상승
             gameObject.SetActive(false); //아이템 비활성화
         }
     }

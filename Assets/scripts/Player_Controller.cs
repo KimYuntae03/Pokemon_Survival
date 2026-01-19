@@ -4,7 +4,7 @@ public class Player_Controller : MonoBehaviour
 {
     public float moveSpeed = 5f; //플레이어 속도
     private Rigidbody2D rb;
-    private Vector2 moveInput;
+    public Vector2 inputVec;
     private Animator anim;
     private float lastHorizontal = 0;
     private float lastVertical = 0;
@@ -33,20 +33,20 @@ public class Player_Controller : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)) 
             lastVertical = (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) ? 1 : 0;
 
-        moveInput.x = lastHorizontal;
-        moveInput.y = lastVertical;
+        inputVec.x = lastHorizontal;
+        inputVec.y = lastVertical;
 
-        if (moveInput.sqrMagnitude > 0.01f) 
+        if (inputVec.sqrMagnitude > 0.01f) 
         {
-            anim.SetFloat("InputX", moveInput.x);
-            anim.SetFloat("InputY", moveInput.y);
+            anim.SetFloat("InputX", inputVec.x);
+            anim.SetFloat("InputY", inputVec.y);
         }
-       float inputMagnitude = moveInput.magnitude;
+       float inputMagnitude = inputVec.magnitude;
         anim.SetFloat("Speed", inputMagnitude);
-        moveInput = moveInput.normalized;
+        inputVec = inputVec.normalized;
     }
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + inputVec * moveSpeed * Time.fixedDeltaTime);
     }
 }

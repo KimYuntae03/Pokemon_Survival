@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -7,6 +8,13 @@ public class Weapon : MonoBehaviour
     public float damage;
     public int count; //무기 개수
     public float speed;
+    float timer;
+    Player_Controller player; //플레이어 입력 방향 가져오는 변수
+
+    void Awake()
+    {
+        player = GetComponentInParent<Player_Controller>();
+    }
 
     void Start()
     {
@@ -19,34 +27,50 @@ public class Weapon : MonoBehaviour
             case 0:
                 transform.Rotate(Vector3.forward * speed * Time.deltaTime);
                 break;
-            default:
+            case 1: // 진공파 (일정 시간마다 발사)
+                timer += Time.deltaTime; // 발사 간격 타이머
+                if (timer > speed) {
+                    timer = 0f;
+                    Fire(); //원거리 무기 발사함수
+                }
                 break;
         }
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump")) //스페이스바를 눌렀을때 레벨업이 되도록 일단 테스트 용
             LevelUp();
     }
 
     public void LevelUp()
     {
         this.damage += 5;
-        this.count += 1;
-        if(id == 0)
-        {
+       switch(id){
+        case 0: //화염자동차
+            this.count += 1;
             Batch();
-        }
+            break;
+        case 1: //파동탄
+            this.count += 1;
+            break;
+       }
     }
 
     public void Init()
     {
-        switch (id)
-        {
-            case 0:
-                Batch();
-                break;
-            default:
-                break;
-        }   
+        if(id == 0) Batch();
     }
+
+    void Fire()
+    {
+        // 풀 매니저에서 진공파 프리팹을 가져온다
+        Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
+        bullet.position = transform.position; // 플레이어 위치에서 발사
+
+        // 플레이어가 이동 중인 방향(inputVec)을 가져옴 (없으면 위쪽으로)
+        Vector3 dir = player.inputVec == Vector2.zero ? Vector3.up : (Vector3)player.inputVec.normalized;
+
+        // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
+        bullet.GetComponent<Bullet>().Init(damage, count, dir);
+    }
+
     void Batch()
     {
         for(int index = 0; index < count; index++)
@@ -77,7 +101,7 @@ public class Weapon : MonoBehaviour
             bullet.Translate(bullet.up * 1.5f, Space.World);
             //무기가 추가됐을때 무기 간격 설정 코드
 
-            bullet.GetComponent<Bullet>().Init(damage, -1);
+            bullet.GetComponent<Bullet>().Init(damage, -1,Vector3.zero);
             //근접 무기는 무조건 관통하므로 per값을 -1로 고정
         }
     }
