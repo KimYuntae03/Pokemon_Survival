@@ -9,17 +9,14 @@ public class Weapon : MonoBehaviour
     public int count; //무기 개수
     public float speed;
     float timer;
+    public int level; //무기레벨 저장
     Player_Controller player; //플레이어 입력 방향 가져오는 변수
 
     void Awake()
     {
         player = GetComponentInParent<Player_Controller>();
     }
-
-    void Start()
-    {
-        Init();
-    }
+    
     void Update()
     {
         switch (id)
@@ -36,25 +33,31 @@ public class Weapon : MonoBehaviour
                 break;
         }
         if(Input.GetButtonDown("Jump")) //스페이스바를 눌렀을때 레벨업이 되도록 일단 테스트 용
-            LevelUp();
+            LevelUp(5,1);
     }
 
-    public void LevelUp()
+    public void LevelUp(float addDamage, int addCount)
     {
         this.damage += 5;
-       switch(id){
-        case 0: //화염자동차
-            this.count += 1;
-            Batch();
-            break;
-        case 1: //파동탄
-            this.count += 1;
-            break;
-       }
+        switch(id){
+            case 0: //화염자동차
+                this.count += 1;
+                Batch();
+                break;
+            case 1: //파동탄
+                this.count += 1;
+                break;
+        }
     }
 
-    public void Init()
+    public void Init(ItemData data)
     {
+        // 1. 넘겨받은 데이터로 기본 정보 세팅 (추가된 부분)
+        id = data.itemId;
+        damage = data.baseDamage;
+        count = data.baseCount;
+        level = 0; // 초기 레벨 설정
+
         if(id == 0) Batch();
     }
 

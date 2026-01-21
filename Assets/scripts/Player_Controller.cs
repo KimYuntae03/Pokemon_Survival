@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {
-    public float moveSpeed = 5f; //플레이어 속도
+    public float moveSpeed = 3.5f; //플레이어 속도
     private Rigidbody2D rb;
     public Vector2 inputVec;
     private Animator anim;
@@ -14,6 +14,7 @@ public class Player_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
+    
 
     void Update()
     {
@@ -48,5 +49,9 @@ public class Player_Controller : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + inputVec * moveSpeed * Time.fixedDeltaTime);
+    }
+    public void ApplySpeedBoost(float amount)
+    {
+        moveSpeed += amount;
     }
 }

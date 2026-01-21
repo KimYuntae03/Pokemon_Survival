@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
-  m_Name: Lucky Egg
+  m_Name: Item_Alkaloid
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemType: 0
-  itemId: 0
-  itemName: 
-  itemDesc: 
-  itemIcon: {fileID: 0}
+  itemType: 5
+  itemId: 2
+  itemName: "\uC54C\uCE7C\uB85C\uC774\uB4DC"
+  itemDesc: "\uC774\uB3D9\uC18D\uB3C4\uAC00 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+  itemIcon: {fileID: 8415749749222809256, guid: 1d4b3f62ad742d2448aeed7538e345c7, type: 3}
   baseDamage: 0
   baseCount: 0
-  damages: []
+  damages:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
   counts: 
   projectile: {fileID: 0}

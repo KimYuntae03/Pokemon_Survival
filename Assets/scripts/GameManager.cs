@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public int level;
     public int kill;
     public int exp;
-    public int[] nextExp = { 10, 30, 60, 100, 150, 210, 280, 360, 450, 600 }; 
+    public LevelUp uiLevelUp; //레벨업 시 연결할 UI변수
 
     public Slider expSlider;
     public TextMeshProUGUI timerText;
@@ -52,12 +52,17 @@ public class GameManager : MonoBehaviour
     public void GetExp()
     {
         exp++;
+        //필요한 경험치량 증가
+        int targetExp = Mathf.RoundToInt(Mathf.Pow(level, 1.4f)) + 9;
 
-        // 레벨업 체크 (현재 레벨이 최대 레벨 배열을 넘지 않게 처리)
-        if (level < nextExp.Length && exp == nextExp[level]) {
+        if (exp >= targetExp) {
             level++;
             exp = 0;
             UpdateLevelUI();
+                
+            if (uiLevelUp != null) {
+                uiLevelUp.Show();
+            }
         }
 
         UpdateExpUI();
@@ -79,10 +84,8 @@ public class GameManager : MonoBehaviour
 
     void UpdateExpUI()
     {
-        // 다음 레벨 경험치가 있다면 슬라이더 갱신
-        if (level < nextExp.Length) {
-            expSlider.value = (float)exp / nextExp[level];
-        }
+        int currentTargetExp = Mathf.RoundToInt(Mathf.Pow(level, 1.4f)) + 9;
+        expSlider.value = (float)exp / currentTargetExp; //현재 Exp / 목표 Exp를 경험치 바에 반영
     }
 
     void UpdateKillUI()
