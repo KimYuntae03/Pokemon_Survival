@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class ItemUI : MonoBehaviour
+public class ItemUI : MonoBehaviour, ISelectHandler
 {
     public Image icon;       // 아이템 아이콘 연결용
     public TMP_Text textName;    // 아이템 이름 텍스트 연결용
-    public TMP_Text textDesc;    // 아이템 설명 텍스트 연결용
+    // public TMP_Text textDesc;    // 아이템 설명 텍스트 연결용
 
     ItemData data;           // 현재 슬롯이 배정받은 데이터
     int level;
@@ -18,7 +19,13 @@ public class ItemUI : MonoBehaviour
 
         icon.sprite = data.itemIcon;
         textName.text = data.itemName;
-        textDesc.text = data.itemDesc;
+        // textDesc.text = data.itemDesc;
+    }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        // LevelUp 스크립트에 있는 '공용 설명창'에 현재 아이템 설명을 전달
+        GetComponentInParent<LevelUp>().UpdateDescription(data.itemDesc);
     }
 
     // 버튼이 클릭되었을 때 실행될 함수
@@ -84,5 +91,9 @@ public class ItemUI : MonoBehaviour
                 // player.power += 1; 
                 break;
         }
+    }
+    public string GetItemDescription()
+    {
+        return data != null ? data.itemDesc : "";
     }
 }
