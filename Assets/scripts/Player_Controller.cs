@@ -8,11 +8,21 @@ public class Player_Controller : MonoBehaviour
     private Animator anim;
     private float lastHorizontal = 0;
     private float lastVertical = 0;
+    public ItemData defaultWeaponData;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        // 기본무기 생성
+        if (defaultWeaponData != null) {
+            GameObject obj = Instantiate(defaultWeaponData.itemPrefab, transform);
+            obj.transform.localPosition = Vector3.zero;
+
+            Weapon weapon = obj.GetComponent<Weapon>();
+            weapon.Init(defaultWeaponData);
+            weapon.level++; 
+        }
     }
     
 

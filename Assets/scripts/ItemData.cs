@@ -4,6 +4,7 @@ using UnityEngine;
 public class ItemData : ScriptableObject
 {
     public enum ItemType { Melee, Range, Glove, Shoe, Heal,buff }
+    public float baseSpeed;
 
     [Header("# Main info")]
     public ItemType itemType;
@@ -22,4 +23,6 @@ public class ItemData : ScriptableObject
     
     [Header("# Weapon")]
     public GameObject projectile;
+
+    public GameObject itemPrefab;
 }

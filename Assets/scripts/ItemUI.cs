@@ -31,8 +31,6 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     // 버튼이 클릭되었을 때 실행될 함수
     public void OnClick()
     {
-        Debug.Log("버튼이 클릭되었습니다!");
-
         //플레이어 참조를 가져옴
         Player_Controller player = GetComponentInParent<LevelUp>().player;
 
@@ -64,19 +62,27 @@ public class ItemUI : MonoBehaviour, ISelectHandler
                 isExist = true;
                 if (weapon.gameObject.activeSelf) {
                     weapon.LevelUp(data.damages[weapon.level], data.counts[weapon.level]);
-                    weapon.level++;
                 } 
                 else { //스킬이 첫 선택일 경우
                     weapon.gameObject.SetActive(true);
+                    weapon.transform.localPosition = Vector3.zero;
                     weapon.Init(data); // 기본 데미지, 개수 등 초기화
-                    weapon.level++;
                 }
                 break;
             }
         }
 
-        if (!isExist) {
-            // [새 무기 생성 코드...]
+        if (!isExist) {//무기를 처음 선택할 때
+            if (data.itemPrefab != null){ //프리팹이 있는지 체크
+                    //프리팹 생성 및 플레이어의 자식으로 설정
+                    GameObject newWeapon = Instantiate(data.itemPrefab, player.transform);
+                    newWeapon.transform.localPosition = Vector3.zero;
+                    Weapon weaponScript = newWeapon.GetComponent<Weapon>();
+                
+                    if (weaponScript != null) {
+                        weaponScript.Init(data); //데이터 전달해서 초기화
+                    }
+            }          
         }
     }
 
@@ -85,7 +91,6 @@ public class ItemUI : MonoBehaviour, ISelectHandler
         switch (data.itemId) {
             case 2: // 알카로이드 (이동속도 증가)
                 player.moveSpeed += 0.5f; // 혹은 data.baseDamage 수치를 활용
-                Debug.Log("이동속도가 증가했습니다!");
                 break;
             case 3: // 공격력 증가 포션 등
                 // player.power += 1; 

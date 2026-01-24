@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     {
         // 타이머 작동
         timer += Time.deltaTime;
-        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 5f), spawnData.Length - 1);
+        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 15f), spawnData.Length - 1);
         //ㄴ>Mathf 클래스의 FloorToInt로 정수변환 20초마다 1레벨 증가로 인식
 
         //level증가할 수록 생성주기가 짧아짐. ? 참일때 값 : 거짓일때 값

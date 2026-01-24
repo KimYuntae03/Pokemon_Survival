@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
   m_Name: Wave_Bullet
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  baseSpeed: 1
   itemType: 0
   itemId: 1
   itemName: "\uD30C\uB3D9\uD0C4"
@@ -28,3 +29,4 @@ MonoBehaviour:
   - 5
   counts: 0100000001000000010000000100000001000000
   projectile: {fileID: 5462467204441570806, guid: 5dd4b54853002984aaf5d9040eeec2da, type: 3}
+  itemPrefab: {fileID: 7743814889358280944, guid: ea884b509c5dd734ba16562289aec361, type: 3}

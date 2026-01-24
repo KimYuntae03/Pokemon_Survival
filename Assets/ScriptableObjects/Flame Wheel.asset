@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
   m_Name: Flame Wheel
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  baseSpeed: -150
   itemType: 0
   itemId: 0
   itemName: "\uD654\uC5FC\uBC14\uD034"
@@ -28,3 +29,4 @@ MonoBehaviour:
   - 5
   counts: 0100000001000000010000000100000001000000
   projectile: {fileID: 5462467204441570806, guid: dc59705931ba99f41a2ce7eb8230211a, type: 3}
+  itemPrefab: {fileID: 8016220021746060585, guid: 2922432d2c6a9354b9c09abc2b60426d, type: 3}

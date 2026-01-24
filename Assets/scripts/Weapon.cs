@@ -10,13 +10,14 @@ public class Weapon : MonoBehaviour
     public float speed;
     float timer;
     public int level; //무기레벨 저장
+    public LayerMask targetLayer; //Enemy레이어를 체크할 변수
     Player_Controller player; //플레이어 입력 방향 가져오는 변수
 
     void Awake()
     {
         player = GetComponentInParent<Player_Controller>();
     }
-    
+
     void Update()
     {
         switch (id)
@@ -31,9 +32,15 @@ public class Weapon : MonoBehaviour
                     Fire(); //원거리 무기 발사함수
                 }
                 break;
+            case 2:
+                timer += Time.deltaTime;
+                if(timer > speed)
+                {
+                    timer = 0f;
+                    Fire();
+                }
+                break;
         }
-        if(Input.GetButtonDown("Jump")) //스페이스바를 눌렀을때 레벨업이 되도록 일단 테스트 용
-            LevelUp(5,1);
     }
 
     public void LevelUp(float addDamage, int addCount)
@@ -47,6 +54,9 @@ public class Weapon : MonoBehaviour
             case 1: //파동탄
                 this.count += 1;
                 break;
+            case 2:
+                this.speed = Mathf.Max(this.speed - 0.5f, 0.2f); //쿨타임 감소
+                break;
         }
     }
 
@@ -57,21 +67,41 @@ public class Weapon : MonoBehaviour
         damage = data.baseDamage;
         count = data.baseCount;
         level = 0; // 초기 레벨 설정
+        this.speed = data.baseSpeed;
 
         if(id == 0) Batch();
     }
 
     void Fire()
-    {
-        // 풀 매니저에서 진공파 프리팹을 가져온다
-        Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
-        bullet.position = transform.position; // 플레이어 위치에서 발사
+    {   
+        if(id == 2)
+        {
+            // 주변 적들을 감지 (반경 10f 내의 Enemy 레이어)
+            Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 3f, LayerMask.GetMask("Enemy"));
 
-        // 플레이어가 이동 중인 방향(inputVec)을 가져옴 (없으면 위쪽으로)
-        Vector3 dir = player.inputVec == Vector2.zero ? Vector3.up : (Vector3)player.inputVec.normalized;
+            if (targets.Length == 0) return; //범위내에 없으면 공격X
 
-        // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
-        bullet.GetComponent<Bullet>().Init(damage, count, dir);
+            // 적들 중 랜덤으로 하나 선택
+            Transform target = targets[Random.Range(0, targets.Length)].transform;
+            Vector3 targetPos = target.position;
+
+            // 풀에서 할퀴기 이펙트(Bullet_Scratch)를 가져옴
+            Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
+            bullet.position = targetPos; // 선택된 적의 위치에 생성
+            
+            bullet.GetComponent<Bullet>().Init(damage, 0, Vector3.zero);
+        }
+        else{
+            // 풀 매니저에서 진공파 프리팹을 가져온다
+            Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
+            bullet.position = transform.position; // 플레이어 위치에서 발사
+
+            // 플레이어가 이동 중인 방향(inputVec)을 가져옴 (없으면 위쪽으로)
+            Vector3 dir = player.inputVec == Vector2.zero ? Vector3.up : (Vector3)player.inputVec.normalized;
+
+            // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
+            bullet.GetComponent<Bullet>().Init(damage, count, dir);
+        }
     }
 
     void Batch()
@@ -107,5 +137,10 @@ public class Weapon : MonoBehaviour
             bullet.GetComponent<Bullet>().Init(damage, -1,Vector3.zero);
             //근접 무기는 무조건 관통하므로 per값을 -1로 고정
         }
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 10f);
     }
 }
