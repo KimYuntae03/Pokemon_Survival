@@ -3234,8 +3234,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4266,11 +4266,11 @@ MonoBehaviour:
     health: 10
     speed: 2.3
   - spriteType: 2
-    spawnTime: 1.5
+    spawnTime: 1.2
     health: 15
     speed: 2
   - spriteType: 3
-    spawnTime: 2
+    spawnTime: 1.2
     health: 30
     speed: 1.5
   spawnPoint:
