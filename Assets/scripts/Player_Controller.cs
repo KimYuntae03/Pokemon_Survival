@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI; //체력바 UI를 위해 추가
 
 public class Player_Controller : MonoBehaviour
 {
@@ -9,9 +10,22 @@ public class Player_Controller : MonoBehaviour
     private float lastHorizontal = 0;
     private float lastVertical = 0;
     public ItemData defaultWeaponData;
+    public float maxHp = 100f;
+    public float CurHp;
+    public Slider hpSlider; //인스펙터에서 연결할 슬라이더
+
+    void Awake()
+    {
+        CurHp = maxHp; //체력 초기화
+    }
 
     void Start()
-    {
+    {   
+        if (hpSlider != null) {
+            hpSlider.maxValue = maxHp;
+            hpSlider.value = CurHp;
+        }
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         // 기본무기 생성
@@ -63,5 +77,21 @@ public class Player_Controller : MonoBehaviour
     public void ApplySpeedBoost(float amount)
     {
         moveSpeed += amount;
+    }
+
+    void UpdateHpBar()
+    {
+        if (hpSlider != null) {
+            hpSlider.value = CurHp; // 슬라이더 값을 현재 체력으로 업데이트
+        }
+    }
+    public void TakeDamage(float damage)
+    {
+        CurHp -= damage;
+        UpdateHpBar();
+
+        if (CurHp <= 0) {
+            // 사망 로직 추가 예정
+        }
     }
 }

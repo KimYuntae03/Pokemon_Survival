@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   id: 2
   prefabId: 4
-  damage: 5
+  damage: 10
   count: 1
   speed: 0.2
   level: 1
