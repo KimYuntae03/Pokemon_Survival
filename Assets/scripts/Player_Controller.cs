@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI; //체력바 UI를 위해 추가
+using System.Collections;//플레이어 피격시 데미지 표현(코루틴 사용)
 
 public class Player_Controller : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class Player_Controller : MonoBehaviour
     public float maxHp = 100f;
     public float CurHp;
     public Slider hpSlider; //인스펙터에서 연결할 슬라이더
+    SpriteRenderer spriteRenderer; //캐릭터 색 바꿀 컴포넌트
 
     void Awake()
-    {
+    {   
+        spriteRenderer = GetComponent<SpriteRenderer>(); //색 변경 컴포넌트 가져오기
         CurHp = maxHp; //체력 초기화
     }
 
@@ -88,10 +91,33 @@ public class Player_Controller : MonoBehaviour
     public void TakeDamage(float damage)
     {
         CurHp -= damage;
+        CurHp = Mathf.Max(CurHp, 0);
         UpdateHpBar();
+
+        StopCoroutine("OnDamage");
+        StartCoroutine("OnDamage");
 
         if (CurHp <= 0) {
             // 사망 로직 추가 예정
         }
+    }
+
+    IEnumerator OnDamage() //색상을 변경했다가 되돌리는 코루틴
+    {
+        // 캐릭터 색상을 빨간색으로 변경
+        spriteRenderer.color = Color.red;
+
+        // 0.3초 동안 대기
+        yield return new WaitForSeconds(0.1f);
+
+        // 다시 원래 색상(하얀색)으로 복구
+        spriteRenderer.color = Color.white;
+    }
+
+    void Die()
+    {
+        Debug.Log("플레이어 사망!");
+        //추후에 게임오버 UI나 재시작 화면 구현
+        Time.timeScale = 0f; 
     }
 }

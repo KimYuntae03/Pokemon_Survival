@@ -128,4 +128,18 @@ public class Enemy : MonoBehaviour
         gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
         
     }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        //충돌한 적이 Player인지 확인
+        if (collision.gameObject.CompareTag("Player")) {
+
+            //플레이어 컨트롤러 컴포넌트를 가져옴
+            Player_Controller player = collision.gameObject.GetComponent<Player_Controller>();
+            
+            if (player != null) {
+                player.TakeDamage(20f * Time.deltaTime); //초당 20의 데미지를 줌
+            }
+        }
+    }
 }
