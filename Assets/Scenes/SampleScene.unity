@@ -4020,6 +4020,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffdc4d85ff294484da43cbb09a0e43b1, type: 2}
   - {fileID: 11400000, guid: 32c51e936bbcc3b4ea3df73e5612444d, type: 2}
   - {fileID: 11400000, guid: 872d1d4e1e7163d40bf25c0e3ff6363a, type: 2}
+  - {fileID: 11400000, guid: f4b1f8940deee1547894bee2b58e8d85, type: 2}
   itemSlots:
   - {fileID: 620914891}
   - {fileID: 499743093}
@@ -4305,6 +4306,7 @@ MonoBehaviour:
   level: 0
   kill: 0
   exp: 0
+  expMultiplier: 1
   uiLevelUp: {fileID: 1740854508}
   expSlider: {fileID: 482146335}
   timerText: {fileID: 263202612}

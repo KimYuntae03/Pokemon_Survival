@@ -62,7 +62,6 @@ public class Weapon : MonoBehaviour
 
     public void Init(ItemData data)
     {
-        // 1. 넘겨받은 데이터로 기본 정보 세팅 (추가된 부분)
         id = data.itemId;
         damage = data.baseDamage;
         count = data.baseCount;
@@ -97,7 +96,7 @@ public class Weapon : MonoBehaviour
             bullet.position = transform.position; // 플레이어 위치에서 발사
 
             // 플레이어가 이동 중인 방향(inputVec)을 가져옴 (없으면 위쪽으로)
-            Vector3 dir = player.inputVec == Vector2.zero ? Vector3.up : (Vector3)player.inputVec.normalized;
+            Vector3 dir = player.inputVec == Vector2.zero ? (Vector3)player.lastVec : (Vector3)player.inputVec.normalized;
 
             // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
             bullet.GetComponent<Bullet>().Init(damage, count, dir);

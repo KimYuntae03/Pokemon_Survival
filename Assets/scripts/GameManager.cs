@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
 
     public int level;
     public int kill;
-    public int exp;
+    public float exp;
+    public float expMultiplier = 1.0f; //경험치 추가배율
     public LevelUp uiLevelUp; //레벨업 시 연결할 UI변수
 
     public Slider expSlider;
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void GetExp()
     {
-        exp++;
+        exp += Mathf.RoundToInt(1 * expMultiplier);
         //필요한 경험치량 증가
         int targetExp = Mathf.RoundToInt(Mathf.Pow(level, 1.4f)) + 9;
 

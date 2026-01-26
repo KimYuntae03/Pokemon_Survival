@@ -92,8 +92,9 @@ public class ItemUI : MonoBehaviour, ISelectHandler
             case 2: // 알카로이드 (이동속도 증가)
                 player.moveSpeed += 0.5f; // 혹은 data.baseDamage 수치를 활용
                 break;
-            case 3: // 공격력 증가 포션 등
-                // player.power += 1; 
+            case 3: // 행복의 알 (경험치 획등량 증가)
+                GameManager.instance.expMultiplier += 0.2f;
+                Debug.Log($"<color=yellow>행복의 알 획득!</color> 현재 배율: {GameManager.instance.expMultiplier}");
                 break;
         }
     }

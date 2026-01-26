@@ -15,6 +15,7 @@ public class Player_Controller : MonoBehaviour
     public float CurHp;
     public Slider hpSlider; //인스펙터에서 연결할 슬라이더
     SpriteRenderer spriteRenderer; //캐릭터 색 바꿀 컴포넌트
+    public Vector2 lastVec; //마지막 입력 방향 저장용 변수
 
     void Awake()
     {   
@@ -69,9 +70,13 @@ public class Player_Controller : MonoBehaviour
             anim.SetFloat("InputX", inputVec.x);
             anim.SetFloat("InputY", inputVec.y);
         }
-       float inputMagnitude = inputVec.magnitude;
+        float inputMagnitude = inputVec.magnitude;
         anim.SetFloat("Speed", inputMagnitude);
         inputVec = inputVec.normalized;
+
+        if (inputVec.magnitude != 0) {
+            lastVec = inputVec.normalized;
+        }
     }
     void FixedUpdate()
     {
