@@ -40,6 +40,13 @@ public class Weapon : MonoBehaviour
                     Fire();
                 }
                 break;
+            case 4:
+                timer += Time.deltaTime;
+                if (timer > speed) { // 여기서 speed는 공격 쿨타임
+                    timer = 0f;
+                    Fire();
+                }
+                break;
         }
     }
 
@@ -67,6 +74,7 @@ public class Weapon : MonoBehaviour
         count = data.baseCount;
         level = 0; // 초기 레벨 설정
         this.speed = data.baseSpeed;
+        transform.localPosition = Vector3.zero;
 
         if(id == 0) Batch();
     }
@@ -90,7 +98,7 @@ public class Weapon : MonoBehaviour
             
             bullet.GetComponent<Bullet>().Init(damage, 0, Vector3.zero);
         }
-        else{
+        else if(id == 1){
             // 풀 매니저에서 진공파 프리팹을 가져온다
             Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
             bullet.position = transform.position; // 플레이어 위치에서 발사
@@ -100,6 +108,24 @@ public class Weapon : MonoBehaviour
 
             // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
             bullet.GetComponent<Bullet>().Init(damage, count, dir);
+        }
+        else if(id == 4)
+        {
+            Transform scaryFace = GameManager.instance.pool.Get(prefabId).transform;
+            scaryFace.parent = player.transform;// 플레이어를 부모로 설정
+            scaryFace.localPosition = Vector3.zero; //위치 초기화
+            scaryFace.localRotation = Quaternion.identity;
+            scaryFace.localScale = Vector3.one;
+
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject enemyObj in enemies) {
+                if (!enemyObj.activeSelf) continue;
+
+                Enemy enemy = enemyObj.GetComponent<Enemy>();
+                if (enemy != null) {
+                    enemy.ApplySlow(3.0f, 0.1f); // 3초간 10% 감소
+                }
+            }
         }
     }
 

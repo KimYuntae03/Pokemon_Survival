@@ -2200,6 +2200,7 @@ MonoBehaviour:
   maxHp: 100
   CurHp: 0
   hpSlider: {fileID: 91965243}
+  lastVec: {x: 0, y: 0}
 --- !u!95 &762689883
 Animator:
   serializedVersion: 7
@@ -3926,6 +3927,7 @@ MonoBehaviour:
   - {fileID: 7150397901694433770, guid: 43735b96250c9464989fbd6ed5d47ae3, type: 3}
   - {fileID: 5462467204441570806, guid: 5dd4b54853002984aaf5d9040eeec2da, type: 3}
   - {fileID: 1547592141922926797, guid: 880e40bef3de0424c9fd4db709946f7e, type: 3}
+  - {fileID: 6812278814823101577, guid: b8757161a63d4154a8879aef0559a2f4, type: 3}
 --- !u!1 &1740854504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4021,6 +4023,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 32c51e936bbcc3b4ea3df73e5612444d, type: 2}
   - {fileID: 11400000, guid: 872d1d4e1e7163d40bf25c0e3ff6363a, type: 2}
   - {fileID: 11400000, guid: f4b1f8940deee1547894bee2b58e8d85, type: 2}
+  - {fileID: 11400000, guid: 1aa774dbef424534b9470c2e18f273e2, type: 2}
   itemSlots:
   - {fileID: 620914891}
   - {fileID: 499743093}

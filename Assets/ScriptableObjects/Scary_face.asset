@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
+  m_Name: Scary_face
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  baseSpeed: 20
+  itemType: 1
+  itemId: 4
+  itemName: "\uAC81\uB098\uB294\uC5BC\uAD74 "
+  itemDesc: "\uC801\uC758 \uC774\uB3D9\uC18D\uB3C4\uB97C \uC77C\uC815\uC2DC\uAC04
+    \uAC10\uC18C\uC2DC\uD0B5\uB2C8\uB2E4."
+  itemIcon: {fileID: 21300000, guid: 78d58c0a240d1e747bed8d6a592086b5, type: 2}
+  baseDamage: 0
+  baseCount: 0
+  damages:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  counts: 
+  projectile: {fileID: 6812278814823101577, guid: b8757161a63d4154a8879aef0559a2f4, type: 3}
+  itemPrefab: {fileID: 8372794226226134118, guid: 52cbf2a54d90b6b4198f9355751c46e6, type: 3}

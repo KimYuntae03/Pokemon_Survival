@@ -1,9 +1,11 @@
 using Unity.Android.Gradle.Manifest;
 using UnityEngine;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
     public float speed;
+    float defaultSpeed; //원래속도 기억할 변수
     public float health;
     public float maxHealth;
     public RuntimeAnimatorController[] animCon;
@@ -22,6 +24,7 @@ public class Enemy : MonoBehaviour
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         hitScript = GetComponent<enemy_Hit>();
+        defaultSpeed = speed;
     }
     
 
@@ -141,5 +144,16 @@ public class Enemy : MonoBehaviour
                 player.TakeDamage(20f * Time.deltaTime); //초당 20의 데미지를 줌
             }
         }
+    }
+
+    public void ApplySlow(float duration, float rate) { //겁나는 얼굴
+        StopCoroutine("SlowRoutine"); // 이미 느려진 상태라면 초기화 후 재시작
+        StartCoroutine(SlowRoutine(duration, rate));
+    }
+
+    IEnumerator SlowRoutine(float duration, float rate) {
+        speed = defaultSpeed * (1f - rate); // 20% 감소면 rate = 0.2f
+        yield return new WaitForSeconds(duration);
+        speed = defaultSpeed; // 원래대로 복구
     }
 }
