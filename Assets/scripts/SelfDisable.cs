@@ -1,11 +1,13 @@
 using UnityEngine;
 
 public class SelfDisable : MonoBehaviour
-{
+{   
+    [SerializeField] private float disableTime = 3f;
+
     void OnEnable()
     {
         // 0.8초 뒤에 자동으로 꺼짐
-        Invoke("Disable", 0.8f);
+        Invoke("Disable", disableTime);
     }
 
     void Disable()

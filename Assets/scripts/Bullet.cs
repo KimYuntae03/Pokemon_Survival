@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         this.damage = damage;
         this.per = per;
-        if (per > -1) {
+        if (per > -1) { //원거리 무기 일때만 물리속도 적용
             rigid.linearVelocity = dir * 15f;
         }
     }
@@ -34,7 +34,9 @@ public class Bullet : MonoBehaviour
         // 관통력을 다 썼다면 비활성화
         if (per < 0) {
             rigid.linearVelocity = Vector2.zero;
-            gameObject.SetActive(false); 
+            if (rigid.linearVelocity != Vector2.zero || per < -1) {
+                 gameObject.SetActive(false); 
+            }
         }
     }
 
@@ -45,13 +47,13 @@ public class Bullet : MonoBehaviour
         }
     }
     void OnBecameInvisible()
-{
-    // 원거리무기만 화면밖으로 나갔을 때를 취급하므로 근접무기는 제외 
-    if (per == -1)
-        return;
+    {
+        // 원거리무기만 화면밖으로 나갔을 때를 취급하므로 근접무기는 제외 
+        if (per == -1)
+            return;
 
-    // 화면 밖으로 나가면 물리 속도를 멈추고 풀로 돌려보냄
-    rigid.linearVelocity = Vector2.zero;
-    gameObject.SetActive(false); //비활성화
-}
+        // 화면 밖으로 나가면 물리 속도를 멈추고 풀로 돌려보냄
+        rigid.linearVelocity = Vector2.zero;
+        gameObject.SetActive(false); //비활성화
+    }
 }

@@ -115,7 +115,6 @@ public class Weapon : MonoBehaviour
             scaryFace.parent = player.transform;// 플레이어를 부모로 설정
             scaryFace.localPosition = Vector3.zero; //위치 초기화
             scaryFace.localRotation = Quaternion.identity;
-            scaryFace.localScale = Vector3.one;
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject enemyObj in enemies) {

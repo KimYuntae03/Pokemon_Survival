@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4ff28fb2441944990a90b519f10ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelfDisable
+  disableTime: 3
 --- !u!95 &5521870070982966898
 Animator:
   serializedVersion: 7
