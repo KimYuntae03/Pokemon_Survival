@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public float exp;
     public float expMultiplier = 1.0f; //경험치 추가배율
     public LevelUp uiLevelUp; //레벨업 시 연결할 UI변수
+    public float damageBuff = 1.0f; //데미지 관리 기본 1배
+
 
     public Slider expSlider;
     public TextMeshProUGUI timerText;
@@ -97,5 +99,10 @@ public class GameManager : MonoBehaviour
     void UpdateLevelUI()
     {
         levelText.text = string.Format("Lv.{0:D2}", level);
+    }
+
+    public void ApplyDamageBuff(float amount) //데미지 증가 함수
+    {
+        damageBuff += amount; // 10% 증가 시 1.1f
     }
 }

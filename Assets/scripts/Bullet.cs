@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public float damage;
     public int per ;
+    public int weaponId; //어떤 무기인지 확인용 변수
 
     Rigidbody2D rigid;
 
@@ -12,10 +13,12 @@ public class Bullet : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    public void Init(float damage, int per,Vector3 dir) //변수 초기화 함수
+    public void Init(float damage, int per,Vector3 dir, int id) //변수 초기화 함수
     {
         this.damage = damage;
         this.per = per;
+        this.weaponId = id;
+
         if (per > -1) { //원거리 무기 일때만 물리속도 적용
             rigid.linearVelocity = dir * 15f;
         }
@@ -34,8 +37,8 @@ public class Bullet : MonoBehaviour
         // 관통력을 다 썼다면 비활성화
         if (per < 0) {
             rigid.linearVelocity = Vector2.zero;
-            if (rigid.linearVelocity != Vector2.zero || per < -1) {
-                 gameObject.SetActive(false); 
+            if (weaponId != 2) { 
+                gameObject.SetActive(false); 
             }
         }
     }

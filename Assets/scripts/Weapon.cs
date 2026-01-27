@@ -81,6 +81,8 @@ public class Weapon : MonoBehaviour
 
     void Fire()
     {   
+        float finalDamage = damage * GameManager.instance.damageBuff;
+
         if(id == 2)
         {
             // 주변 적들을 감지 (반경 10f 내의 Enemy 레이어)
@@ -96,7 +98,7 @@ public class Weapon : MonoBehaviour
             Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
             bullet.position = targetPos; // 선택된 적의 위치에 생성
             
-            bullet.GetComponent<Bullet>().Init(damage, 0, Vector3.zero);
+            bullet.GetComponent<Bullet>().Init(finalDamage, 0, Vector3.zero,id);
         }
         else if(id == 1){
             // 풀 매니저에서 진공파 프리팹을 가져온다
@@ -107,7 +109,7 @@ public class Weapon : MonoBehaviour
             Vector3 dir = player.inputVec == Vector2.zero ? (Vector3)player.lastVec : (Vector3)player.inputVec.normalized;
 
             // Bullet 스크립트의 Init 호출 (damage, 관통력, 발사방향)
-            bullet.GetComponent<Bullet>().Init(damage, count, dir);
+            bullet.GetComponent<Bullet>().Init(finalDamage, count, dir,id);
         }
         else if(id == 4)
         {
@@ -158,13 +160,8 @@ public class Weapon : MonoBehaviour
             bullet.Translate(bullet.up * 1.5f, Space.World);
             //무기가 추가됐을때 무기 간격 설정 코드
 
-            bullet.GetComponent<Bullet>().Init(damage, -1,Vector3.zero);
+            bullet.GetComponent<Bullet>().Init(damage, -1,Vector3.zero,id);
             //근접 무기는 무조건 관통하므로 per값을 -1로 고정
         }
-    }
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 10f);
     }
 }

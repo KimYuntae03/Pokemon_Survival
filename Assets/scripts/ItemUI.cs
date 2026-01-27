@@ -96,6 +96,10 @@ public class ItemUI : MonoBehaviour, ISelectHandler
                 GameManager.instance.expMultiplier += 0.2f;
                 Debug.Log($"<color=yellow>행복의 알 획득!</color> 현재 배율: {GameManager.instance.expMultiplier}");
                 break;
+            case 5: // [추가] 생명의 구슬 (피해량 10% 증가)
+                GameManager.instance.ApplyDamageBuff(0.2f);
+                Debug.Log($"<color=red>생명의 구슬 획득!</color> 현재 공격력 버프: {GameManager.instance.damageBuff}");
+                break;
         }
     }
     public string GetItemDescription()

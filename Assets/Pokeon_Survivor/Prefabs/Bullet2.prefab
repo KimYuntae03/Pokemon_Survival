@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4ff28fb2441944990a90b519f10ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelfDisable
-  disableTime: 0.3
+  disableTime: 0.4
 --- !u!212 &5851949015107643548
 SpriteRenderer:
   serializedVersion: 2
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   damage: 0
   per: 0
+  weaponId: 0
 --- !u!50 &2277550723000762813
 Rigidbody2D:
   serializedVersion: 5

@@ -1044,10 +1044,10 @@ RectTransform:
   - {fileID: 1408482639}
   m_Father: {fileID: 20736706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499743093
 MonoBehaviour:
@@ -1416,10 +1416,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 7482667652216324306, guid: ffb42fca8eb8aba4a9d83a1b0806c99c, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1872,10 +1872,10 @@ RectTransform:
   - {fileID: 2105228343}
   m_Father: {fileID: 20736706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620914891
 MonoBehaviour:
@@ -3946,7 +3946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1740854505
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4024,6 +4024,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 872d1d4e1e7163d40bf25c0e3ff6363a, type: 2}
   - {fileID: 11400000, guid: f4b1f8940deee1547894bee2b58e8d85, type: 2}
   - {fileID: 11400000, guid: 1aa774dbef424534b9470c2e18f273e2, type: 2}
+  - {fileID: 11400000, guid: 140a9a95d63964c49bb3b45cfe9670c1, type: 2}
   itemSlots:
   - {fileID: 620914891}
   - {fileID: 499743093}
@@ -4311,6 +4312,7 @@ MonoBehaviour:
   exp: 0
   expMultiplier: 1
   uiLevelUp: {fileID: 1740854508}
+  damageBuff: 1
   expSlider: {fileID: 482146335}
   timerText: {fileID: 263202612}
   killText: {fileID: 1420382833}
@@ -4367,10 +4369,10 @@ RectTransform:
   - {fileID: 1177328546}
   m_Father: {fileID: 20736706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 660, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906360650
 MonoBehaviour:
@@ -4551,11 +4553,11 @@ MonoBehaviour:
     speed: 2
   - spriteType: 2
     spawnTime: 1.2
-    health: 15
+    health: 10
     speed: 2
   - spriteType: 3
     spawnTime: 1.2
-    health: 30
+    health: 10
     speed: 1.5
   spawnPoint:
   - {fileID: 77136870}
