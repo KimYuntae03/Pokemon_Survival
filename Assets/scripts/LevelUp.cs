@@ -77,8 +77,12 @@ public class LevelUp : MonoBehaviour
     public void Hide()
     {
         Time.timeScale = 1f; // 게임 다시 시작
+        if (player != null) {
+            player.ResetInput(); 
+        }
         if (selectionPointer != null)
             selectionPointer.SetActive(false);
         gameObject.SetActive(false);
     }
+
 }

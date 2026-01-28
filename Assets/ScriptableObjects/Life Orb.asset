@@ -20,12 +20,7 @@ MonoBehaviour:
   itemIcon: {fileID: -4475692340546594715, guid: 1211530cdb1207744a31bfef5751b99b, type: 3}
   baseDamage: 0
   baseCount: 0
-  damages:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  damages: []
   counts: 
   projectile: {fileID: 0}
   itemPrefab: {fileID: 0}

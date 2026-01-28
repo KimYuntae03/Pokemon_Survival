@@ -131,4 +131,26 @@ public class Player_Controller : MonoBehaviour
         //추후에 게임오버 UI나 재시작 화면 구현
         Time.timeScale = 0f; 
     }
+    public void ResetInput()
+    {
+        inputVec = Vector2.zero;
+        lastHorizontal = 0;
+        lastVertical = 0;
+        
+        // 애니메이션도 정지 상태로 강제 전환
+        if (anim != null) {
+            anim.SetFloat("Speed", 0);
+        }
+    }
+    public void ApplyMaxHpBoost(float amount) //맥스업 선택시 hp증가함수
+    {
+        maxHp += amount; 
+        CurHp += amount; 
+        
+        // UI 업데이트
+        if (hpSlider != null) {
+            hpSlider.maxValue = maxHp;
+            hpSlider.value = CurHp;
+        }
+    }
 }

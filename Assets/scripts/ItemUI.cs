@@ -118,11 +118,13 @@ public class ItemUI : MonoBehaviour, ISelectHandler
                 break;
             case 3: // 행복의 알 (경험치 획등량 증가)
                 GameManager.instance.expMultiplier += 0.2f;
-                Debug.Log($"<color=yellow>행복의 알 획득!</color> 현재 배율: {GameManager.instance.expMultiplier}");
                 break;
-            case 5: // [추가] 생명의 구슬 (피해량 10% 증가)
+            case 5: // 생명의 구슬 (피해량 10% 증가)
                 GameManager.instance.ApplyDamageBuff(0.2f);
-                Debug.Log($"<color=red>생명의 구슬 획득!</color> 현재 공격력 버프: {GameManager.instance.damageBuff}");
+                break;
+            case 6: // 맥스업 (최대체력 20증가)
+                player.ApplyMaxHpBoost(data.baseDamage); //여기서 baseDamage는 체력 증가량
+                Debug.Log($"<color=green>맥스업 획득!</color> 최대 체력: {player.maxHp}");
                 break;
         }
     }
