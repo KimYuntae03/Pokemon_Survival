@@ -49,7 +49,7 @@ MonoBehaviour:
   damage: 10
   count: 1
   speed: 0.2
-  level: 1
+  level: 0
   targetLayer:
     serializedVersion: 2
     m_Bits: 64

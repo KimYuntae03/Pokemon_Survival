@@ -26,6 +26,6 @@ MonoBehaviour:
   - 5
   - 5
   - 5
-  counts: 
+  counts: 0000000000000000000000000000000000000000
   projectile: {fileID: 1547592141922926797, guid: 880e40bef3de0424c9fd4db709946f7e, type: 3}
   itemPrefab: {fileID: 4002915729036012069, guid: 47194eb479b17c64aa978afaec65795d, type: 3}

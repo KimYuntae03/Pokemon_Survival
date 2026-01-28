@@ -81,6 +81,7 @@ public class Weapon : MonoBehaviour
 
     void Fire()
     {   
+        //생구 먹었을때 무기에 데미지 증가를 적용하기 위해 추가
         float finalDamage = damage * GameManager.instance.damageBuff;
 
         if(id == 2)

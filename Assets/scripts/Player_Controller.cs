@@ -45,7 +45,13 @@ public class Player_Controller : MonoBehaviour
     
 
     void Update()
-    {
+    {   
+        if (Time.timeScale == 0) 
+        {
+            inputVec = Vector2.zero; // 이동 벡터 초기화
+            anim.SetFloat("Speed", 0); // 애니메이션도 정지 상태로 고정
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) lastHorizontal = -1;
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) lastHorizontal = 1;
 

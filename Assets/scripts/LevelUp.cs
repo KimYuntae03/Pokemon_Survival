@@ -10,6 +10,8 @@ public class LevelUp : MonoBehaviour
     public Player_Controller player;
     public TMP_Text descriptionText;
     
+    public GameObject selectionPointer;
+    
     void Awake()
     {
         // 처음엔 비활성화
@@ -46,11 +48,21 @@ public class LevelUp : MonoBehaviour
 
         if (count > 0)
         {
-            // 첫 번째 슬롯 버튼을 선택 상태로 만듦 
-            itemSlots[0].GetComponent<Button>().Select();
-            
-            // 첫 번째 슬롯의 설명을 설명창에 즉시 업데이트
-            UpdateDescription(itemSlots[0].GetItemDescription()); 
+            Button firstButton = itemSlots[0].GetComponent<Button>();
+            firstButton.Select();
+            if (selectionPointer != null)
+            {
+                selectionPointer.SetActive(true);
+                
+                // 포인터의 부모를 첫 번째 슬롯으로 변경
+                selectionPointer.transform.SetParent(itemSlots[0].transform);
+
+                RectTransform pointerRect = selectionPointer.GetComponent<RectTransform>();
+                pointerRect.anchoredPosition = new Vector2(-70f, 20f); 
+                pointerRect.localScale = Vector3.one;
+                pointerRect.localRotation = Quaternion.identity;
+            }
+            UpdateDescription(itemSlots[0].GetItemDescription());
         }
 
         itemSlots[0].GetComponent<Button>().Select();
@@ -65,6 +77,8 @@ public class LevelUp : MonoBehaviour
     public void Hide()
     {
         Time.timeScale = 1f; // 게임 다시 시작
+        if (selectionPointer != null)
+            selectionPointer.SetActive(false);
         gameObject.SetActive(false);
     }
 }

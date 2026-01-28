@@ -8,6 +8,8 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     public Image icon;       // 아이템 아이콘 연결용
     public TMP_Text textName;    // 아이템 이름 텍스트 연결용
     // public TMP_Text textDesc;    // 아이템 설명 텍스트 연결용
+    public RectTransform pointer;
+
 
     ItemData data;           // 현재 슬롯이 배정받은 데이터
     int level;
@@ -23,9 +25,26 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     }
 
     public void OnSelect(BaseEventData eventData)
-    {
+    {   
+        Debug.Log(gameObject.name + " 선택됨");
         // LevelUp 스크립트에 있는 '공용 설명창'에 현재 아이템 설명을 전달
         GetComponentInParent<LevelUp>().UpdateDescription(data.itemDesc);
+
+        //화살표 아이콘 이동
+        LevelUp levelUpScript = GetComponentInParent<LevelUp>();
+
+        if (levelUpScript.selectionPointer != null)
+            {
+                GameObject pointer = levelUpScript.selectionPointer;
+                pointer.SetActive(true);
+
+                pointer.transform.SetParent(this.transform);
+                RectTransform pointerRect = pointer.GetComponent<RectTransform>();
+                
+                pointerRect.anchoredPosition = new Vector2(-70f, 20f);
+                pointerRect.localScale = Vector3.one;
+                pointerRect.localRotation = Quaternion.identity;
+            }
     }
 
     // 버튼이 클릭되었을 때 실행될 함수
@@ -61,7 +80,12 @@ public class ItemUI : MonoBehaviour, ISelectHandler
             if (weapon.id == data.itemId) {
                 isExist = true;
                 if (weapon.gameObject.activeSelf) {
-                    weapon.LevelUp(data.damages[weapon.level], data.counts[weapon.level]);
+                    if (weapon.level < data.damages.Length && weapon.level < data.counts.Length) {
+                        weapon.LevelUp(data.damages[weapon.level], data.counts[weapon.level]);
+                }   else {
+                        // 만렙일 경우에 대한 예외 처리
+                        Debug.LogWarning($"{data.itemName}은 이미 최대 레벨({weapon.level})입니다!");
+                    }
                 } 
                 else { //스킬이 첫 선택일 경우
                     weapon.gameObject.SetActive(true);
