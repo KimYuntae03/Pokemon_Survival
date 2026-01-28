@@ -4,6 +4,7 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
+    
     public float speed;
     float defaultSpeed; //원래속도 기억할 변수
     public float health;
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D target; //enemy들이 추적할 타겟
     bool isLive;
     public int expPrefabId = 2;
+    public Transform shadow;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     Animator anim;
@@ -100,6 +102,35 @@ public class Enemy : MonoBehaviour
         speed = data.speed;
         maxHealth = data.health;
         health = data.health;
+            if (shadow != null)
+        {
+            // 기본값 초기화
+            shadow.localPosition = new Vector3(0, -0.45f, 0); 
+            shadow.localScale = Vector3.one;
+
+            switch (data.spriteType)
+            {
+                case 2: //아보
+                    shadow.localPosition = new Vector3(0, -0.6f, 0); 
+                    shadow.localScale = new Vector3(1.3f, 1.2f, 1f); 
+                    break;
+
+                case 4: //레트라
+                    shadow.localPosition = new Vector3(0, -0.45f, 0);
+                    shadow.localScale = new Vector3(1.3f, 1.2f, 1f); 
+                    break;
+
+                case 5: // 동탁군 
+                    shadow.localPosition = new Vector3(0, -0.75f, 0); 
+                    shadow.localScale = new Vector3(1.5f, 1.0f, 1f); 
+                    break;
+
+                default: // 기타 기본 몹 
+                    shadow.localPosition = new Vector3(0, -0.45f, 0);
+                    shadow.localScale = new Vector3(1f, 1.2f, 1f);
+                    break;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
