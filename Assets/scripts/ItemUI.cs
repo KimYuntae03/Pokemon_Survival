@@ -13,6 +13,7 @@ public class ItemUI : MonoBehaviour, ISelectHandler
 
     ItemData data;           // 현재 슬롯이 배정받은 데이터
     int level;
+    public AudioClip selectSound;
 
     // LevelUp 스크립트에서 호출하여 슬롯 정보를 업데이트하는 함수
     public void Set(ItemData data)
@@ -34,7 +35,8 @@ public class ItemUI : MonoBehaviour, ISelectHandler
         LevelUp levelUpScript = GetComponentInParent<LevelUp>();
 
         if (levelUpScript.selectionPointer != null)
-            {
+            {   
+                AudioSource.PlayClipAtPoint(selectSound, Camera.main.transform.position);
                 GameObject pointer = levelUpScript.selectionPointer;
                 pointer.SetActive(true);
 

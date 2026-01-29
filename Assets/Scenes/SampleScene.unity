@@ -1178,6 +1178,7 @@ MonoBehaviour:
   icon: {fileID: 1788104682}
   textName: {fileID: 546939223}
   pointer: {fileID: 0}
+  selectSound: {fileID: 8300000, guid: 725e0f0a22f82bd459118060a000dfe3, type: 3}
 --- !u!114 &499743094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,6 +2008,7 @@ MonoBehaviour:
   icon: {fileID: 549577500}
   textName: {fileID: 1642135354}
   pointer: {fileID: 0}
+  selectSound: {fileID: 8300000, guid: 725e0f0a22f82bd459118060a000dfe3, type: 3}
 --- !u!114 &620914892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4629,6 +4631,7 @@ MonoBehaviour:
   icon: {fileID: 325793157}
   textName: {fileID: 1642225516}
   pointer: {fileID: 0}
+  selectSound: {fileID: 8300000, guid: 725e0f0a22f82bd459118060a000dfe3, type: 3}
 --- !u!114 &1906360651
 MonoBehaviour:
   m_ObjectHideFlags: 0
