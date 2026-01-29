@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     public LevelUp uiLevelUp; //레벨업 시 연결할 UI변수
     public float damageBuff = 1.0f; //데미지 관리 기본 1배
 
-
     public Slider expSlider;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI killText;
@@ -41,7 +40,7 @@ public class GameManager : MonoBehaviour
         UpdateLevelUI();
     }
 
-        void Update()
+    void Update()
     {
         // 타이머 작동
         gameTime += Time.deltaTime;
@@ -62,12 +61,17 @@ public class GameManager : MonoBehaviour
             level++;
             exp = 0;
             UpdateLevelUI();
-                
+            
+            if (level == 2) {
+                player.Evolve(1); // 파이숭이 진화
+            } else if (level == 3) {
+                player.Evolve(2); // 초염몽 진화
+            }
+
             if (uiLevelUp != null) {
                 uiLevelUp.Show();
+                }
             }
-        }
-
         UpdateExpUI();
     }
 

@@ -17,6 +17,11 @@ public class Player_Controller : MonoBehaviour
     SpriteRenderer spriteRenderer; //캐릭터 색 바꿀 컴포넌트
     public Vector2 lastVec; //마지막 입력 방향 저장용 변수
 
+    public RuntimeAnimatorController[] evolutionAnimators;
+    //ㄴ>애니메이션 저장용 배열. 불꽃숭이0,파이숭이1,초염몽2
+    public RectTransform hpBarRect; //체력바 위치조정
+    public Transform shadowTransform;//그림자 위치조정
+
     void Awake()
     {   
         spriteRenderer = GetComponent<SpriteRenderer>(); //색 변경 컴포넌트 가져오기
@@ -153,4 +158,32 @@ public class Player_Controller : MonoBehaviour
             hpSlider.value = CurHp;
         }
     }
+
+    public void Evolve(int stage) //플레이어 진화
+    {
+        if (stage < evolutionAnimators.Length && evolutionAnimators[stage] != null)
+        {
+            anim.runtimeAnimatorController = evolutionAnimators[stage];
+            Debug.Log($"<color=cyan>진화 성공!</color> 단계: {stage}");
+            
+            Vector3 hpBarPos = new Vector3(0, -25f, 0);
+            Vector3 shadowPos = new Vector3(0, -0.6f, 0);
+            Vector3 shadowScale = new Vector3(1f, 1f, 1f);
+
+            if(stage == 1)
+            {
+                shadowPos = new Vector3(0, -0.7f, 0);
+            }
+            else if (stage == 2) 
+            {
+                hpBarPos = new Vector3(0, -33f, 0);
+                shadowPos = new Vector3(0, -0.95f, 0);
+                shadowScale = new Vector3(1.3f, 1.2f, 1f);
+            }
+            hpBarRect.localPosition = hpBarPos;
+            shadowTransform.localPosition = shadowPos;
+            shadowTransform.localScale = shadowScale;
+        }
+    }
+
 }

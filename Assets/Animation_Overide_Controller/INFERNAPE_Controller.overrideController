@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: INFERNAPE_Controller
+  m_Controller: {fileID: 9100000, guid: 982e9c2d31343284ebfc91a6bff8750c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 283f96047e60e2e40a6679bcf8793183, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 283f96047e60e2e40a6679bcf8793183, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bfdb3b919ce9a4b4087b510b11e51c90, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bfdb3b919ce9a4b4087b510b11e51c90, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 403e545571496584894c4c9bd0336284, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 403e545571496584894c4c9bd0336284, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cb1374855fd577d4a8d015b957049c18, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cb1374855fd577d4a8d015b957049c18, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d0e8017ce13dee741bab885df62a05e7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d0e8017ce13dee741bab885df62a05e7, type: 2}
