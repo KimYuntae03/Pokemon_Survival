@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; //재시작 기능 사용
 
 public class GameManager : MonoBehaviour
 {   
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI killText;
     public TextMeshProUGUI levelText;
 
+    public GameObject uiGameOver;
+
     void Awake()
     {
         // 싱글톤 초기화
@@ -42,6 +45,16 @@ public class GameManager : MonoBehaviour
         UpdateExpUI();
         UpdateKillUI();
         UpdateLevelUI();
+    }
+    public void GameOver()
+    {
+        isPlayerLive = false; // 플레이어 사망
+        uiGameOver.SetActive(true); // 종료 UI 활성화
+    }
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     void Start()

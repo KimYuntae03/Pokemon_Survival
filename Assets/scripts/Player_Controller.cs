@@ -114,7 +114,7 @@ public class Player_Controller : MonoBehaviour
         StartCoroutine("OnDamage");
 
         if (CurHp <= 0) {
-            // 사망 로직 추가 예정
+            Die();
         }
     }
 
@@ -132,8 +132,7 @@ public class Player_Controller : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("플레이어 사망!");
-        //추후에 게임오버 UI나 재시작 화면 구현
+        GameManager.instance.GameOver();
         Time.timeScale = 0f; 
     }
     public void ResetInput()
