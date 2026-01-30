@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public float gameTime;
     public float maxGameTime = 7 * 60f;
-
+    public bool isPlayerLive;//플레이어 생사확인
     public int level;
     public int kill;
     public float exp;
@@ -27,6 +27,21 @@ public class GameManager : MonoBehaviour
     {
         // 싱글톤 초기화
         instance = this;
+        Time.timeScale = 0f;
+    }
+
+    public void GameStart()
+    {
+        Time.timeScale = 1f;
+        isPlayerLive = true;
+        level = 1;
+        exp = 0;
+        kill = 0;
+        gameTime = 0;
+
+        UpdateExpUI();
+        UpdateKillUI();
+        UpdateLevelUI();
     }
 
     void Start()
@@ -41,8 +56,9 @@ public class GameManager : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         // 타이머 작동
+        if(!isPlayerLive) return;
         gameTime += Time.deltaTime;
 
         if (gameTime > maxGameTime) {

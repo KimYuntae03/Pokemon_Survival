@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
   m_PixelRect:
     serializedVersion: 2
-    x: 662.4
-    y: 56.8
+    x: 660
+    y: 50.4
     width: 875.2
     height: 764.8
   m_ShowMode: 4
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 188.00003
     height: 357.59998
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -301,8 +301,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 662.4
-    y: 56.8
+    x: 0
+    y: 0
     width: 875.2
     height: 36
   m_SerializedDataModeController:
@@ -647,8 +647,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 662.4
-    y: 444
+    x: 0
+    y: 24
     width: 421.4
     height: 331.59998
   m_SerializedDataModeController:
@@ -699,11 +699,10 @@ MonoBehaviour:
       m_Data: 51864
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51722
-    - m_Data: 51724
-    - m_Data: 51726
-    - m_Data: 51852
-    - m_Data: 1000000000
+    - m_Data: 51664
+    - m_Data: 51666
+    - m_Data: 51668
+    - m_Data: 51670
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -736,10 +735,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51722
-    - m_Data: 51724
-    - m_Data: 51726
-    - m_Data: 51728
+    - m_Data: 51664
+    - m_Data: 51666
+    - m_Data: 51668
+    - m_Data: 51670
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -834,8 +833,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1272.8
-    y: 92.8
+    x: 611.4
+    y: 24
     width: 263.8
     height: 682.8
   m_SerializedDataModeController:
@@ -885,8 +884,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1084.8
-    y: 444
+    x: 423.4
+    y: 24
     width: 186.00003
     height: 331.59998
   m_SerializedDataModeController:
@@ -905,8 +904,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 61390
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -1682,8 +1680,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 662.4
-    y: 92.8
+    x: 0
+    y: 24
     width: 609.4
     height: 325.2
   m_SerializedDataModeController:
@@ -1759,7 +1757,7 @@ MonoBehaviour:
       height: 1152
     m_MinimalGUI: 1
   m_defaultScale: 0.26406252
-  m_LastWindowPixelSize: {x: 761.75, y: 406.5}
+  m_LastWindowPixelSize: {x: 609.4, y: 325.2}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100

@@ -8,7 +8,8 @@ public class Spawner : MonoBehaviour
     int level;
 
     void Update()
-    {
+    {   
+        if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
         timer += Time.deltaTime;
         level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 5f), spawnData.Length - 1);
