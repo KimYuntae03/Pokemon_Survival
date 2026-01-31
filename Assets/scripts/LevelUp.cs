@@ -9,20 +9,22 @@ public class LevelUp : MonoBehaviour
     public ItemUI[] itemSlots;  // 버튼 3개에 붙어있는 UI 업데이트용 스크립트
     public Player_Controller player;
     public TMP_Text descriptionText;
-    
+    public GameObject contentPanel;
     public GameObject selectionPointer;
     
     void Awake()
     {
         // 처음엔 비활성화
-        gameObject.SetActive(false);
+        if (contentPanel != null)
+            contentPanel.SetActive(false);
     }
 
     public void Show()
     {
         Time.timeScale = 0f; // 게임 일시정지
-        gameObject.SetActive(true);
-
+        if (contentPanel != null)
+            contentPanel.SetActive(true);
+        
         List<int> ranList = new List<int>();//중복 방지를 위한 리스트
         int count = Mathf.Min(itemSlots.Length, allItems.Length);
 
@@ -82,7 +84,8 @@ public class LevelUp : MonoBehaviour
         }
         if (selectionPointer != null)
             selectionPointer.SetActive(false);
-        gameObject.SetActive(false);
+        if (contentPanel != null)
+            contentPanel.SetActive(false);
     }
 
 }

@@ -25,9 +25,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI levelText;
 
     public AudioSource titleBgm;//타이틀 BGM연결 
+    public AudioSource mainBgm;//인게임 BGM
+    public AudioSource dangerBgm;//20퍼 이하 BGM
     public AudioSource levelUpSfx;//레벨업 시 효과음 
     public AudioSource expGetSfx;//보석획득 효과음
+    public AudioSource scratchSfx;//할퀴기 효과음
     public GameObject uiGameOver;
+    bool isDanger = false; //BGM체크 변수
 
     void Awake()
     {
@@ -38,8 +42,11 @@ public class GameManager : MonoBehaviour
 
     public void GameStart()
     {   
-        if (titleBgm != null) { //게임 시작 누르면 타이틀BGM종료
+        if (titleBgm != null) { // 타이틀BGM종료
             titleBgm.Stop();
+        }
+        if (mainBgm != null) {//인게임 BGM재생
+            mainBgm.Play();
         }
 
         Time.timeScale = 1f;
@@ -57,6 +64,12 @@ public class GameManager : MonoBehaviour
     {
         isPlayerLive = false; // 플레이어 사망
         uiGameOver.SetActive(true); // 종료 UI 활성화
+        if (mainBgm != null) {//인게임 BGM종료
+            mainBgm.Stop();
+        }
+        if (dangerBgm != null) {//위험 BGM정지
+            dangerBgm.Stop();
+        }
     }
     public void Restart()
     {
@@ -154,5 +167,20 @@ public class GameManager : MonoBehaviour
     public void ApplyDamageBuff(float amount) //데미지 증가 함수
     {
         damageBuff += amount; // 10% 증가 시 1.1f
+    }
+
+    public void ChangeBgm(bool danger)
+    {
+        if (isDanger == danger) return;
+
+        isDanger = danger;
+
+        if (danger) {
+            mainBgm.Pause(); // 일반 BGM 일시정지
+            dangerBgm.Play(); // 긴급 BGM 재생
+        } else {
+            dangerBgm.Stop(); // 긴급 BGM 정지
+            mainBgm.UnPause(); // 일반 BGM 다시 재생
+        }
     }
 }

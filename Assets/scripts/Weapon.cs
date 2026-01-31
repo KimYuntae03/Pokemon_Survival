@@ -85,11 +85,13 @@ public class Weapon : MonoBehaviour
         float finalDamage = damage * GameManager.instance.damageBuff;
 
         if(id == 2)
-        {
-            // 주변 적들을 감지 (반경 10f 내의 Enemy 레이어)
+        {   
             Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 3f, LayerMask.GetMask("Enemy"));
+            if (targets.Length == 0) return; //범위내에 없으면 발동ㄴ
 
-            if (targets.Length == 0) return; //범위내에 없으면 공격X
+            if (GameManager.instance.scratchSfx != null) {
+                GameManager.instance.scratchSfx.PlayOneShot(GameManager.instance.scratchSfx.clip);
+            }
 
             // 적들 중 랜덤으로 하나 선택
             Transform target = targets[Random.Range(0, targets.Length)].transform;

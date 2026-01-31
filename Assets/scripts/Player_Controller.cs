@@ -89,10 +89,12 @@ public class Player_Controller : MonoBehaviour
             lastVec = inputVec.normalized;
         }
     }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + inputVec * moveSpeed * Time.fixedDeltaTime);
     }
+
     public void ApplySpeedBoost(float amount)
     {
         moveSpeed += amount;
@@ -109,6 +111,10 @@ public class Player_Controller : MonoBehaviour
         CurHp -= damage;
         CurHp = Mathf.Max(CurHp, 0);
         UpdateHpBar();
+
+        if (CurHp > 0 && CurHp / maxHp <= 0.2f) {
+            GameManager.instance.ChangeBgm(true);
+        }
 
         StopCoroutine("OnDamage");
         StartCoroutine("OnDamage");
