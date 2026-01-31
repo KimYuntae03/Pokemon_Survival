@@ -141,6 +141,7 @@ public class Player_Controller : MonoBehaviour
         GameManager.instance.GameOver();
         Time.timeScale = 0f; 
     }
+
     public void ResetInput()
     {
         inputVec = Vector2.zero;
@@ -152,6 +153,7 @@ public class Player_Controller : MonoBehaviour
             anim.SetFloat("Speed", 0);
         }
     }
+
     public void ApplyMaxHpBoost(float amount) //맥스업 선택시 hp증가함수
     {
         maxHp += amount; 
@@ -191,4 +193,15 @@ public class Player_Controller : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        CurHp += amount;
+        CurHp = Mathf.Min(CurHp, maxHp);
+        
+        UpdateHpBar();
+
+        if (CurHp / maxHp > 0.2f) {
+            GameManager.instance.ChangeBgm(false);
+        }
+    }
 }

@@ -1,2 +1,12 @@
 fileFormatVersion: 2
 guid: fd531600d8027c64bba56a5d5b2c7ce0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scratchPrefab: {fileID: 1547592141922926797, guid: 880e40bef3de0424c9fd4db709946f7e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

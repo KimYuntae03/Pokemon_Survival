@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   id: 4
-  prefabId: 5
+  prefabId: 0
   damage: 0
   count: 0
   speed: 0
@@ -53,3 +53,4 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  scratchPrefab: {fileID: 0}

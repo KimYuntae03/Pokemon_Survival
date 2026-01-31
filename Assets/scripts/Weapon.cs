@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     float timer;
     public int level; //무기레벨 저장
     public LayerMask targetLayer; //Enemy레이어를 체크할 변수
+    public GameObject scratchPrefab;//할퀴기 프리팹 연결
     Player_Controller player; //플레이어 입력 방향 가져오는 변수
 
     void Awake()
@@ -97,11 +98,14 @@ public class Weapon : MonoBehaviour
             Transform target = targets[Random.Range(0, targets.Length)].transform;
             Vector3 targetPos = target.position;
 
-            // 풀에서 할퀴기 이펙트(Bullet_Scratch)를 가져옴
-            Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
-            bullet.position = targetPos; // 선택된 적의 위치에 생성
-            
-            bullet.GetComponent<Bullet>().Init(finalDamage, 0, Vector3.zero,id);
+            // [수정] 풀 매니저를 쓰지 않고 직접 생성
+            if (scratchPrefab != null) {
+                GameObject bulletObj = Instantiate(scratchPrefab, targetPos, Quaternion.identity);
+                bulletObj.GetComponent<Bullet>().Init(finalDamage, 0, Vector3.zero, id);
+                
+                // [추가] 풀을 안 쓰므로 일정 시간(예: 0.5초) 뒤에 직접 파괴해줘야 메모리가 쌓이지 않습니다.
+                Destroy(bulletObj, 0.5f); 
+            }
         }
         else if(id == 1){
             // 풀 매니저에서 진공파 프리팹을 가져온다
