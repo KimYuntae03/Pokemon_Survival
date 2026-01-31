@@ -30,11 +30,16 @@ public class GameManager : MonoBehaviour
     public AudioSource levelUpSfx;//레벨업 시 효과음 
     public AudioSource expGetSfx;//보석획득 효과음
     public AudioSource scratchSfx;//할퀴기 효과음
+    public AudioSource berrySfx;//자뭉열매 효과음
     public GameObject uiGameOver;
     bool isDanger = false; //BGM체크 변수
 
     void Awake()
     {
+        if (instance != null && instance != this) {
+            Destroy(gameObject); // 새로 만들어진 중복 객체를 파괴
+            return;
+        }
         // 싱글톤 초기화
         instance = this;
         Time.timeScale = 0f;

@@ -4,22 +4,19 @@ public class MapSection : MonoBehaviour
 {
     public GameObject[] decoPrefabs; // 잔디, 꽃 등등
     public int decoCount = 20;
-    void Start()
-    {
 
-    }
+    [Header("Item Settings")]
+    [Range(0, 100)] public float berrySpawnChance = 10f;
 
-    void Update()
-    {
-        
-    }
     void OnEnable() 
     {
         // 기존 장식 삭제 
         foreach (Transform child in transform) {
             if (child.CompareTag("Decoration")) Destroy(child.gameObject);
+            if (child.CompareTag("Item")) child.gameObject.SetActive(false);
         }
         SpawnDecorations();
+        SpawnBerry();
     }
     void SpawnDecorations()
     {
@@ -32,5 +29,17 @@ public class MapSection : MonoBehaviour
             deco.transform.localPosition = spawnPos;
             deco.tag = "Decoration"; // 태그 설정
         }
+    }
+
+    void SpawnBerry()
+    {
+        if (Random.Range(0f, 100f) > berrySpawnChance) return;
+
+        GameObject berry = GameManager.instance.pool.Get(4);
+        
+        berry.transform.SetParent(transform);
+
+        Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 9.5f), Random.Range(-9.5f, 9.5f), 0);
+        berry.transform.localPosition = spawnPos;
     }
 }

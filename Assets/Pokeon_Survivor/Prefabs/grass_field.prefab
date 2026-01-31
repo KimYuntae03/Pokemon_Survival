@@ -4401,6 +4401,7 @@ MonoBehaviour:
   - {fileID: 2994242326921456414, guid: 6b0285542bff0124cba3520329d7d81c, type: 3}
   - {fileID: 2243484638468761264, guid: 605b6ea663fb61349ab79864e9276942, type: 3}
   decoCount: 10
+  berrySpawnChance: 65
 --- !u!212 &8435294646287066065
 SpriteRenderer:
   serializedVersion: 2

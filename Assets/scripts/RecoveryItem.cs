@@ -13,6 +13,11 @@ public class RecoveryItem : MonoBehaviour
                 float healAmount = player.maxHp * healPercent;
                 player.Heal(healAmount);
 
+                if (GameManager.instance.berrySfx != null) {
+                    GameManager.instance.berrySfx.PlayOneShot(GameManager.instance.berrySfx.clip);
+                }
+
+                transform.SetParent(GameManager.instance.pool.transform);
                 gameObject.SetActive(false); // 먹으면 사라짐 
             }
         }
