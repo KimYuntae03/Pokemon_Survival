@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     public int level; //무기레벨 저장
     public LayerMask targetLayer; //Enemy레이어를 체크할 변수
     public GameObject scratchPrefab;//할퀴기 프리팹 연결
+    public GameObject scaryFacePrefab;//겁나는 얼굴 프리팹 연결
     Player_Controller player; //플레이어 입력 방향 가져오는 변수
 
     void Awake()
@@ -132,16 +133,17 @@ public class Weapon : MonoBehaviour
             bullet.GetComponent<Bullet>().Init(finalDamage, count, dir,id);
         }
         else if(id == 4)
-        {
-            Transform scaryFace = GameManager.instance.pool.Get(prefabId).transform;
-            scaryFace.parent = player.transform;// 플레이어를 부모로 설정
-            scaryFace.localPosition = Vector3.zero; //위치 초기화
-            scaryFace.localRotation = Quaternion.identity;
+        {   
+            if(scaryFacePrefab != null){
+                GameObject scaryFaceObj = Instantiate(scaryFacePrefab, player.transform);
+                scaryFaceObj.transform.localPosition = Vector3.zero;
+                scaryFaceObj.transform.localRotation = Quaternion.identity;
 
-            if (mySfx != null) {
-                 mySfx.Play(); 
+                if (mySfx != null) {
+                    mySfx.Play(); 
+                }
+                Destroy(scaryFaceObj, 3.0f);
             }
-
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject enemyObj in enemies) {
                 if (!enemyObj.activeSelf) continue;

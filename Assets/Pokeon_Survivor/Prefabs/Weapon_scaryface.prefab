@@ -56,6 +56,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   scratchPrefab: {fileID: 0}
+  scaryFacePrefab: {fileID: 6812278814823101577, guid: b8757161a63d4154a8879aef0559a2f4, type: 3}
 --- !u!82 &-7377877939869022754
 AudioSource:
   m_ObjectHideFlags: 0

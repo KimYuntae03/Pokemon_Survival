@@ -4,7 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - mySfx: {instanceID: 0}
   - scratchPrefab: {fileID: 1547592141922926797, guid: 880e40bef3de0424c9fd4db709946f7e, type: 3}
+  - scaryFacePrefab: {fileID: 6812278814823101577, guid: b8757161a63d4154a8879aef0559a2f4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
