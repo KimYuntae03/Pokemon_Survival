@@ -140,6 +140,9 @@ public class Player_Controller : MonoBehaviour
 
     void Die()
     {   
+        if (GameManager.instance.PlayerDieSfx != null) {
+            GameManager.instance.PlayerDieSfx.PlayOneShot(GameManager.instance.PlayerDieSfx.clip);
+        }
         rb.simulated = false;
         ResetInput();
         if (shadowTransform != null) shadowTransform.gameObject.SetActive(false);

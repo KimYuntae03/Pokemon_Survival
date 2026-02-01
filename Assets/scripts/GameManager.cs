@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public AudioSource expGetSfx;//보석획득 효과음
     public AudioSource berrySfx;//자뭉열매 효과음
     public AudioSource berrySfx2;
+    public AudioSource PlayerDieSfx;//플레이어 사망 효과음
 
     [Header("BGM SFX")]
     public AudioSource titleBgm;//타이틀 BGM연결 
