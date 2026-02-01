@@ -9,6 +9,9 @@ public class Weapon : MonoBehaviour
     public int count; //무기 개수
     public float speed;
     float timer;
+    float sfxTimer;
+    public AudioSource mySfx;
+    
     public int level; //무기레벨 저장
     public LayerMask targetLayer; //Enemy레이어를 체크할 변수
     public GameObject scratchPrefab;//할퀴기 프리팹 연결
@@ -17,6 +20,7 @@ public class Weapon : MonoBehaviour
     void Awake()
     {
         player = GetComponentInParent<Player_Controller>();
+        mySfx = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -25,6 +29,12 @@ public class Weapon : MonoBehaviour
         {
             case 0:
                 transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+                sfxTimer += Time.deltaTime;
+                if (sfxTimer > 1.5f) // 1.5초마다 실행
+                {
+                    sfxTimer = 0f;
+                    if (mySfx != null) mySfx.Play();
+                }
                 break;
             case 1: // 진공파 (일정 시간마다 발사)
                 timer += Time.deltaTime; // 발사 간격 타이머
@@ -53,6 +63,9 @@ public class Weapon : MonoBehaviour
 
     public void LevelUp(float addDamage, int addCount)
     {
+        if (!GameManager.instance.isPlayerLive) 
+        return;
+
         this.damage += 5;
         switch(id){
             case 0: //화염자동차
@@ -125,6 +138,10 @@ public class Weapon : MonoBehaviour
             scaryFace.localPosition = Vector3.zero; //위치 초기화
             scaryFace.localRotation = Quaternion.identity;
 
+            if (mySfx != null) {
+                 mySfx.Play(); 
+            }
+
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject enemyObj in enemies) {
                 if (!enemyObj.activeSelf) continue;
@@ -139,17 +156,15 @@ public class Weapon : MonoBehaviour
 
     void Batch()
     {
-        for(int index = 0; index < count; index++)
-        {
+        for(int index = 0; index < count; index++){
+
             Transform bullet;
             //PoolManager에 등록했던 prefabId를 사용해서 무기를 꺼내옴
             
-            if(index < transform.childCount) 
-            {
+            if(index < transform.childCount) {
                 bullet = transform.GetChild(index);         
             }
-            else
-            {
+            else{
                 bullet = GameManager.instance.pool.Get(prefabId).transform;
                 bullet.parent = transform;
             }

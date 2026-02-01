@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy_Hit
   isKnockback: 0
-  hitSound: {fileID: 8300000, guid: 9e2e50e3941d37f4fa0dd9e3f0e69666, type: 3}
+  hitSound: {fileID: 0}
 --- !u!82 &-2600539167057278323
 AudioSource:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3288261962235434155}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
