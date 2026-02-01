@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; //재시작 기능 사용
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {   
@@ -24,13 +25,19 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI killText;
     public TextMeshProUGUI levelText;
 
+    public AudioSource levelUpSfx;//레벨업 시 효과음 
+    public AudioSource expGetSfx;//보석획득 효과음
+    public AudioSource berrySfx;//자뭉열매 효과음
+    public AudioSource berrySfx2;
+
+    [Header("BGM SFX")]
     public AudioSource titleBgm;//타이틀 BGM연결 
     public AudioSource mainBgm;//인게임 BGM
     public AudioSource dangerBgm;//20퍼 이하 BGM
-    public AudioSource levelUpSfx;//레벨업 시 효과음 
-    public AudioSource expGetSfx;//보석획득 효과음
+
+    [Header("Weapon SFX")]
     public AudioSource scratchSfx;//할퀴기 효과음
-    public AudioSource berrySfx;//자뭉열매 효과음
+
     public GameObject uiGameOver;
     bool isDanger = false; //BGM체크 변수
 
@@ -65,6 +72,7 @@ public class GameManager : MonoBehaviour
         UpdateKillUI();
         UpdateLevelUI();
     }
+
     public void GameOver()
     {
         isPlayerLive = false; // 플레이어 사망
@@ -75,7 +83,9 @@ public class GameManager : MonoBehaviour
         if (dangerBgm != null) {//위험 BGM정지
             dangerBgm.Stop();
         }
+        Time.timeScale = 0f;
     }
+
     public void Restart()
     {
         Time.timeScale = 1f;
@@ -186,6 +196,19 @@ public class GameManager : MonoBehaviour
         } else {
             dangerBgm.Stop(); // 긴급 BGM 정지
             mainBgm.UnPause(); // 일반 BGM 다시 재생
+        }
+    }
+
+    public IEnumerator PlayBerrySfxSequence()
+    {
+        if (berrySfx != null) {
+            berrySfx.PlayOneShot(berrySfx.clip);
+        }
+
+        yield return new WaitForSeconds(0.6f); 
+
+        if (berrySfx2 != null) {
+            berrySfx2.PlayOneShot(berrySfx2.clip);
         }
     }
 }

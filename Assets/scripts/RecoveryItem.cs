@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class RecoveryItem : MonoBehaviour
 {
@@ -12,10 +13,9 @@ public class RecoveryItem : MonoBehaviour
                 // 최대 체력의 30% 계산 후 회복
                 float healAmount = player.maxHp * healPercent;
                 player.Heal(healAmount);
+                player.OnHeal();
 
-                if (GameManager.instance.berrySfx != null) {
-                    GameManager.instance.berrySfx.PlayOneShot(GameManager.instance.berrySfx.clip);
-                }
+                GameManager.instance.StartCoroutine(GameManager.instance.PlayBerrySfxSequence());
 
                 transform.SetParent(GameManager.instance.pool.transform);
                 gameObject.SetActive(false); // 먹으면 사라짐 

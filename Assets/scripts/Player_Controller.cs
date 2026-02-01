@@ -13,9 +13,11 @@ public class Player_Controller : MonoBehaviour
     public ItemData defaultWeaponData;
     public float maxHp = 100f;
     public float CurHp;
+
     public Slider hpSlider; //인스펙터에서 연결할 슬라이더
     SpriteRenderer spriteRenderer; //캐릭터 색 바꿀 컴포넌트
     public Vector2 lastVec; //마지막 입력 방향 저장용 변수
+    public Transform visualTransform;//플레이어 이미지 저장용 변수
 
     public RuntimeAnimatorController[] evolutionAnimators;
     //ㄴ>애니메이션 저장용 배열. 불꽃숭이0,파이숭이1,초염몽2
@@ -24,7 +26,7 @@ public class Player_Controller : MonoBehaviour
 
     void Awake()
     {   
-        spriteRenderer = GetComponent<SpriteRenderer>(); //색 변경 컴포넌트 가져오기
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>(); //색 변경 컴포넌트 가져오기
         CurHp = maxHp; //체력 초기화
     }
 
@@ -36,7 +38,7 @@ public class Player_Controller : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         // 기본무기 생성
         if (defaultWeaponData != null) {
             GameObject obj = Instantiate(defaultWeaponData.itemPrefab, transform);
@@ -137,10 +139,15 @@ public class Player_Controller : MonoBehaviour
     }
 
     void Die()
-    {
-        GameManager.instance.GameOver();
-        Time.timeScale = 0f; 
+    {   
+        rb.simulated = false;
+        ResetInput();
+        if (shadowTransform != null) shadowTransform.gameObject.SetActive(false);
+        if (hpSlider != null) hpSlider.gameObject.SetActive(false);
+        StartCoroutine(DieRoutine());
     }
+
+
 
     public void ResetInput()
     {
@@ -203,5 +210,47 @@ public class Player_Controller : MonoBehaviour
         if (CurHp / maxHp > 0.2f) {
             GameManager.instance.ChangeBgm(false);
         }
+    }
+
+    public void OnHeal()
+    {
+        StartCoroutine(HealEffectRoutine());
+    }
+
+    IEnumerator HealEffectRoutine()
+    {
+        Color originalColor = Color.white;
+        Color healColor = new Color(0.2f, 1f, 0.2f, 1f);
+        
+        yield return new WaitForSeconds(0.9f);
+
+        spriteRenderer.color = healColor;
+
+        yield return new WaitForSeconds(1.0f);
+
+        // 다시 원래색으로 복구
+        spriteRenderer.color = originalColor;
+    }
+
+    IEnumerator DieRoutine()
+    {
+        float duration = 0.8f; // 연출 시간
+        float timer = 0f;
+        Vector3 startLocalPos = visualTransform.localPosition;
+
+        if (shadowTransform != null) shadowTransform.gameObject.SetActive(false);//그림자,체력바 끄기
+        if (hpSlider != null) hpSlider.gameObject.SetActive(false);
+
+        while (timer < duration)
+        {
+            timer += Time.unscaledDeltaTime;
+            float progress = timer / duration;
+            
+            // 아래로 1.5만큼 이동 및 투명도 조절
+            visualTransform.localPosition = startLocalPos + Vector3.down * (progress * 2.5f);
+
+            yield return null;
+        }
+        GameManager.instance.GameOver();
     }
 }
