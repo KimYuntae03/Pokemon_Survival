@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a0dd600f61c9742ab4e7ed7a8e33a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MagnetItem
+  floatSpeed: 2
+  floatAmplitude: 0.2
 --- !u!1 &2083099914032445552
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,21 @@ public class RecoveryItem : MonoBehaviour
 {
     public float healPercent = 0.3f; // 30% 회복
 
+    public float floatSpeed = 3f;   // 떠다니는 속도
+    public float floatAmplitude = 0.15f;
+    Vector3 startLocalPos;
+
+    void Start()
+    {
+        startLocalPos = transform.localPosition; 
+    }
+
+    void Update()
+    {
+        float newY = Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
+        transform.localPosition = startLocalPos + new Vector3(0, newY, 0);
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) {

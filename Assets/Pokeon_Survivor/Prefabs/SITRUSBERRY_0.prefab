@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1234189127994673770, guid: 60f93c5fb16f05b42ac70ec10f5f5cde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoveryItem
   healPercent: 0.3
+  floatSpeed: 2
+  floatAmplitude: 0.2
 --- !u!1 &2083099914032445552
 GameObject:
   m_ObjectHideFlags: 0
