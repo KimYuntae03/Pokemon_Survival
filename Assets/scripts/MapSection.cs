@@ -35,7 +35,7 @@ public class MapSection : MonoBehaviour
     {
         if (Random.Range(0f, 100f) > berrySpawnChance) return;
 
-        GameObject berry = GameManager.instance.pool.Get(4);
+        GameObject berry = GameManager.instance.pool.GetWeapon(3);
         
         berry.transform.SetParent(transform);
 

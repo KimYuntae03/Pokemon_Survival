@@ -123,7 +123,7 @@ public class Weapon : MonoBehaviour
         }
         else if(id == 1){
             // 풀 매니저에서 진공파 프리팹을 가져온다
-            Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
+            Transform bullet = GameManager.instance.pool.GetWeapon(prefabId).transform;
             bullet.position = transform.position; // 플레이어 위치에서 발사
 
             // 플레이어가 이동 중인 방향(inputVec)을 가져옴 (없으면 위쪽으로)
@@ -167,7 +167,7 @@ public class Weapon : MonoBehaviour
                 bullet = transform.GetChild(index);         
             }
             else{
-                bullet = GameManager.instance.pool.Get(prefabId).transform;
+                bullet = GameManager.instance.pool.GetWeapon(prefabId).transform;
                 bullet.parent = transform;
             }
 

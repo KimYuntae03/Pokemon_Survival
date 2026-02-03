@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_Hit
   isKnockback: 0
   hitSound: {fileID: 0}
+  damageTextPrefab: {fileID: 3025243457529248030, guid: 3fe29270bd5f12f4480725b07a8cc87f, type: 3}
 --- !u!82 &-2600539167057278323
 AudioSource:
   m_ObjectHideFlags: 0

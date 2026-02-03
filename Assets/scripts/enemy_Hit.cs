@@ -9,6 +9,7 @@ public class enemy_Hit : MonoBehaviour
     public bool isKnockback = false; //넉백중인지 확인하는 변수
     public AudioClip hitSound; //인스펙터에서 넣을 효과음 파일
     AudioSource audioSource; //효과음 재생할 컴포넌트
+    public GameObject damageTextPrefab;//DamageText프리팹 연결할 변수
 
     void Awake()
     {
@@ -20,7 +21,6 @@ public class enemy_Hit : MonoBehaviour
 
     void OnEnable()
     {
-        // 몬스터가 풀에서 다시 나올 때(스폰될 때) 색상을 원래대로 강제 초기화합니다.
         if (spr != null) {
             spr.color = originColor;
         }
@@ -28,13 +28,23 @@ public class enemy_Hit : MonoBehaviour
         StopAllCoroutines();
     }
 
-    public void OnHit()// 외부(Bullet 등)에서 데미지를 입었을 때 호출할 함수
+    public void OnHit(float damage)
     {
         StopCoroutine("FlashRoutine"); // 이미 번쩍이는 중이면 멈추고 새로 시작
         StartCoroutine("FlashRoutine");
-
         StopCoroutine("KnockbackRoutine");
         StartCoroutine("KnockbackRoutine");
+
+        if (damageTextPrefab != null) {
+            GameObject hudText = Instantiate(damageTextPrefab, transform.position, Quaternion.identity);
+            
+            // 자식 오브젝트에 있는 TextMesh 컴포넌트를 찾아 데미지 기입
+            TextMesh tm = hudText.GetComponentInChildren<TextMesh>();
+            if (tm != null) {
+                tm.text = Mathf.RoundToInt(damage).ToString();
+            }
+        }
+        
         if (audioSource != null && hitSound != null) {
             audioSource.PlayOneShot(hitSound); // 소리를 한 번 재생
         }
@@ -59,13 +69,9 @@ public class enemy_Hit : MonoBehaviour
 
     IEnumerator FlashRoutine()
     {
-        // 1. 색상을 아주 밝게 변경 (번쩍이는 효과)
+        //색상변경,유지,복구
         spr.color = new Color(5f, 5f, 5f, 1f); 
-
-        // 2. 0.1초 동안 유지
         yield return new WaitForSeconds(0.1f);
-
-        // 3. 원래 저장해두었던 색상으로 복구
         spr.color = originColor;
     }
 }

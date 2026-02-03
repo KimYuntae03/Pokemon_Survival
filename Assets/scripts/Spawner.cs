@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
     {
         // PoolManager에서 몬스터 꺼내오기
         //프리팹을 Enemy로 통일했으므로 항상 0번째 프리팹만 호출하도록 인자를0으로 설정
-        GameObject enemy = GameManager.instance.pool.Get(0);
+        GameObject enemy = GameManager.instance.pool.GetEnemy(0);
 
         int selectedIndex = Random.Range(0, level + 1);
         if (selectedIndex < level && Random.value > 0.5f) {

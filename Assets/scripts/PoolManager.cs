@@ -3,41 +3,44 @@ using UnityEngine;
 
 public class PoolManager : MonoBehaviour
 {
-    public GameObject[] prefabs;
+    public GameObject[] enemyPrefabs;  // 적 프리팹
+    public GameObject[] weaponPrefabs; // 무기 프리팹
     
     //프리팹에 있는 요소를 담을 리스트 주머니(꼬렛,주벳 등등)
-    List<GameObject>[] pools;
+    List<GameObject>[] enemyPools;
+    List<GameObject>[] weaponPools;
     
     void Awake()
     {
-        // 프리팹 종류만큼 리스트 배열 초기화
-        pools = new List<GameObject>[prefabs.Length];
-
-        //enemy종류 수 만큼 돌면서 enemy를 담을 리스트 추가
-        for (int i = 0; i < pools.Length; i++) {
-            pools[i] = new List<GameObject>();
-        }
+        //enemy 풀 초기화
+        enemyPools = new List<GameObject>[enemyPrefabs.Length];
+        for (int i = 0; i < enemyPools.Length; i++) enemyPools[i] = new List<GameObject>();
+        //weapon 풀 초기화
+        weaponPools = new List<GameObject>[weaponPrefabs.Length];
+        for (int i = 0; i < weaponPools.Length; i++) weaponPools[i] = new List<GameObject>();
     }
 
-    public GameObject Get(int index)
-    {
-        GameObject select = null;
+    public GameObject GetEnemy(int index) {
+        return GetFromPool(enemyPools, enemyPrefabs, index);
+    }
 
-        // 선택한 풀의 리스트
+    public GameObject GetWeapon(int index) {
+        return GetFromPool(weaponPools, weaponPrefabs, index);
+    }
+
+    GameObject GetFromPool(List<GameObject>[] pools, GameObject[] prefabs, int index) {
+        GameObject select = null;
         foreach (GameObject item in pools[index]) {
-            if (!item.activeSelf) { //죽어서 pools[index]에 들어간 몬스터가 있으면
-                select = item; 
-                select.SetActive(true); //select에 담고 화면에 생성
+            if (!item.activeSelf) {
+                select = item;
+                select.SetActive(true);
                 break;
             }
         }
-
-        
-        if (!select) { //재활용할 몬스터가 없으면
-            select = Instantiate(prefabs[index], transform); //새로 하나 들어서 생성
-            pools[index].Add(select); //새로 만든 애가 죽으면 다시 사용할 수 있도록 pools[index]에 등록
+        if (!select) {
+            select = Instantiate(prefabs[index], transform);
+            pools[index].Add(select);
         }
-
         return select;
     }
 

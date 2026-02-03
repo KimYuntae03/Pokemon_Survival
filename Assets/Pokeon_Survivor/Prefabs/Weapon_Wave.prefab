@@ -45,11 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   id: 1
-  prefabId: 3
+  prefabId: 1
   damage: 5
   count: 1
   speed: 1
+  mySfx: {fileID: 0}
   level: 1
   targetLayer:
     serializedVersion: 2
     m_Bits: 0
+  scratchPrefab: {fileID: 0}
+  scaryFacePrefab: {fileID: 0}
