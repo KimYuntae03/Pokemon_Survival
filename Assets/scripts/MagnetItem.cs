@@ -5,7 +5,7 @@ public class MagnetItem : MonoBehaviour
     public float floatSpeed = 3f;
     public float floatAmplitude = 0.15f;
     Vector3 startPos;
-
+    
     void Start()
     {
         startPos = transform.localPosition; 
@@ -21,6 +21,9 @@ public class MagnetItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+
+            GameManager.instance.PlayMagnetSfx();
+            
             GameObject[] gems = GameObject.FindGameObjectsWithTag("Gem");
 
             foreach (GameObject gem in gems)

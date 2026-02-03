@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public AudioSource berrySfx;//자뭉열매 효과음
     public AudioSource berrySfx2;
     public AudioSource PlayerDieSfx;//플레이어 사망 효과음
+    public AudioClip magnetSfxClip;//자석획득 효과음
 
     [Header("BGM SFX")]
     public AudioSource titleBgm;//타이틀 BGM연결 
@@ -197,6 +198,16 @@ public class GameManager : MonoBehaviour
         } else {
             dangerBgm.Stop(); // 긴급 BGM 정지
             mainBgm.UnPause(); // 일반 BGM 다시 재생
+        }
+    }
+
+    public void PlayMagnetSfx()
+    {
+        if (magnetSfxClip != null)
+        {
+            // 기존에 있던 expGetSfx나 다른 소스를 빌려 써서 재생합니다.
+            // PlayOneShot을 쓰면 기존 소리와 섞여서 잘 들립니다.
+            expGetSfx.PlayOneShot(magnetSfxClip); 
         }
     }
 
