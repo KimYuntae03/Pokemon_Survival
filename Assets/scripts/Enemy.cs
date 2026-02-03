@@ -142,13 +142,11 @@ public class Enemy : MonoBehaviour
         float dmg = collision.GetComponent<Bullet>().damage;
         health -= dmg;
 
-        if(health > 0)
-        {
-            if (hitScript != null) { 
-                hitScript.OnHit(dmg);
-            }
+        if (hitScript != null) { 
+            hitScript.OnHit(dmg);
         }
-        else 
+        
+        if(health <= 0)
         {   
             isLive = false;
             Dead();

@@ -157,7 +157,9 @@ public class Weapon : MonoBehaviour
     }
 
     void Batch()
-    {
+    {   
+        float finalDamage = damage * GameManager.instance.damageBuff;
+
         for(int index = 0; index < count; index++){
 
             Transform bullet;
@@ -184,7 +186,7 @@ public class Weapon : MonoBehaviour
             bullet.Translate(bullet.up * 1.5f, Space.World);
             //무기가 추가됐을때 무기 간격 설정 코드
 
-            bullet.GetComponent<Bullet>().Init(damage, -1,Vector3.zero,id);
+            bullet.GetComponent<Bullet>().Init(finalDamage, -1,Vector3.zero,id);
             //근접 무기는 무조건 관통하므로 per값을 -1로 고정
         }
     }
