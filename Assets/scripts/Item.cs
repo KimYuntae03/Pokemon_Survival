@@ -48,4 +48,9 @@ public class Item : MonoBehaviour
             gameObject.SetActive(false); //아이템 비활성화
         }
     }
+
+    public void StartMagnet()
+    {
+        isChasing = true; // 거리에 상관없이 끌어당김
+    }
 }

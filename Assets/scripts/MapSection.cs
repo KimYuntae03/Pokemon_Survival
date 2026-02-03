@@ -7,6 +7,7 @@ public class MapSection : MonoBehaviour
 
     [Header("Item Settings")]
     [Range(0, 100)] public float berrySpawnChance = 10f;
+    [Range(0, 100)] public float magnetSpawnChance = 5f;
 
     void OnEnable() 
     {
@@ -17,7 +18,9 @@ public class MapSection : MonoBehaviour
         }
         SpawnDecorations();
         SpawnBerry();
+        SpawnMagnet();
     }
+
     void SpawnDecorations()
     {
         for (int i = 0; i < decoCount; i++)
@@ -41,5 +44,17 @@ public class MapSection : MonoBehaviour
 
         Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 9.5f), Random.Range(-9.5f, 9.5f), 0);
         berry.transform.localPosition = spawnPos;
+    }
+
+    void SpawnMagnet()
+    {
+        if (Random.Range(0f, 100f) > magnetSpawnChance) return;
+
+        GameObject magnet = GameManager.instance.pool.GetWeapon(4); 
+        
+        magnet.transform.SetParent(transform);
+
+        Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 9.5f), Random.Range(-9.5f, 9.5f), 0);
+        magnet.transform.localPosition = spawnPos;
     }
 }
