@@ -6460,6 +6460,14 @@ MonoBehaviour:
     spawnTime: 1.2
     health: 10
     speed: 1.5
+  - spriteType: 6
+    spawnTime: 2
+    health: 20
+    speed: 1.5
+  - spriteType: 7
+    spawnTime: 2
+    health: 20
+    speed: 1.5
   spawnPoint:
   - {fileID: 77136870}
   - {fileID: 925757973}

@@ -124,6 +124,14 @@ public class Enemy : MonoBehaviour
                     shadow.localPosition = new Vector3(0, -0.75f, 0); 
                     shadow.localScale = new Vector3(1.5f, 1.0f, 1f); 
                     break;
+                case 6: //골벳
+                    shadow.localPosition = new Vector3(0, -0.75f, 0); 
+                    shadow.localScale = new Vector3(1.5f, 1.0f, 1f); 
+                    break;
+                case 7: //헬가
+                    shadow.localPosition = new Vector3(0, -0.75f, 0); 
+                    shadow.localScale = new Vector3(1.5f, 1.0f, 1f); 
+                    break;
 
                 default: // 기타 기본 몹 
                     shadow.localPosition = new Vector3(0, -0.45f, 0);

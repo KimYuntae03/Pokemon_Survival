@@ -206,6 +206,8 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 221c1e7e9b8c79e478cbb1e9f3ccc273, type: 2}
   - {fileID: 9100000, guid: 15cb7bf278c7fb248aa4b6b779de3ea4, type: 2}
   - {fileID: 9100000, guid: b7924158afdb2b04da95d64f69003f72, type: 2}
+  - {fileID: 9100000, guid: 904e481bc565a7c499c85fe70f3f92dc, type: 2}
+  - {fileID: 9100000, guid: ee8151b5df663224da9d22ca3cb8bac4, type: 2}
   target: {fileID: 0}
   expPrefabId: 2
   shadow: {fileID: 2486442795870197207}
