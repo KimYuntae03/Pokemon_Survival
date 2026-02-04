@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public AudioSource titleBgm;//타이틀 BGM연결 
     public AudioSource mainBgm;//인게임 BGM
     public AudioSource dangerBgm;//20퍼 이하 BGM
+    public AudioSource bossBgm; //기라티나 BGM
 
     [Header("Weapon SFX")]
     public AudioSource scratchSfx;//할퀴기 효과음
@@ -85,6 +86,9 @@ public class GameManager : MonoBehaviour
         }
         if (dangerBgm != null) {//위험 BGM정지
             dangerBgm.Stop();
+        }
+        if (bossBgm != null) {//위험 BGM정지
+            bossBgm.Stop();
         }
         Time.timeScale = 0f;
     }
@@ -233,6 +237,15 @@ public class GameManager : MonoBehaviour
 
         if (berrySfx2 != null) {
             berrySfx2.PlayOneShot(berrySfx2.clip);
+        }
+    }
+    public void PlayBossBgm()
+    {
+        if (mainBgm != null) mainBgm.Stop();
+        if (dangerBgm != null) dangerBgm.Stop();
+        
+        if (bossBgm != null) {
+            bossBgm.Play();
         }
     }
 }

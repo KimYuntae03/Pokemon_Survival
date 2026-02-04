@@ -13,8 +13,9 @@ public class Spawner : MonoBehaviour
         if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
 
-        if (GameManager.instance.gameTime >= 60f && !isBossSpawned) {
-            SpawnBoss(8); // 기라티나 인덱스 번호
+        if (!isBossSpawned && GameManager.instance.gameTime >= 60f) { 
+            isBossSpawned = true; 
+            SpawnBoss(8); 
         }
 
         timer += Time.deltaTime;
@@ -31,7 +32,7 @@ public class Spawner : MonoBehaviour
     void SpawnBoss(int index)
     {
         isBossSpawned = true;
-
+        GameManager.instance.PlayBossBgm();
         GameObject enemy = GameManager.instance.pool.GetEnemy(index);
 
         enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].position;
@@ -49,8 +50,9 @@ public class Spawner : MonoBehaviour
         GameObject enemy = GameManager.instance.pool.GetEnemy(0);
 
         int selectedIndex = Random.Range(0, Mathf.Min(level + 1, 8));
+        
         if (selectedIndex < level && Random.value > 0.5f) {
-            selectedIndex = level;
+            selectedIndex = Mathf.Min(level, 7);
         }
         // 미리 만들어둔 소환 지점 중 랜덤하게 한 곳
         enemy.transform.position = spawnPoint[Random.Range(0, spawnPoint.Length)].position;
