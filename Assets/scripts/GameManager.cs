@@ -87,9 +87,6 @@ public class GameManager : MonoBehaviour
         if (dangerBgm != null) {//위험 BGM정지
             dangerBgm.Stop();
         }
-        if (bossBgm != null) {//위험 BGM정지
-            bossBgm.Stop();
-        }
         Time.timeScale = 0f;
     }
 
@@ -101,7 +98,9 @@ public class GameManager : MonoBehaviour
         // 인게임 BGM 정지
         if (mainBgm != null) mainBgm.Stop();
         if (dangerBgm != null) dangerBgm.Stop();
-        
+        if (bossBgm != null) {//위험 BGM정지
+            bossBgm.Stop();
+        }
         Time.timeScale = 0f; // 게임 일시 정지
     }
 
@@ -240,7 +239,9 @@ public class GameManager : MonoBehaviour
         }
     }
     public void PlayBossBgm()
-    {
+    {   
+        // StartCoroutine(FadeBgmRoutine());
+
         if (mainBgm != null) mainBgm.Stop();
         if (dangerBgm != null) dangerBgm.Stop();
         
@@ -248,4 +249,32 @@ public class GameManager : MonoBehaviour
             bossBgm.Play();
         }
     }
+
+    // IEnumerator FadeBgmRoutine()
+    // {
+    //     float duration = 0.5f; // 전환 시간
+    //     float timer = 0f;
+    //     float startVolume = mainBgm.volume;
+
+    //     // 1. 기존 BGM 서서히 줄이기
+    //     while (timer < duration) {
+    //         timer += Time.unscaledDeltaTime;
+    //         mainBgm.volume = Mathf.Lerp(startVolume, 0, timer / duration);
+    //         yield return null;
+    //     }
+    //     mainBgm.Stop();
+    //     mainBgm.volume = startVolume;
+
+    //     // 2. 보스 BGM 재생
+    //     if (bossBgm != null) {
+    //         bossBgm.volume = 0;
+    //         bossBgm.Play();
+    //         timer = 0;
+    //         while (timer < duration) {
+    //             timer += Time.unscaledDeltaTime;
+    //             bossBgm.volume = Mathf.Lerp(0, startVolume, timer / duration);
+    //             yield return null;
+    //         }
+    //     }
+    // }
 }

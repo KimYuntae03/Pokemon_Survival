@@ -104,9 +104,21 @@ public class Enemy : MonoBehaviour
         if (player != null) {
             target = player.GetComponent<Rigidbody2D>();
         }
+        anim.transform.localPosition = Vector3.zero; //전에 처치했던 기라티나 위치 초기화
+
         isLive = true;
         health = maxHealth; //죽어서 리스폰된 enemy의 체력을 max로 초기화
         
+        rigid.simulated = true;//전에 처치했던 기라티나 물리엔진 켜기
+        GetComponent<Collider2D>().enabled = true;
+
+        Transform mask = transform.Find("GiraMask");
+        if (mask != null) mask.gameObject.SetActive(false);
+
+        SpriteRenderer spr = GetComponent<SpriteRenderer>();
+        if (spr != null) spr.maskInteraction = SpriteMaskInteraction.None;
+
+        anim.transform.localPosition = Vector3.zero;
     }
     
     public void Init(SpawnData data)
@@ -180,16 +192,25 @@ public class Enemy : MonoBehaviour
 
     void Dead()
     {   
+        isLive = false;
         GameManager.instance.GetKill(); //killcount 상승
-        if (anim.runtimeAnimatorController == animCon[8]) {
-            GameManager.instance.GameClear(); //보스몹 처치시
+
+        rigid.simulated = false;
+        GetComponent<Collider2D>().enabled = false; //물리 효과 차단
+
+        bool isGiratina = anim.runtimeAnimatorController == animCon[8];
+
+        if (isGiratina) 
+        {
+            if (shadow != null) shadow.gameObject.SetActive(false);
+            StartCoroutine(SinkingRoutine());
         }
         else
         {
             GameObject exp = GameManager.instance.pool.GetWeapon(expPrefabId);//풀 메니저에서 Exp가져옴
             exp.transform.position = transform.position;
+            gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
         }
-        gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -215,5 +236,39 @@ public class Enemy : MonoBehaviour
         speed = defaultSpeed * (1f - rate); // 20% 감소면 rate = 0.2f
         yield return new WaitForSeconds(duration);
         speed = defaultSpeed; // 원래대로 복구
+    }
+
+    IEnumerator SinkingRoutine()//기라티나 기절 코루틴
+    {
+        float duration = 1.5f;
+        float timer = 0f;
+        
+        Transform visualTransform = anim.transform; 
+        Vector3 startPos = visualTransform.localPosition;
+
+        Transform mask = transform.Find("GiraMask");
+        if (mask != null) {
+            mask.gameObject.SetActive(true);
+            mask.parent = null;
+        }
+        SpriteRenderer spr = GetComponent<SpriteRenderer>();
+        if (spr != null) spr.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = timer / duration;
+            
+            visualTransform.localPosition = startPos + Vector3.down * (progress * 4.0f);
+
+            yield return null;
+        }
+        if (mask != null) {
+            mask.parent = transform; //다음 소환을 위해 다시 mask의 부모로 설정
+            mask.gameObject.SetActive(false);
+        }
+
+        GameManager.instance.GameClear();
+        gameObject.SetActive(false);
     }
 }
