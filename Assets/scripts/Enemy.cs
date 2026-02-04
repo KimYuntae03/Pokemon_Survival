@@ -56,8 +56,21 @@ public class Enemy : MonoBehaviour
     {
         if(!isLive) return;
         //에니메이션 방향 전환 
-        spriter .flipX = target.position.x > rigid.position.x;
+        bool isGiratina = anim.runtimeAnimatorController == animCon[8];
 
+        if (isGiratina) //기라티나 특별 애니메이션 처리
+        {
+            Vector2 dir = (target.position - rigid.position).normalized;
+            
+            anim.SetFloat("DirX", dir.x);
+            anim.SetFloat("DirY", dir.y);
+
+            spriter.flipX = false; 
+        }
+        else //일반몹
+        {
+            spriter.flipX = target.position.x > rigid.position.x;
+        }
         //Vector3 사용 이유는 오브젝트의 위치 호환성과 에러 방지를 위함
         Vector3 dist = (Vector3)target.position - transform.position;
         
@@ -131,6 +144,10 @@ public class Enemy : MonoBehaviour
                 case 7: //헬가
                     shadow.localPosition = new Vector3(0, -0.75f, 0); 
                     shadow.localScale = new Vector3(1.5f, 1.0f, 1f); 
+                    break;
+                case 8: // 기라티나
+                    shadow.localPosition = new Vector3(0, -1.2f, 0); 
+                    shadow.localScale = new Vector3(3.0f, 2.2f, 1f);
                     break;
 
                 default: // 기타 기본 몹 
