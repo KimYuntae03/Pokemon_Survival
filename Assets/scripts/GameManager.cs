@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public AudioSource scratchSfx;//할퀴기 효과음
 
     public GameObject uiGameOver;
+    public GameObject uiGameClear;
     bool isDanger = false; //BGM체크 변수
 
     void Awake()
@@ -86,6 +87,18 @@ public class GameManager : MonoBehaviour
             dangerBgm.Stop();
         }
         Time.timeScale = 0f;
+    }
+
+    public void GameClear()
+    {
+        isPlayerLive = false; // 플레이어 상태 업데이트
+        uiGameClear.SetActive(true); // 클리어 UI 활성화
+        
+        // 인게임 BGM 정지
+        if (mainBgm != null) mainBgm.Stop();
+        if (dangerBgm != null) dangerBgm.Stop();
+        
+        Time.timeScale = 0f; // 게임 일시 정지
     }
 
     public void Restart()
@@ -159,16 +172,15 @@ public class GameManager : MonoBehaviour
 
     void UpdateTimerUI()
     {
-        float remainTime = gameTime;
-        int min = Mathf.FloorToInt(remainTime / 60);
-        int sec = Mathf.FloorToInt(remainTime % 60);
+        int min = Mathf.FloorToInt(gameTime / 60);
+        int sec = Mathf.FloorToInt(gameTime % 60);
         timerText.text = string.Format("{0:D2}:{1:D2}", min, sec);
     }
 
     void UpdateExpUI()
     {
-        int currentTargetExp = Mathf.RoundToInt(Mathf.Pow(level, 1.4f)) + 9;
-        expSlider.value = (float)exp / currentTargetExp; //현재 Exp / 목표 Exp를 경험치 바에 반영
+        int targetExp = Mathf.RoundToInt(Mathf.Pow(level, 1.4f)) + 9;
+        expSlider.value = exp / targetExp; //현재 Exp / 목표 Exp를 경험치 바에 반영
     }
 
     void UpdateKillUI()

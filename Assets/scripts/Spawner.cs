@@ -6,28 +6,49 @@ public class Spawner : MonoBehaviour
     public Transform[] spawnPoint;
     float timer;
     int level;
+    bool isBossSpawned = false;
 
     void Update()
     {   
         if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
+
+        if (GameManager.instance.gameTime >= 60f && !isBossSpawned) {
+            SpawnBoss(8); // 기라티나 인덱스 번호
+        }
+
         timer += Time.deltaTime;
         level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 5f), spawnData.Length - 1);
         //ㄴ>Mathf 클래스의 FloorToInt로 정수변환 20초마다 1레벨 증가로 인식
-
+        
         //level증가할 수록 생성주기가 짧아짐. ? 참일때 값 : 거짓일때 값
         if (timer > spawnData[level].spawnTime) {
             timer = 0;
             Spawn();
         }
     }
-    void Spawn()
+
+    void SpawnBoss(int index)
     {
+        isBossSpawned = true;
+
+        GameObject enemy = GameManager.instance.pool.GetEnemy(index);
+
+        enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].position;
+
+        if (index < spawnData.Length) {
+            enemy.GetComponent<Enemy>().Init(spawnData[index]);
+        }
+    }
+
+    void Spawn()
+    {   
+        if (isBossSpawned) return;//보스몹 생성 후에는 생정 중지
+
         // PoolManager에서 몬스터 꺼내오기
-        //프리팹을 Enemy로 통일했으므로 항상 0번째 프리팹만 호출하도록 인자를0으로 설정
         GameObject enemy = GameManager.instance.pool.GetEnemy(0);
 
-        int selectedIndex = Random.Range(0, level + 1);
+        int selectedIndex = Random.Range(0, Mathf.Min(level + 1, 8));
         if (selectedIndex < level && Random.value > 0.5f) {
             selectedIndex = level;
         }

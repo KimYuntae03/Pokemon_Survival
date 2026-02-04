@@ -181,10 +181,15 @@ public class Enemy : MonoBehaviour
     void Dead()
     {   
         GameManager.instance.GetKill(); //killcount 상승
-        GameObject exp = GameManager.instance.pool.GetWeapon(expPrefabId);//풀 메니저에서 Exp가져옴
-        exp.transform.position = transform.position;//보석 위치를 현재 죽은 몬스터의 위치로 설정
+        if (anim.runtimeAnimatorController == animCon[8]) {
+            GameManager.instance.GameClear(); //보스몹 처치시
+        }
+        else
+        {
+            GameObject exp = GameManager.instance.pool.GetWeapon(expPrefabId);//풀 메니저에서 Exp가져옴
+            exp.transform.position = transform.position;
+        }
         gameObject.SetActive(false); //죽은 enemy오브젝트 비활성화
-        
     }
 
     void OnCollisionStay2D(Collision2D collision)

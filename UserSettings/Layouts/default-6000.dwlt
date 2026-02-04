@@ -444,8 +444,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 660
-    y: 50.4
+    x: 0
+    y: 0
     width: 875.2
     height: 36
   m_SerializedDataModeController:
@@ -842,11 +842,10 @@ MonoBehaviour:
       m_Data: 52050
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51708
-    - m_Data: 51710
-    - m_Data: 51712
-    - m_Data: 51714
-    - m_Data: 1000000000
+    - m_Data: 51758
+    - m_Data: 51760
+    - m_Data: 51762
+    - m_Data: 51764
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -879,10 +878,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51708
-    - m_Data: 51710
-    - m_Data: 51712
-    - m_Data: 51714
+    - m_Data: 51758
+    - m_Data: 51760
+    - m_Data: 51762
+    - m_Data: 51764
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,8 +979,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1160
-    y: 86.4
+    x: 501
+    y: 24
     width: 374.2
     height: 682.8
   m_SerializedDataModeController:
@@ -1031,8 +1030,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 970.4
-    y: 468
+    x: 311.4
+    y: 24
     width: 187.6
     height: 301.19998
   m_SerializedDataModeController:
@@ -1051,10 +1050,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 50994
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: 50994
+        m_Data: 0
       m_ExpandedIDs:
       - m_Data: -1318
       - m_Data: 50692
@@ -1788,8 +1786,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 660
-    y: 468
+    x: 0
+    y: 24
     width: 309.4
     height: 301.19998
   m_SerializedDataModeController:
@@ -1826,8 +1824,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 660
-    y: 86.4
+    x: 0
+    y: 24
     width: 499
     height: 355.6
   m_SerializedDataModeController:
@@ -1903,7 +1901,7 @@ MonoBehaviour:
       height: 1373.2682
     m_MinimalGUI: 1
   m_defaultScale: 0.24365234
-  m_LastWindowPixelSize: {x: 623.75, y: 444.5}
+  m_LastWindowPixelSize: {x: 499, y: 355.6}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
