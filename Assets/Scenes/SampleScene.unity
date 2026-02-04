@@ -4662,7 +4662,7 @@ SpriteMask:
   m_BackSortingLayer: 2
   m_FrontSortingOrder: 0
   m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 1
+  m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
   m_MaskSource: 0
 --- !u!1 &1511309802
@@ -5716,6 +5716,7 @@ MonoBehaviour:
   mainBgm: {fileID: 1887020731}
   dangerBgm: {fileID: 1887020730}
   bossBgm: {fileID: 1887020735}
+  bossDeathSfx: {fileID: 1887020734}
   scratchSfx: {fileID: 1887020729}
   uiGameOver: {fileID: 1116049636}
   uiGameClear: {fileID: 1274302491}

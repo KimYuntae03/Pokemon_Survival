@@ -7,8 +7,6 @@ public class enemy_Hit : MonoBehaviour
     Color originColor;
     Rigidbody2D rigid; //넉백 효과를 위한 변수
     public bool isKnockback = false; //넉백중인지 확인하는 변수
-    public AudioClip hitSound; //인스펙터에서 넣을 효과음 파일
-    AudioSource audioSource; //효과음 재생할 컴포넌트
     public GameObject damageTextPrefab;//DamageText프리팹 연결할 변수
 
     void Awake()
@@ -16,7 +14,6 @@ public class enemy_Hit : MonoBehaviour
         spr = GetComponent<SpriteRenderer>();
         originColor = spr.color;
         rigid = GetComponent<Rigidbody2D>(); 
-        audioSource = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -43,10 +40,6 @@ public class enemy_Hit : MonoBehaviour
             if (tm != null) {
                 tm.text = Mathf.RoundToInt(damage).ToString();
             }
-        }
-        
-        if (audioSource != null && hitSound != null) {
-            audioSource.PlayOneShot(hitSound); // 소리를 한 번 재생
         }
     }
 

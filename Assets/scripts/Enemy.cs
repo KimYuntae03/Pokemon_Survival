@@ -239,7 +239,9 @@ public class Enemy : MonoBehaviour
     }
 
     IEnumerator SinkingRoutine()//기라티나 기절 코루틴
-    {
+    {   
+        GameManager.instance.PlayBossDeathSfx();
+        
         float duration = 1.5f;
         float timer = 0f;
         

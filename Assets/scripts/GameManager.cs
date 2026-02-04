@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public AudioSource mainBgm;//인게임 BGM
     public AudioSource dangerBgm;//20퍼 이하 BGM
     public AudioSource bossBgm; //기라티나 BGM
+    public AudioSource bossDeathSfx;//기라티나 처치 효과음
 
     [Header("Weapon SFX")]
     public AudioSource scratchSfx;//할퀴기 효과음
@@ -220,8 +221,6 @@ public class GameManager : MonoBehaviour
     {
         if (magnetSfxClip != null)
         {
-            // 기존에 있던 expGetSfx나 다른 소스를 빌려 써서 재생합니다.
-            // PlayOneShot을 쓰면 기존 소리와 섞여서 잘 들립니다.
             expGetSfx.PlayOneShot(magnetSfxClip); 
         }
     }
@@ -240,8 +239,6 @@ public class GameManager : MonoBehaviour
     }
     public void PlayBossBgm()
     {   
-        // StartCoroutine(FadeBgmRoutine());
-
         if (mainBgm != null) mainBgm.Stop();
         if (dangerBgm != null) dangerBgm.Stop();
         
@@ -250,31 +247,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // IEnumerator FadeBgmRoutine()
-    // {
-    //     float duration = 0.5f; // 전환 시간
-    //     float timer = 0f;
-    //     float startVolume = mainBgm.volume;
-
-    //     // 1. 기존 BGM 서서히 줄이기
-    //     while (timer < duration) {
-    //         timer += Time.unscaledDeltaTime;
-    //         mainBgm.volume = Mathf.Lerp(startVolume, 0, timer / duration);
-    //         yield return null;
-    //     }
-    //     mainBgm.Stop();
-    //     mainBgm.volume = startVolume;
-
-    //     // 2. 보스 BGM 재생
-    //     if (bossBgm != null) {
-    //         bossBgm.volume = 0;
-    //         bossBgm.Play();
-    //         timer = 0;
-    //         while (timer < duration) {
-    //             timer += Time.unscaledDeltaTime;
-    //             bossBgm.volume = Mathf.Lerp(0, startVolume, timer / duration);
-    //             yield return null;
-    //         }
-    //     }
-    // }
+    public void PlayBossDeathSfx()
+    {
+        if (bossDeathSfx != null) {
+            bossDeathSfx.Play(); 
+        }
+    }
 }

@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 8139109605037179911, guid: 35ae0998c176005409cd644f80bd9ae8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy_Hit
   isKnockback: 0
-  hitSound: {fileID: 0}
   damageTextPrefab: {fileID: 3025243457529248030, guid: 3fe29270bd5f12f4480725b07a8cc87f, type: 3}
 --- !u!82 &-2600539167057278323
 AudioSource:
@@ -239,7 +238,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 9e2e50e3941d37f4fa0dd9e3f0e69666, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.13
   m_Pitch: 1
@@ -247,7 +246,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 47
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
