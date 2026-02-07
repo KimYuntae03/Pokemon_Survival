@@ -27,8 +27,6 @@ public class ItemUI : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
     {   
-        Debug.Log(gameObject.name + " 선택됨");
-        // LevelUp 스크립트에 있는 '공용 설명창'에 현재 아이템 설명을 전달
         GetComponentInParent<LevelUp>().UpdateDescription(data.itemDesc);
 
         //화살표 아이콘 이동

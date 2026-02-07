@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public AudioSource dangerBgm;//20퍼 이하 BGM
     public AudioSource bossBgm; //기라티나 BGM
     public AudioSource bossDeathSfx;//기라티나 처치 효과음
+    public AudioSource clearBgm;//게임클리어 BGM
 
     [Header("Weapon SFX")]
     public AudioSource scratchSfx;//할퀴기 효과음
@@ -99,9 +100,9 @@ public class GameManager : MonoBehaviour
         // 인게임 BGM 정지
         if (mainBgm != null) mainBgm.Stop();
         if (dangerBgm != null) dangerBgm.Stop();
-        if (bossBgm != null) {//위험 BGM정지
-            bossBgm.Stop();
-        }
+        if (bossBgm != null) bossBgm.Stop();
+        if (clearBgm != null) clearBgm.Play();
+        
         Time.timeScale = 0f; // 게임 일시 정지
     }
 

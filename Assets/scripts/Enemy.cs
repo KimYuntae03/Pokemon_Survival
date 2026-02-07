@@ -175,6 +175,9 @@ public class Enemy : MonoBehaviour
         //Bullet 태그를 단 오브젝트와 충동하지 않으면 그냥 return(enemy와 Bullet의 충돌여부 확인)
         if(!collision.CompareTag("Bullet"))
             return;
+
+        if (!isLive) return;//이미 죽은 적이면 피격처리 X
+        
         //설정한 Bullet의 damage만큼을 enemy의 health에서 빼서 남은 hp계산
         float dmg = collision.GetComponent<Bullet>().damage;
         health -= dmg;

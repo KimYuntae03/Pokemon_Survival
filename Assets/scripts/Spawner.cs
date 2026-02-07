@@ -13,14 +13,14 @@ public class Spawner : MonoBehaviour
         if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
 
-        if (!isBossSpawned && GameManager.instance.gameTime >= 20f) { 
+        if (!isBossSpawned && GameManager.instance.gameTime >= 360f) { 
             isBossSpawned = true; 
             SpawnBoss(8); 
         }
 
         timer += Time.deltaTime;
-        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 5f), spawnData.Length - 1);
-        //ㄴ>Mathf 클래스의 FloorToInt로 정수변환 20초마다 1레벨 증가로 인식
+        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 40f), spawnData.Length - 1);
+        //ㄴ>Mathf 클래스의 FloorToInt로 정수변환 40초마다 1레벨 증가로 인식
         
         //level증가할 수록 생성주기가 짧아짐. ? 참일때 값 : 거짓일때 값
         if (timer > spawnData[level].spawnTime) {
