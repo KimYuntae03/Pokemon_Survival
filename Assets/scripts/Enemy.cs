@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D target; //enemy들이 추적할 타겟
     bool isLive;
     public int expPrefabId = 2;
+    public BossHealthBar bossHealthBar;
     public Transform shadow;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
@@ -75,7 +76,7 @@ public class Enemy : MonoBehaviour
         Vector3 dist = (Vector3)target.position - transform.position;
         
         //플레이어가 화면 밖으로 벗어나 거리가 15f보다 멀어지면 리스폰
-        if (Mathf.Abs(dist.x) > 15f || Mathf.Abs(dist.y) > 15f)
+        if (!isGiratina && (Mathf.Abs(dist.x) > 15f || Mathf.Abs(dist.y) > 15f))
         {
             RepositionEnemy(dist);
         }
@@ -119,6 +120,16 @@ public class Enemy : MonoBehaviour
         if (spr != null) spr.maskInteraction = SpriteMaskInteraction.None;
 
         anim.transform.localPosition = Vector3.zero;
+        // if (bossHealthBar == null) {
+        //     BossHealthBar[] bars = Resources.FindObjectsOfTypeAll<BossHealthBar>();
+        //     foreach (BossHealthBar bar in bars) {
+        //         if (bar.gameObject.scene.name != null) { // 씬에 존재하는 것만 필터링
+        //             bossHealthBar = bar;
+        //             break;
+        //         }
+        //     }
+        // }
+        // if (bossHealthBar != null) bossHealthBar.gameObject.SetActive(false);
     }
     
     public void Init(SpawnData data)
@@ -127,7 +138,16 @@ public class Enemy : MonoBehaviour
         speed = data.speed;
         maxHealth = data.health;
         health = data.health;
-            if (shadow != null)
+
+        bool isGiratina = data.spriteType == 8;
+        if (bossHealthBar != null) {
+            bossHealthBar.gameObject.SetActive(isGiratina);
+            if (isGiratina) {
+                bossHealthBar.InitBossBar(transform,maxHealth);
+            }
+        }
+
+        if (shadow != null)
         {
             // 기본값 초기화
             shadow.localPosition = new Vector3(0, -0.45f, 0); 
@@ -181,15 +201,28 @@ public class Enemy : MonoBehaviour
         //설정한 Bullet의 damage만큼을 enemy의 health에서 빼서 남은 hp계산
         float dmg = collision.GetComponent<Bullet>().damage;
         health -= dmg;
-
-        if (hitScript != null) { 
-            hitScript.OnHit(dmg);
+        bool isGiratina = anim.runtimeAnimatorController == animCon[8];
+        if (isGiratina && bossHealthBar != null) {
+            bossHealthBar.UpdateHealthBar(health, maxHealth);
         }
-        
+
+        if (hitScript != null)  hitScript.OnHit(dmg);
+               
         if(health <= 0)
         {   
             isLive = false;
+            if (isGiratina && bossHealthBar != null) {
+                bossHealthBar.Hide(); 
+            }
             Dead();
+        }
+    }
+
+    void OnDisable() {
+        bool isGiratina = anim.runtimeAnimatorController == animCon[8];
+    
+        if (bossHealthBar != null && !isGiratina) {
+            bossHealthBar.gameObject.SetActive(false);
         }
     }
 

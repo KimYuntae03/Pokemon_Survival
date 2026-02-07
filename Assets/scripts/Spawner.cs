@@ -7,13 +7,14 @@ public class Spawner : MonoBehaviour
     float timer;
     int level;
     bool isBossSpawned = false;
+    public BossHealthBar bossHealthBar;
 
     void Update()
     {   
         if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
 
-        if (!isBossSpawned && GameManager.instance.gameTime >= 360f) { 
+        if (!isBossSpawned && GameManager.instance.gameTime >= 20f) { 
             isBossSpawned = true; 
             SpawnBoss(8); 
         }
@@ -36,6 +37,12 @@ public class Spawner : MonoBehaviour
         GameObject enemy = GameManager.instance.pool.GetEnemy(index);
 
         enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].position;
+
+        if (bossHealthBar != null) {
+            bossHealthBar.gameObject.SetActive(true);
+            enemy.GetComponent<Enemy>().bossHealthBar = bossHealthBar; 
+            bossHealthBar.InitBossBar(enemy.transform, spawnData[index].health);
+        }
 
         if (index < spawnData.Length) {
             enemy.GetComponent<Enemy>().Init(spawnData[index]);
