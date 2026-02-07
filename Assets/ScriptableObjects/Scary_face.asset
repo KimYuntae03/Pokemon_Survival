@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
   m_Name: Scary_face
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  baseSpeed: 10
+  baseSpeed: 30
   itemType: 1
   itemId: 4
   itemName: "\uAC81\uB098\uB294\uC5BC\uAD74 "

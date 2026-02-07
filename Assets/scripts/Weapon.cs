@@ -66,7 +66,7 @@ public class Weapon : MonoBehaviour
     {
         if (!GameManager.instance.isPlayerLive) 
         return;
-
+        level++;
         this.damage += 5;
         switch(id){
             case 0: //화염자동차
@@ -76,9 +76,12 @@ public class Weapon : MonoBehaviour
             case 1: //파동탄
                 this.count += 1;
                 break;
-            case 2:
+            case 2: //할퀴기
                 this.speed = Mathf.Max(this.speed - 0.5f, 0.2f); //쿨타임 감소
                 break;
+            case 4: //겁나는 얼굴
+            this.speed = Mathf.Max(this.speed - 2.0f, 10.0f); 
+            break;
         }
     }
 
@@ -150,7 +153,7 @@ public class Weapon : MonoBehaviour
 
                 Enemy enemy = enemyObj.GetComponent<Enemy>();
                 if (enemy != null) {
-                    enemy.ApplySlow(3.0f, 0.1f); // 3초간 10% 감소
+                    enemy.ApplySlow(3.0f, 0.5f); // 5초간 50% 감소
                 }
             }
         }

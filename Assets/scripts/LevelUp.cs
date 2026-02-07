@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
 
 public class LevelUp : MonoBehaviour
 {
@@ -25,12 +26,21 @@ public class LevelUp : MonoBehaviour
         if (contentPanel != null)
             contentPanel.SetActive(true);
         
-        List<int> ranList = new List<int>();//중복 방지를 위한 리스트
-        int count = Mathf.Min(itemSlots.Length, allItems.Length);
+        List<ItemData> availableItems = new List<ItemData>();
+        Weapon[] currentWeapons = player.GetComponentsInChildren<Weapon>(true);
+
+        foreach (ItemData item in allItems) {
+            Weapon targetWeapon = currentWeapons.FirstOrDefault(w => w.id == item.itemId);
+            
+            if (targetWeapon == null || targetWeapon.level < 5) {
+                availableItems.Add(item);
+            }
+        }
+        List<int> ranList = new List<int>();
+        int count = Mathf.Min(itemSlots.Length, availableItems.Count);
 
         // 랜덤하게 3개 뽑아서 버튼들에 데이터 전달
-        for (int i = 0; i < itemSlots.Length; i++)
-            {
+        for (int i = 0; i < itemSlots.Length; i++){
                 // 일단 모든 슬롯을 끄고 시작 (아이템이 부족할 때 대비)
                 itemSlots[i].gameObject.SetActive(false);
             }
