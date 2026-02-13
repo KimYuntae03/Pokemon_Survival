@@ -67,17 +67,19 @@ public class Weapon : MonoBehaviour
         if (!GameManager.instance.isPlayerLive) 
         return;
         level++;
-        this.damage += 5;
         switch(id){
             case 0: //화염자동차
                 this.count += 1;
+                this.damage += 3;
                 Batch();
                 break;
             case 1: //파동탄
                 this.count += 1;
+                this.damage += 5;
                 break;
             case 2: //할퀴기
                 this.speed = Mathf.Max(this.speed - 0.5f, 0.2f); //쿨타임 감소
+                this.damage += 5;
                 break;
             case 4: //겁나는 얼굴
             this.speed = Mathf.Max(this.speed - 2.0f, 10.0f); 
@@ -104,7 +106,7 @@ public class Weapon : MonoBehaviour
 
         if(id == 2)
         {   
-            Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 3f, LayerMask.GetMask("Enemy"));
+            Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 2.5f, LayerMask.GetMask("Enemy"));
             if (targets.Length == 0) return; //범위내에 없으면 발동ㄴ
 
             if (GameManager.instance.scratchSfx != null) {

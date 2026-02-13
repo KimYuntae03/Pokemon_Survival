@@ -52,7 +52,7 @@ public class enemy_Hit : MonoBehaviour
 
         rigid.linearVelocity = Vector2.zero; // 속도 초기화
         
-        rigid.AddForce(dirVec.normalized * 1.2f, ForceMode2D.Impulse); 
+        rigid.AddForce(dirVec.normalized * 0.9f, ForceMode2D.Impulse); 
 
         // 0.2초 동안 뒤로 밀려나는 시간
         yield return new WaitForSeconds(0.2f); 

@@ -114,12 +114,12 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     {
         switch (data.itemId) {
             case 2: // 알카로이드 (이동속도 증가)
-                player.moveSpeed += 0.5f; // 혹은 data.baseDamage 수치를 활용
+                player.moveSpeed += 0.3f; // 혹은 data.baseDamage 수치를 활용
                 break;
             case 3: // 행복의 알 (경험치 획등량 증가)
-                GameManager.instance.expMultiplier += 0.2f;
+                GameManager.instance.expMultiplier += 0.5f;
                 break;
-            case 5: // 생명의 구슬 (피해량 10% 증가)
+            case 5: // 생명의 구슬 (피해량 20% 증가)
                 GameManager.instance.ApplyDamageBuff(0.2f);
                 break;
             case 6: // 맥스업 (최대체력 20증가)

@@ -212,6 +212,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 40567d001763e2c46af5245a239367a3, type: 2}
   target: {fileID: 0}
   expPrefabId: 2
+  bossHealthBar: {fileID: 0}
   shadow: {fileID: 2486442795870197207}
 --- !u!114 &-7768833218840761428
 MonoBehaviour:
