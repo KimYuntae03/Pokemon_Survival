@@ -110,6 +110,11 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f; // 게임 일시 정지
     }
 
+    public void GameQuit()
+    {
+        Application.Quit();
+    }
+
     public void Restart()
     {
         Time.timeScale = 1f;
