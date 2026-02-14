@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public PoolManager pool;
     public Player_Controller player;
+    public Transform uiJoystick;
 
     public float gameTime;
     public float maxGameTime = 7 * 60f;
@@ -60,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void GameStart()
     {   
+        uiJoystick.localScale = new Vector3(0.7f, 0.7f, 1f);
         if (titleBgm != null) { // 타이틀BGM종료
             titleBgm.Stop();
         }
@@ -83,6 +85,7 @@ public class GameManager : MonoBehaviour
     {
         isPlayerLive = false; // 플레이어 사망
         uiGameOver.SetActive(true); // 종료 UI 활성화
+        uiJoystick.localScale = Vector3.zero;
         if (mainBgm != null) {//인게임 BGM종료
             mainBgm.Stop();
         }
@@ -96,7 +99,8 @@ public class GameManager : MonoBehaviour
     {
         isPlayerLive = false; // 플레이어 상태 업데이트
         uiGameClear.SetActive(true); // 클리어 UI 활성화
-        
+        uiJoystick.localScale = Vector3.zero;
+
         // 인게임 BGM 정지
         if (mainBgm != null) mainBgm.Stop();
         if (dangerBgm != null) dangerBgm.Stop();
@@ -124,6 +128,7 @@ public class GameManager : MonoBehaviour
         UpdateExpUI();
         UpdateKillUI();
         UpdateLevelUI();
+        uiJoystick.localScale = Vector3.zero;
     }
 
     void Update()
