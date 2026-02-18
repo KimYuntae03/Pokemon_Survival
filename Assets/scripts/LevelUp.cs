@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.EventSystems;
 
 public class LevelUp : MonoBehaviour
 {
@@ -60,8 +61,9 @@ public class LevelUp : MonoBehaviour
 
         if (count > 0)
         {
-            Button firstButton = itemSlots[0].GetComponent<Button>();
-            firstButton.Select();
+            EventSystem.current.SetSelectedGameObject(itemSlots[0].gameObject);
+            itemSlots[0].isDescriptionActive = true;
+            
             if (selectionPointer != null)
             {
                 selectionPointer.SetActive(true);

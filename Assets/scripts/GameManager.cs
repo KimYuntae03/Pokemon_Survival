@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
         }
         // 싱글톤 초기화
         instance = this;
+        Application.targetFrameRate = 60;
         Time.timeScale = 0f;
     }
 
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour
         UpdateKillUI();
         UpdateLevelUI();
     }
-
+    //
     public void GameOver()
     {
         isPlayerLive = false; // 플레이어 사망

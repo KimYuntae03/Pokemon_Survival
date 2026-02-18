@@ -9,8 +9,6 @@ public class Player_Controller : MonoBehaviour
     private Rigidbody2D rb;
     public Vector2 inputVec;
     private Animator anim;
-    private float lastHorizontal = 0;
-    private float lastVertical = 0;
     public ItemData defaultWeaponData;
     public float maxHp = 100f;
     public float CurHp;
@@ -134,13 +132,9 @@ public class Player_Controller : MonoBehaviour
         StartCoroutine(DieRoutine());
     }
 
-
-
     public void ResetInput()
     {
         inputVec = Vector2.zero;
-        lastHorizontal = 0;
-        lastVertical = 0;
         
         // 애니메이션도 정지 상태로 강제 전환
         if (anim != null) {

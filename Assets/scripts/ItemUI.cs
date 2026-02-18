@@ -9,9 +9,9 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     public TMP_Text textName;    // 아이템 이름 텍스트 연결용
     // public TMP_Text textDesc;    // 아이템 설명 텍스트 연결용
     public RectTransform pointer;
+    public bool isDescriptionActive = false;
 
-
-    ItemData data;           // 현재 슬롯이 배정받은 데이터
+    public ItemData data;           // 현재 슬롯이 배정받은 데이터
     int level;
     public AudioClip selectSound;
 
@@ -22,15 +22,16 @@ public class ItemUI : MonoBehaviour, ISelectHandler
 
         icon.sprite = data.itemIcon;
         textName.text = data.itemName;
-        // textDesc.text = data.itemDesc;
+        isDescriptionActive = false;
     }
 
     public void OnSelect(BaseEventData eventData)
     {   
-        GetComponentInParent<LevelUp>().UpdateDescription(data.itemDesc);
-
-        //화살표 아이콘 이동
+        if (data == null) return;
+        isDescriptionActive = true;
+        
         LevelUp levelUpScript = GetComponentInParent<LevelUp>();
+        levelUpScript.UpdateDescription(data.itemDesc);
 
         if (levelUpScript.selectionPointer != null)
             {   
@@ -49,7 +50,18 @@ public class ItemUI : MonoBehaviour, ISelectHandler
 
     // 버튼이 클릭되었을 때 실행될 함수
     public void OnClick()
-    {
+    {   
+        if (!isDescriptionActive)
+        {
+            ItemUI[] allSlots = GetComponentInParent<LevelUp>().itemSlots;
+            foreach(ItemUI slot in allSlots) slot.isDescriptionActive = false;
+
+            isDescriptionActive = true;
+            
+            OnSelect(null); 
+            return;
+        }
+
         //플레이어 참조를 가져옴
         Player_Controller player = GetComponentInParent<LevelUp>().player;
 
@@ -67,6 +79,7 @@ public class ItemUI : MonoBehaviour, ISelectHandler
                 // 추후 추가
                 break;
         }
+        isDescriptionActive = false;
         GetComponentInParent<LevelUp>().Hide(); //레벨업 창 닫기
     }
 
