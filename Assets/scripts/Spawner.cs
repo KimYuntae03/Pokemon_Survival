@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
         if (!GameManager.instance.isPlayerLive) return;
         // 타이머 작동
         transform.position = GameManager.instance.player.transform.position;
-        if (!isBossSpawned && GameManager.instance.gameTime >= 330f) { 
+        if (!isBossSpawned && GameManager.instance.gameTime >= 240f) { 
             isBossSpawned = true; 
             SpawnBoss(8); 
         }

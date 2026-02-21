@@ -71,7 +71,6 @@ public class Player_Controller : MonoBehaviour
     void OnMove(InputValue value)
     {
         inputVec = value.Get<Vector2>();
-        Debug.Log("조이스틱 입력 중: " + inputVec);
     }
 
     void FixedUpdate()
@@ -159,19 +158,19 @@ public class Player_Controller : MonoBehaviour
         if (stage < evolutionAnimators.Length && evolutionAnimators[stage] != null)
         {
             anim.runtimeAnimatorController = evolutionAnimators[stage];
-            Debug.Log($"<color=cyan>진화 성공!</color> 단계: {stage}");
             
             Vector3 hpBarPos = new Vector3(0, -25f, 0);
             Vector3 shadowPos = new Vector3(0, -0.6f, 0);
             Vector3 shadowScale = new Vector3(1f, 1f, 1f);
 
             if(stage == 1)
-            {
+            {   
+                hpBarPos = new Vector3(-11, -30f, 0);
                 shadowPos = new Vector3(0, -0.7f, 0);
             }
             else if (stage == 2) 
             {
-                hpBarPos = new Vector3(0, -33f, 0);
+                hpBarPos = new Vector3(-11, -33f, 0);
                 shadowPos = new Vector3(0, -0.95f, 0);
                 shadowScale = new Vector3(1.3f, 1.2f, 1f);
             }

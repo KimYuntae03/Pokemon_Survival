@@ -14,7 +14,8 @@ public class LevelUp : MonoBehaviour
     public GameObject contentPanel;
     public GameObject selectionPointer;
     public RectTransform uiJoystick;
-    
+    public GameObject pauseButton;
+
     void Awake()
     {
         // 처음엔 비활성화
@@ -27,6 +28,7 @@ public class LevelUp : MonoBehaviour
         if (uiJoystick != null) {
             uiJoystick.localScale = Vector3.zero;
         }
+        if (pauseButton != null) pauseButton.SetActive(false);
         Time.timeScale = 0f; // 게임 일시정지
         if (contentPanel != null)
             contentPanel.SetActive(true);
@@ -97,6 +99,7 @@ public class LevelUp : MonoBehaviour
         if (uiJoystick != null) {
             uiJoystick.localScale = new Vector3(0.8f, 0.8f, 1f);
         }
+        if (pauseButton != null) pauseButton.SetActive(true);
         Time.timeScale = 1f; // 게임 다시 시작
         if (player != null) {
             player.ResetInput(); 

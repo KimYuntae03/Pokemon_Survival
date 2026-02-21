@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aa224b62b9f0147a22c34d1f001a90, type: 3}
   m_Name: Scratch
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  baseSpeed: 2
+  baseSpeed: 2.2
   itemType: 0
   itemId: 2
   itemName: "\uD560\uD034\uAE30"

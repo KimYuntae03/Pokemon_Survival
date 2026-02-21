@@ -171,9 +171,9 @@ public class GameManager : MonoBehaviour
             }
             UpdateLevelUI();
             
-            if (level == 9) {
+            if (level == 2) {
                 player.Evolve(1); // 파이숭이 진화
-            } else if (level == 18) {
+            } else if (level == 3) {
                 player.Evolve(2); // 초염몽 진화
             }
 

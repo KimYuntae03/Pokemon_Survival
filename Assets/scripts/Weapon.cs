@@ -78,7 +78,7 @@ public class Weapon : MonoBehaviour
                 this.damage += 5;
                 break;
             case 2: //할퀴기
-                this.speed = Mathf.Max(this.speed - 0.5f, 0.2f); //쿨타임 감소
+                this.speed = Mathf.Max(this.speed - 0.2f, 1f); //쿨타임 감소
                 this.damage += 5;
                 break;
             case 4: //겁나는 얼굴
