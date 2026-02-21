@@ -8105,7 +8105,7 @@ MonoBehaviour:
   - spriteType: 0
     spawnTime: 0.7
     health: 5
-    speed: 1
+    speed: 0.8
   - spriteType: 1
     spawnTime: 0.8
     health: 10
@@ -8117,7 +8117,7 @@ MonoBehaviour:
   - spriteType: 3
     spawnTime: 0.7
     health: 30
-    speed: 1.1
+    speed: 1
   - spriteType: 4
     spawnTime: 0.9
     health: 40
@@ -8133,7 +8133,7 @@ MonoBehaviour:
   - spriteType: 7
     spawnTime: 0.8
     health: 40
-    speed: 1.7
+    speed: 1.5
   - spriteType: 8
     spawnTime: 1
     health: 1000

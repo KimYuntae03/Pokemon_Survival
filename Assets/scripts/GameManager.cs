@@ -221,15 +221,19 @@ public class GameManager : MonoBehaviour
     public void ChangeBgm(bool danger)
     {
         if (isDanger == danger) return;
-
         isDanger = danger;
 
         if (danger) {
             mainBgm.Pause(); // 일반 BGM 일시정지
+            if (bossBgm.isPlaying) bossBgm.Pause();
             dangerBgm.Play(); // 긴급 BGM 재생
         } else {
             dangerBgm.Stop(); // 긴급 BGM 정지
-            mainBgm.UnPause(); // 일반 BGM 다시 재생
+            if (bossBgm.clip != null && !mainBgm.isPlaying) { 
+                bossBgm.UnPause();
+            } else {
+                mainBgm.UnPause();
+            }
         }
     }
 
@@ -256,6 +260,8 @@ public class GameManager : MonoBehaviour
     public void PlayBossBgm()
     {   
         if (mainBgm != null) mainBgm.Stop();
+        if (isDanger) return;
+
         if (dangerBgm != null) dangerBgm.Stop();
         
         if (bossBgm != null) {
