@@ -13,6 +13,7 @@ public class LevelUp : MonoBehaviour
     public TMP_Text descriptionText;
     public GameObject contentPanel;
     public GameObject selectionPointer;
+    public RectTransform uiJoystick;
     
     void Awake()
     {
@@ -23,6 +24,9 @@ public class LevelUp : MonoBehaviour
 
     public void Show()
     {
+        if (uiJoystick != null) {
+            uiJoystick.localScale = Vector3.zero;
+        }
         Time.timeScale = 0f; // 게임 일시정지
         if (contentPanel != null)
             contentPanel.SetActive(true);
@@ -89,7 +93,10 @@ public class LevelUp : MonoBehaviour
     }
 
     public void Hide()
-    {
+    {   
+        if (uiJoystick != null) {
+            uiJoystick.localScale = new Vector3(0.8f, 0.8f, 1f);
+        }
         Time.timeScale = 1f; // 게임 다시 시작
         if (player != null) {
             player.ResetInput(); 

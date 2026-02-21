@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject uiGameOver;
     public GameObject uiGameClear;
+    public GameObject pauseButton;
     bool isDanger = false; //BGM체크 변수
 
     void Awake()
@@ -62,12 +63,15 @@ public class GameManager : MonoBehaviour
 
     public void GameStart()
     {   
-        uiJoystick.localScale = new Vector3(0.7f, 0.7f, 1f);
+        uiJoystick.localScale = new Vector3(0.8f, 0.8f, 1f);
         if (titleBgm != null) { // 타이틀BGM종료
             titleBgm.Stop();
         }
         if (mainBgm != null) {//인게임 BGM재생
             mainBgm.Play();
+        }
+        if (pauseButton != null) {
+            pauseButton.SetActive(true);
         }
 
         Time.timeScale = 1f;
@@ -263,6 +267,19 @@ public class GameManager : MonoBehaviour
     {
         if (bossDeathSfx != null) {
             bossDeathSfx.Play(); 
+        }
+    }
+    public void TogglePause()//일시정지 버튼
+    {
+        if (Time.timeScale > 0) 
+        {
+            Time.timeScale = 0f;
+            uiJoystick.localScale = Vector3.zero;
+        }
+        else 
+        {
+            Time.timeScale = 1f;
+            uiJoystick.localScale = new Vector3(0.8f, 0.8f, 1f);
         }
     }
 }
