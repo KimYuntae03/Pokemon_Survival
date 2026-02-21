@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.2f1 (a9779f353c9b) revision 11106207'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'ko' Physical Memory: 16098 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-happy" at "2026-02-21T14:33:59.0759438Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-21T13:26:20Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-happy" at "2026-02-21T13:26:20.8656726Z"
+Date: 2026-02-21T14:33:59Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/happy/Desktop/Pokemon_Survival
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51614
+52191
 -licensingIpc
 LicenseClient-happy
 -job-worker-count
@@ -65,12 +65,12 @@ C:/Users/happy/Desktop/Pokemon_Survival
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [4260]  Target information:
+Player connection [16320]  Target information:
 
-Player connection [4260]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 3630706017 [EditorId] 3630706017 [Version] 1048832 [Id] WindowsEditor(7,������) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16320]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 1872823973 [EditorId] 1872823973 [Version] 1048832 [Id] WindowsEditor(7,������) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4260] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4260] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16320] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16320] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,7 +82,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 15.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.2f1 (a9779f353c9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -98,21 +98,21 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              25b7739844444bd8b242b6fe775f4e22
+  Session Id:              71200f7cd2f94ae78f51bfc1d9d1b18b
   Correlation Id:          2638a31b8f44e7911627cd5afba4118d
-  External correlation Id: 8300591334101390796
+  External correlation Id: 164653591273340359
   Machine Id:              E/phiWZ3GK2KzZIoEV2vV00tjJc=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-happy" (connect: 0.00s, validation: 0.00s, handshake: 2.30s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-happy-notifications" at "2026-02-21T13:26:23.1743313Z"
-[Licensing::Module] Licensing Background thread has ended after 2.31s
-[Licensing::Module] Licensing is initialized (took 0.85s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-happy" (connect: 0.00s, validation: 0.00s, handshake: 2.27s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-happy-notifications" at "2026-02-21T14:34:01.3533155Z"
+[Licensing::Module] Licensing Background thread has ended after 2.28s
+[Licensing::Module] Licensing is initialized (took 0.49s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 14569590706704-UnityPersXXXX
@@ -120,41 +120,41 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/E
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.859789 seconds.
-- Loaded All Assemblies, in  1.753 seconds
+Registered in 0.493158 seconds.
+- Loaded All Assemblies, in  1.582 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 594 ms
+Android Extension - Scanning For ADB Devices 514 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.674 seconds
-Domain Reload Profiling: 3425ms
-	BeginReloadAssembly (298ms)
+- Finished resetting the current domain, in  1.572 seconds
+Domain Reload Profiling: 3149ms
+	BeginReloadAssembly (378ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (961ms)
-	LoadAllAssembliesAndSetupDomain (391ms)
-		LoadAssemblies (292ms)
+	RebuildCommonClasses (113ms)
+	RebuildNativeTypeToScriptingClass (55ms)
+	initialDomainReloadingComplete (609ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (372ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (383ms)
-			TypeCache.Refresh (378ms)
-				TypeCache.ScanAssembly (359ms)
+		AnalyzeDomain (413ms)
+			TypeCache.Refresh (408ms)
+				TypeCache.ScanAssembly (376ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (1675ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1573ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1564ms)
+		SetupLoadedEditorAssemblies (1475ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (806ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (221ms)
-			ProcessInitializeOnLoadAttributes (351ms)
-			ProcessInitializeOnLoadMethodAttributes (176ms)
+			InitializePlatformSupportModulesInManaged (706ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (234ms)
+			ProcessInitializeOnLoadAttributes (386ms)
+			ProcessInitializeOnLoadMethodAttributes (139ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -167,11 +167,11 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  1.439 seconds
+- Loaded All Assemblies, in  1.577 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -183,381 +183,437 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.489 seconds
-Domain Reload Profiling: 2923ms
-	BeginReloadAssembly (349ms)
+- Finished resetting the current domain, in  1.552 seconds
+Domain Reload Profiling: 3123ms
+	BeginReloadAssembly (332ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
+		CreateAndSetChildDomain (65ms)
 	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (934ms)
-		LoadAssemblies (658ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (1086ms)
+		LoadAssemblies (700ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (442ms)
-			TypeCache.Refresh (339ms)
-				TypeCache.ScanAssembly (314ms)
-			BuildScriptInfoCaches (85ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1490ms)
+		AnalyzeDomain (566ms)
+			TypeCache.Refresh (422ms)
+				TypeCache.ScanAssembly (387ms)
+			BuildScriptInfoCaches (115ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1552ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1218ms)
+		SetupLoadedEditorAssemblies (1277ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (293ms)
-			ProcessInitializeOnLoadAttributes (674ms)
-			ProcessInitializeOnLoadMethodAttributes (223ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (295ms)
+			ProcessInitializeOnLoadAttributes (718ms)
+			ProcessInitializeOnLoadMethodAttributes (227ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.94 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7282 unused Assets / (3.3 MB). Loaded Objects now: 8115.
-Memory consumption went from 161.5 MB to 158.2 MB.
-Total: 14.174900 ms (FindLiveObjects: 0.814600 ms CreateObjectMapping: 1.107600 ms MarkObjects: 10.257600 ms  DeleteObjects: 1.993000 ms)
+Unloading 7282 unused Assets / (4.3 MB). Loaded Objects now: 8115.
+Memory consumption went from 161.6 MB to 157.3 MB.
+Total: 14.208000 ms (FindLiveObjects: 1.240700 ms CreateObjectMapping: 0.373700 ms MarkObjects: 9.342200 ms  DeleteObjects: 3.249300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10279.249858 seconds.
+  Time since last request: 14337.541178 seconds.
   path: Assets/scripts/PoolManager.cs
   artifactKey: Guid(bad0ff34dcb50894bb9dddf75ff3b871) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/PoolManager.cs using Guid(bad0ff34dcb50894bb9dddf75ff3b871) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5fbf82f0c30a23c705691ed61eae0fbd') in 0.1290237 seconds
+Start importing Assets/scripts/PoolManager.cs using Guid(bad0ff34dcb50894bb9dddf75ff3b871) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '410592b9405edb0bd77c3de484062bba') in 0.1391304 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Animation/skill_anim/slow_beem.anim
-  artifactKey: Guid(096b90ed8989d554a985b4a72807711b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/skill_anim/slow_beem.anim using Guid(096b90ed8989d554a985b4a72807711b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1480c106366481c484cca4565a41290') in 0.0508848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Pokeon_Survivor/bgm/Battle item.ogg
-  artifactKey: Guid(43d1f0ade9b70e642811c7685cbe845b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/Battle item.ogg using Guid(43d1f0ade9b70e642811c7685cbe845b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3afb77faec22bcb373369466c26d2156') in 0.0562872 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/ScriptableObjects/Lukky_Egg.asset
-  artifactKey: Guid(f4b1f8940deee1547894bee2b58e8d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/ScriptableObjects/Lukky_Egg.asset using Guid(f4b1f8940deee1547894bee2b58e8d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ccbed17898a874d14edd3d34bde279a') in 0.0575797 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Animation/enemy_walk/Enemy3.controller
-  artifactKey: Guid(221c1e7e9b8c79e478cbb1e9f3ccc273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy3.controller using Guid(221c1e7e9b8c79e478cbb1e9f3ccc273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e277bc272951fa8aa6716efc4b30adf2') in 0.0246006 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Pokeon_Survivor/enemy/MAGNEMITE.png
-  artifactKey: Guid(fcae8fa4be03f4e4a854d5cb0678c3fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/enemy/MAGNEMITE.png using Guid(fcae8fa4be03f4e4a854d5cb0678c3fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33268d265200f1770837bc5df231a2b0') in 0.1092322 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Pokeon_Survivor/enemy/ZUBAT.png
-  artifactKey: Guid(b7da44c215a36e045b15f00a18fc44cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/enemy/ZUBAT.png using Guid(b7da44c215a36e045b15f00a18fc44cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf4de576cde63463ff21b3e3becfc560') in 0.0505318 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Pokeon_Survivor/bgm/Battle victory wild.ogg
-  artifactKey: Guid(3fb01ae53ba176946a6db26c8f3f249f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/Battle victory wild.ogg using Guid(3fb01ae53ba176946a6db26c8f3f249f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88cb69eeee94655512691b6c7af31df2') in 0.0480018 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pokeon_Survivor/bgm/PRSFX- Shadow Claw2.wav
-  artifactKey: Guid(59fb2d12d2db81b40b49580250cf3b6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/PRSFX- Shadow Claw2.wav using Guid(59fb2d12d2db81b40b49580250cf3b6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b65cd717a560f3e57d6a5fb1e3bc9ebf') in 0.0429918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Animation/enemy_walk/Enemy2.controller
-  artifactKey: Guid(268f487907f7ea14eabe7fac333e959b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy2.controller using Guid(268f487907f7ea14eabe7fac333e959b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dfd43bd9412f493398eae4f25667650a') in 0.023467 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Pokeon_Survivor/item/HPUP.png
-  artifactKey: Guid(d5e58de9a36ae2642959786152a8f98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/item/HPUP.png using Guid(d5e58de9a36ae2642959786152a8f98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33dd5f8c305ef1e4625d7639ba4fda0b') in 0.0306952 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Pokeon_Survivor/item/NicePng_pokeball-png_1602460.png
-  artifactKey: Guid(b9c460df7b709b541a448be502ea5b61) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/item/NicePng_pokeball-png_1602460.png using Guid(b9c460df7b709b541a448be502ea5b61) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02521d204df582fc857bcf5fc4f0fa59') in 0.0417312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Animation/enemy_walk/Enemy6.anim
-  artifactKey: Guid(3b12d90186f37704a8381058377b4beb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy6.anim using Guid(3b12d90186f37704a8381058377b4beb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0f1bf17c5ee209512d246ab92e0713c') in 0.0279049 seconds
+  path: Assets/Pokeon_Survivor/bgm/Battle item.ogg
+  artifactKey: Guid(43d1f0ade9b70e642811c7685cbe845b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/bgm/Battle item.ogg using Guid(43d1f0ade9b70e642811c7685cbe845b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffc5cfcff5bc1d90860a4d919e0636bd') in 0.0626819 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Pokeon_Survivor/bgm/INFERNAPE.ogg
-  artifactKey: Guid(7eff61d037841374ca44b3174d64808a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/INFERNAPE.ogg using Guid(7eff61d037841374ca44b3174d64808a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b42d78953bb9bdb0f351db5cde34390a') in 0.0344284 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/scripts/MapSection.cs
-  artifactKey: Guid(e9803510b4c045d44b7947a85325fe43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/MapSection.cs using Guid(e9803510b4c045d44b7947a85325fe43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '936672f920e5719c2b297dc336b41eb5') in 0.0218669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Pokeon_Survivor/enemy/DUSTOX.png
-  artifactKey: Guid(9b6bdcf846fb37e41a3455bcbc92618d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/enemy/DUSTOX.png using Guid(9b6bdcf846fb37e41a3455bcbc92618d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '207b3dd4bf2a7d54af0bda0c97ac485e') in 0.0440776 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/scripts/Bullet.cs
-  artifactKey: Guid(26fecee5e0fc7324696c9078019bb9bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/Bullet.cs using Guid(26fecee5e0fc7324696c9078019bb9bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6ab4dc6eab306ae1f47d7df51bbc967') in 0.0231872 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Pokeon_Survivor/item/CARBOS.png
-  artifactKey: Guid(1d4b3f62ad742d2448aeed7538e345c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/item/CARBOS.png using Guid(1d4b3f62ad742d2448aeed7538e345c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b827c2f217f184b2b6177d04e2191eaf') in 0.0327936 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
-  path: Assets/Pokeon_Survivor/skillIcon/HPUP.png
-  artifactKey: Guid(b74aa3604469a024da2289ee232bd756) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skillIcon/HPUP.png using Guid(b74aa3604469a024da2289ee232bd756) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72f83428fbc330b1f6c37711ffae52b2') in 0.0304229 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  path: Assets/ScriptableObjects/Lukky_Egg.asset
+  artifactKey: Guid(f4b1f8940deee1547894bee2b58e8d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ScriptableObjects/Lukky_Egg.asset using Guid(f4b1f8940deee1547894bee2b58e8d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c57d600d68699aa12a7a86de69d221ed') in 0.0657606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Assets/Pokeon_Survivor/pokemon/MONFERNO_walk.png
-  artifactKey: Guid(5489f64d265be844aa825ef871d2783f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/pokemon/MONFERNO_walk.png using Guid(5489f64d265be844aa825ef871d2783f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60932131dc1a2e79db150602fc83425b') in 0.0483084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+  path: Assets/Animation/Giratina/New up.anim
+  artifactKey: Guid(4a40085ca696307469ab21edb28fb5e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Giratina/New up.anim using Guid(4a40085ca696307469ab21edb28fb5e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '645607ad249081e09e7c4ef46750b4c4') in 0.0299606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Bullet2.prefab
-  artifactKey: Guid(880e40bef3de0424c9fd4db709946f7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Bullet2.prefab using Guid(880e40bef3de0424c9fd4db709946f7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '077e99450dec83fc5e20319d18efc760') in 0.0917034 seconds
+  path: Assets/Animation_Overide_Controller/Chimchar_Controller.overrideController
+  artifactKey: Guid(f6f4abeb6edc68e46a1d1f631673d762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation_Overide_Controller/Chimchar_Controller.overrideController using Guid(f6f4abeb6edc68e46a1d1f631673d762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71af3ff68a1574e883a4414a8e8d989a') in 0.0286559 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Animation/enemy_walk/Enemy1.anim
+  artifactKey: Guid(bd026aa89085b7b45acf1e0ec8e44ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/enemy_walk/Enemy1.anim using Guid(bd026aa89085b7b45acf1e0ec8e44ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c387f86c1d2e8707edae123583e355b4') in 0.0288229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ScriptableObjects/Life Orb.asset
+  artifactKey: Guid(140a9a95d63964c49bb3b45cfe9670c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ScriptableObjects/Life Orb.asset using Guid(140a9a95d63964c49bb3b45cfe9670c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e5c3d0bc7105d2b94ba648ef1014f22') in 0.0242176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/ScriptableObjects/Wave_Bullet.asset
+  artifactKey: Guid(32c51e936bbcc3b4ea3df73e5612444d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ScriptableObjects/Wave_Bullet.asset using Guid(32c51e936bbcc3b4ea3df73e5612444d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc28f2b8022e91ebd49d95994e0770e3') in 0.037304 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/Animation/skill_anim/player_skill1.anim
-  artifactKey: Guid(0e3db562f22b28f4b8ce7b6130720b29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/skill_anim/player_skill1.anim using Guid(0e3db562f22b28f4b8ce7b6130720b29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffcb44594e2060e92a17bb285b5ee1f7') in 0.0330736 seconds
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(1b1cbad2141fe96429c56eddedcf2b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0.unity using Guid(1b1cbad2141fe96429c56eddedcf2b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70216444a007e16a0b38a4bcb3fa09a3') in 0.0295121 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Enemy.prefab
-  artifactKey: Guid(f7634a8c0421f5d43aec206d5d9faf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Enemy.prefab using Guid(f7634a8c0421f5d43aec206d5d9faf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7eaf267a09683b28ac13c1940949bfcf') in 0.0584405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- King's Shield.png
-  artifactKey: Guid(aa65f83b14db51642a8af06ca27c4b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- King's Shield.png using Guid(aa65f83b14db51642a8af06ca27c4b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de163cad28ef75f388ff2ecd51701ebf') in 0.076833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Pokeon_Survivor/skillIcon/PRAS- Techno Blast_1.asset
-  artifactKey: Guid(7138e9345ee40ae4c810ae415909bc35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skillIcon/PRAS- Techno Blast_1.asset using Guid(7138e9345ee40ae4c810ae415909bc35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31ba1aea4759f23eb63e389343887602') in 0.0295341 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Pokeon_Survivor/skills/Ancient-PowerFilesheet.png
-  artifactKey: Guid(90a3dae4c87b6ae4dac251b2cb36a5f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/Ancient-PowerFilesheet.png using Guid(90a3dae4c87b6ae4dac251b2cb36a5f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4abc2311512827201c7f1992092297ca') in 0.0416562 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ScriptableObjects/Hp_Up.asset
-  artifactKey: Guid(d523fde992286ce408c24e1d3b381cc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/ScriptableObjects/Hp_Up.asset using Guid(d523fde992286ce408c24e1d3b381cc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02366d55ae2d1983af469f34c3f4ac83') in 0.0224104 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pokeon_Survivor/item/SITRUSBERRY.png
+  artifactKey: Guid(60f93c5fb16f05b42ac70ec10f5f5cde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/item/SITRUSBERRY.png using Guid(60f93c5fb16f05b42ac70ec10f5f5cde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd94a4abff9d398cb9085f671b02f3ef') in 0.0753055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Pokeon_Survivor/pokemon/MONFERNO.png
-  artifactKey: Guid(0d447c8c04682e2419ac5d534221a7cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/pokemon/MONFERNO.png using Guid(0d447c8c04682e2419ac5d534221a7cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0112aa76c03146ca33e163143aa73655') in 0.0384664 seconds
+  path: Assets/Pokeon_Survivor/pokemon/CHIMCHAR.png
+  artifactKey: Guid(d41d8a4f231d95447b0ed80b808c56be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/pokemon/CHIMCHAR.png using Guid(d41d8a4f231d95447b0ed80b808c56be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4b7976f9e72cfaf619571e048b3b2d3') in 0.0325572 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Pokeon_Survivor/bgm/hit.wav
-  artifactKey: Guid(9e2e50e3941d37f4fa0dd9e3f0e69666) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/hit.wav using Guid(9e2e50e3941d37f4fa0dd9e3f0e69666) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5d556b439813c26e54acba2b86a30b63') in 0.0467219 seconds
+  Time since last request: 0.000041 seconds.
+  path: Assets/Pokeon_Survivor/bgm/Cut.ogg
+  artifactKey: Guid(baa889005e5de064a92c3be3f9abfc37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/bgm/Cut.ogg using Guid(baa889005e5de064a92c3be3f9abfc37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd5852e4899d27a6b47263d411bd0934a') in 0.044525 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pokeon_Survivor/enemy/EKANS.png
+  artifactKey: Guid(eb4f8d2877b8f9d4c9f34a91b59f2980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/enemy/EKANS.png using Guid(eb4f8d2877b8f9d4c9f34a91b59f2980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6854ae22ca149211ab5eb3f8b3f02a4') in 0.0475249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Animation/Exp_Anim.controller
+  artifactKey: Guid(3e11aabc9151b1f4199dfd083dda7a40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Exp_Anim.controller using Guid(3e11aabc9151b1f4199dfd083dda7a40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3cdd8feff34a2f7fcdf118c616e672e8') in 0.0245742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/scripts/Bullet.cs
+  artifactKey: Guid(26fecee5e0fc7324696c9078019bb9bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/scripts/Bullet.cs using Guid(26fecee5e0fc7324696c9078019bb9bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8b59149298cc60d82dbdfb157ebb145') in 0.0215485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
   Time since last request: 0.000040 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Weapon_Flame.prefab
+  artifactKey: Guid(2922432d2c6a9354b9c09abc2b60426d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Weapon_Flame.prefab using Guid(2922432d2c6a9354b9c09abc2b60426d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1edd5f17f0052c4b44a64cfd675248a6') in 0.0621618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Aire Mont Sélénite_31.prefab
+  artifactKey: Guid(6b0285542bff0124cba3520329d7d81c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Aire Mont Sélénite_31.prefab using Guid(6b0285542bff0124cba3520329d7d81c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de049045705e6320c2e03d4be32ea062') in 0.0440166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pokeon_Survivor/bgm/GUI sel cursor.ogg
+  artifactKey: Guid(725e0f0a22f82bd459118060a000dfe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/bgm/GUI sel cursor.ogg using Guid(725e0f0a22f82bd459118060a000dfe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbcacb8f735297cbef2c1a75dd6f31c9') in 0.0468207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Animation/enemy_walk/Enemy0.controller
+  artifactKey: Guid(3f94bfad9fc571e4a8380d372cfe9ac6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/enemy_walk/Enemy0.controller using Guid(3f94bfad9fc571e4a8380d372cfe9ac6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fec8ff2bfc9530c9043906e5493b6c8c') in 0.0233957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/scary_face.prefab
+  artifactKey: Guid(b8757161a63d4154a8879aef0559a2f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/scary_face.prefab using Guid(b8757161a63d4154a8879aef0559a2f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '478a05842bd0491a55db9b257804a050') in 0.0387591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Enemy.prefab
+  artifactKey: Guid(f7634a8c0421f5d43aec206d5d9faf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Enemy.prefab using Guid(f7634a8c0421f5d43aec206d5d9faf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbe4f558175578696e6617318922a0da') in 0.0655363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pokeon_Survivor/skills/Custom_Sandsear Storm.png
+  artifactKey: Guid(f3f1332a7c41e6743939ecb174606532) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/Custom_Sandsear Storm.png using Guid(f3f1332a7c41e6743939ecb174606532) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35fe7d19b7e5af9c741d55a4f55a5a30') in 0.0691002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pokeon_Survivor/skills/Crunch.png
+  artifactKey: Guid(44c56a0f7e3dfed4f849e27760fad312) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/Crunch.png using Guid(44c56a0f7e3dfed4f849e27760fad312) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b39a4c3d15bd53062319421b74770fea') in 0.0474458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/ScriptableObjects/Hp_Up.asset
+  artifactKey: Guid(d523fde992286ce408c24e1d3b381cc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ScriptableObjects/Hp_Up.asset using Guid(d523fde992286ce408c24e1d3b381cc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19091c88c8dc832fee828d7a11bac105') in 0.024883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Animation_Overide_Controller/INFERNAPE_Controller.overrideController
+  artifactKey: Guid(962751f21cba6134ba6c45aa0dd0fdff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation_Overide_Controller/INFERNAPE_Controller.overrideController using Guid(962751f21cba6134ba6c45aa0dd0fdff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73d2945f56288926f0f88ca7e40d1a37') in 0.0250145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pokeon_Survivor/bgm/hit.wav
+  artifactKey: Guid(9e2e50e3941d37f4fa0dd9e3f0e69666) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/bgm/hit.wav using Guid(9e2e50e3941d37f4fa0dd9e3f0e69666) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23c58058ebe4bb3cd250efd0ee36e1ba') in 0.0418164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
   path: Assets/Animation/enemy_walk/Enemy7.controller
   artifactKey: Guid(ee8151b5df663224da9d22ca3cb8bac4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy7.controller using Guid(ee8151b5df663224da9d22ca3cb8bac4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bc78e45756e498c88d8c7cacf591043') in 0.0229573 seconds
+Start importing Assets/Animation/enemy_walk/Enemy7.controller using Guid(ee8151b5df663224da9d22ca3cb8bac4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c822c9eb90bd58b4e388afbde8a97f14') in 0.0275242 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pokeon_Survivor/skills/PRAS- King's Shield.png
+  artifactKey: Guid(aa65f83b14db51642a8af06ca27c4b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/PRAS- King's Shield.png using Guid(aa65f83b14db51642a8af06ca27c4b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca3ea3f2ea0af71dee110d981be7c69f') in 0.0651498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pokeon_Survivor/skills/PRAS- Magical Leaf.png
+  artifactKey: Guid(4ebe44f76a7405c4b9428d3dfe800d38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/PRAS- Magical Leaf.png using Guid(4ebe44f76a7405c4b9428d3dfe800d38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6a2ff28b0477a927785b6c88a1ec8c0c') in 0.0426839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
   path: Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 2월 4일 오후 09_04_17.png
   artifactKey: Guid(a2eab5ad5edde0a4da574c9f9602fc23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 2월 4일 오후 09_04_17.png using Guid(a2eab5ad5edde0a4da574c9f9602fc23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0325ae974c83f9eb588920d7859b88dd') in 0.0303393 seconds
+Start importing Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 2월 4일 오후 09_04_17.png using Guid(a2eab5ad5edde0a4da574c9f9602fc23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e189a0f9e3d344a331a775c9ec5515b5') in 0.0295113 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Bullet 0.prefab
-  artifactKey: Guid(dc59705931ba99f41a2ce7eb8230211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Bullet 0.prefab using Guid(dc59705931ba99f41a2ce7eb8230211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b532c38b2a0af980d28613e8e3f3ab70') in 0.0279053 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pokeon_Survivor/Tiles&Image/Aire Mont Sélénite_9.asset
+  artifactKey: Guid(7cf739523752bc74f8d6d02a8f1edc39) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Tiles&Image/Aire Mont Sélénite_9.asset using Guid(7cf739523752bc74f8d6d02a8f1edc39) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2efd6fae98218d2a224e010a13f4d3df') in 0.0246148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pokeon_Survivor/Tiles&Image/cursor.png
-  artifactKey: Guid(bea32984a7e86a44b923a282d5ff86f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Tiles&Image/cursor.png using Guid(bea32984a7e86a44b923a282d5ff86f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b662f7d4acd2884784c0f9d8728cc93') in 0.0306003 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Settings/UniversalRP.asset
-  artifactKey: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf621683d36ce2a3107936bf8167cd9d') in 0.0743968 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a972e53df7a1f979ce410c9de098d629') in 0.2320129 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Weapon_scratch.prefab
-  artifactKey: Guid(47194eb479b17c64aa978afaec65795d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Weapon_scratch.prefab using Guid(47194eb479b17c64aa978afaec65795d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2d7f9e05918999559b7c26b36cc0d3e') in 0.0311639 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Animation/skill_anim/PRAS- Shadow Claw_0.controller
-  artifactKey: Guid(99a507ebc560edf4a957443eb7d8899a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/skill_anim/PRAS- Shadow Claw_0.controller using Guid(99a507ebc560edf4a957443eb7d8899a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be202e111206a97eccb4e9b7298270e0') in 0.0204772 seconds
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 1월 30일 오후 05_35_44.png
+  artifactKey: Guid(80b98796244c59b49aac24cb24a76801) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 1월 30일 오후 05_35_44.png using Guid(80b98796244c59b49aac24cb24a76801) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7082f17a96b3f64535bacc9e14e39ca0') in 0.0395265 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- All Out Pummeling.png
-  artifactKey: Guid(2e05e22867bdf6a47b14d4afed45b667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- All Out Pummeling.png using Guid(2e05e22867bdf6a47b14d4afed45b667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffdbb6348ac473a6db7295fc1d492084') in 0.0819416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 41
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Pokeon_Survivor/pokemon/1.png
-  artifactKey: Guid(659f88f6bdd47f840b10c7c2d68fbcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/pokemon/1.png using Guid(659f88f6bdd47f840b10c7c2d68fbcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ee6e8ee2369fc10b7fb8843a3436f5e6') in 0.033063 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pokeon_Survivor/item/FRESHWATER.png
+  artifactKey: Guid(393d47397442cc14a9a0de39a4c99fb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/item/FRESHWATER.png using Guid(393d47397442cc14a9a0de39a4c99fb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18fc51ffe7af8bafe8c49d695c06265e') in 0.0272661 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Pokeon_Survivor/enemy/BRONZONG.png
-  artifactKey: Guid(e93c4b47e22b62b408bed41fd1662675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/enemy/BRONZONG.png using Guid(e93c4b47e22b62b408bed41fd1662675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8632e9e05c5d209805da53144df035dd') in 0.0436089 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pokeon_Survivor/Tiles&Image/Joystick.png
+  artifactKey: Guid(1cd0fe578f64332468076b9498fa6426) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Tiles&Image/Joystick.png using Guid(1cd0fe578f64332468076b9498fa6426) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fbdb6f3241b3b859cd77741a04c2b601') in 0.027658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
-  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e84199014004833e52e74694853b36c') in 0.0347794 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Bullet 0.prefab
+  artifactKey: Guid(dc59705931ba99f41a2ce7eb8230211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Bullet 0.prefab using Guid(dc59705931ba99f41a2ce7eb8230211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '362850315f9313db675ec4135415003c') in 0.0336281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Pokeon_Survivor/Tiles&Image/cursor.png
+  artifactKey: Guid(bea32984a7e86a44b923a282d5ff86f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Tiles&Image/cursor.png using Guid(bea32984a7e86a44b923a282d5ff86f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1837d8afdf0ab027ee4b55fc1bcc457') in 0.0300813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/UniversalRP.asset
+  artifactKey: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16480525f5dcff8ad9ae4ea6e591d424') in 0.0665102 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 1월 30일 오후 03_26_46 (1).png
+  artifactKey: Guid(4cce44854e28e3242b77e643f3f4f403) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Tiles&Image/ChatGPT Image 2026년 1월 30일 오후 03_26_46 (1).png using Guid(4cce44854e28e3242b77e643f3f4f403) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '151a6f6bb89d75bfd3e0b646a829e729') in 0.0294639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ScriptableObjects/Item_Alkaloid.asset
+  artifactKey: Guid(872d1d4e1e7163d40bf25c0e3ff6363a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ScriptableObjects/Item_Alkaloid.asset using Guid(872d1d4e1e7163d40bf25c0e3ff6363a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4144a7a6e1ba392dac41549c11fb798c') in 0.0284691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Pokeon_Survivor/skills/firepoison.png
+  artifactKey: Guid(11b67de2f0ac0214f9f92df08f3ac249) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/firepoison.png using Guid(11b67de2f0ac0214f9f92df08f3ac249) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7cd42fec634359e760c0da1f7dd4749') in 0.076037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc184ef16791215489308d78408ae142') in 0.0268281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Weapon_scratch.prefab
+  artifactKey: Guid(47194eb479b17c64aa978afaec65795d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Weapon_scratch.prefab using Guid(47194eb479b17c64aa978afaec65795d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd87f27af73f2fe6269851e9f910f6a2e') in 0.0312048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animation/skill_anim/PRAS- Shadow Claw_0.controller
+  artifactKey: Guid(99a507ebc560edf4a957443eb7d8899a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/skill_anim/PRAS- Shadow Claw_0.controller using Guid(99a507ebc560edf4a957443eb7d8899a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '012f6823f729b3e1a3cd2d77fff0060d') in 0.0258043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Animation/enemy_walk/Enemy3.anim
+  artifactKey: Guid(440e0fd1c6b53514d940e5e520e7f85e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/enemy_walk/Enemy3.anim using Guid(440e0fd1c6b53514d940e5e520e7f85e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac7033fb921be3121aa458e6400747ce') in 0.0227555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animation/skill_anim/PRAS- Aura Sphere_0.controller
+  artifactKey: Guid(13bc55ad36351cd45adca170e79bfc6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/skill_anim/PRAS- Aura Sphere_0.controller using Guid(13bc55ad36351cd45adca170e79bfc6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6200cb2f21f518ae15852df4920f29bf') in 0.0248389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pokeon_Survivor/pokemon/1.png
+  artifactKey: Guid(659f88f6bdd47f840b10c7c2d68fbcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/pokemon/1.png using Guid(659f88f6bdd47f840b10c7c2d68fbcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd9faf28c81eab22d41526dbdc3bc8b3') in 0.0271759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pokeon_Survivor/enemy/HOUNDOOM.png
+  artifactKey: Guid(564444863ea646348b9511ee1631ac3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/enemy/HOUNDOOM.png using Guid(564444863ea646348b9511ee1631ac3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '594cce8dc95de1e8dc8fa8392b3a4c4e') in 0.0558859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Right.anim
+  artifactKey: Guid(bfdb3b919ce9a4b4087b510b11e51c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Right.anim using Guid(bfdb3b919ce9a4b4087b510b11e51c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ef9456f7ec2e53bf5dfe0db9a4d5455') in 0.0274403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
   path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
   artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e6cc90db35ba5b6a033169613f830a3') in 0.024308 seconds
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24868c08c29c13be7cb64c6e9cdd53aa') in 0.0251897 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
@@ -565,447 +621,291 @@ Received Import Request.
   Time since last request: 0.000021 seconds.
   path: Assets/scripts/Item.cs
   artifactKey: Guid(63b1675fe1509214795febab52c6b9ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/Item.cs using Guid(63b1675fe1509214795febab52c6b9ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9aaef9f5750fab930e883902f5ba07a5') in 0.0232894 seconds
+Start importing Assets/scripts/Item.cs using Guid(63b1675fe1509214795febab52c6b9ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '56410db51a4971cf76c371f042b46c5e') in 0.0231965 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 0.000021 seconds.
   path: Assets/Pokeon_Survivor/bgm/MONFERNO.ogg
   artifactKey: Guid(9d27f0afd9adf024eb7e374815d732eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/bgm/MONFERNO.ogg using Guid(9d27f0afd9adf024eb7e374815d732eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5300606edc44ce237468cbdeb275ec14') in 0.0371405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
-  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a9ce9e36d3d177ec2745ab9a1376d39f') in 0.0229966 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Bullet 1.prefab
-  artifactKey: Guid(5dd4b54853002984aaf5d9040eeec2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Bullet 1.prefab using Guid(5dd4b54853002984aaf5d9040eeec2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85afddcdfc2934399b7b5ccb158dc5ca') in 0.0366543 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Pokeon_Survivor/skills/animsheet.png
-  artifactKey: Guid(784540f164f8cf64e879ae9962b156ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/animsheet.png using Guid(784540f164f8cf64e879ae9962b156ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f04906d661fb84e06a3da30936e97a1') in 0.0502335 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Animation/Player_walk/MONFERNO/MONFERNO_Idle.anim
-  artifactKey: Guid(6d10714375bd4e942b9ecd2c3a9ac50c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/MONFERNO/MONFERNO_Idle.anim using Guid(6d10714375bd4e942b9ecd2c3a9ac50c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '719a357ad8a1d2dc229d3b970136ebe3') in 0.0246469 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Right.anim
-  artifactKey: Guid(bfdb3b919ce9a4b4087b510b11e51c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Right.anim using Guid(bfdb3b919ce9a4b4087b510b11e51c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ce3c34c4b3993f8550b72f92dc2a9d96') in 0.0293437 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Idle.anim
-  artifactKey: Guid(cb1374855fd577d4a8d015b957049c18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Idle.anim using Guid(cb1374855fd577d4a8d015b957049c18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f01db548359cf2298e161ed2f8c2ddf') in 0.0238364 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
-  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a29b7c46043ad3e370eacf07ada57f15') in 0.0221851 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- Water.png
-  artifactKey: Guid(a7a8571695a0dc045a66f606b88de5bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- Water.png using Guid(a7a8571695a0dc045a66f606b88de5bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '149f1e7a02dbb7ce185aea5e7d0919c1') in 0.123947 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 108
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Animation/Player_walk/Chimchar/Chimchar_Up.anim
-  artifactKey: Guid(438890def0171d945bf5ced85789870a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/Chimchar/Chimchar_Up.anim using Guid(438890def0171d945bf5ced85789870a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '86184d590136516abee950a6850a181d') in 0.0262446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
-  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5ea10e72ae5dc4894ac36ecbdd3f3be') in 0.0218061 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Samples/Input System/1.17.0/On-Screen Controls/Stick.prefab
-  artifactKey: Guid(f77f88b14a477764bb65a49d28c02d33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Samples/Input System/1.17.0/On-Screen Controls/Stick.prefab using Guid(f77f88b14a477764bb65a49d28c02d33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '477f34b67442b02cbc6c42f39bbcdd64') in 0.047381 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
-  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e230ad5444239cd6e7dcefb32b8338dd') in 0.0237166 seconds
+Start importing Assets/Pokeon_Survivor/bgm/MONFERNO.ogg using Guid(9d27f0afd9adf024eb7e374815d732eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e50442ff1e1e5e86de7295f04b5b509e') in 0.0343215 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9c10970e589e274671c8834bbbc111c') in 0.0224962 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Animation/GIRATINA_0.controller
+  artifactKey: Guid(d9aafe27b3a388e4dab1f8bcd901c024) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/GIRATINA_0.controller using Guid(d9aafe27b3a388e4dab1f8bcd901c024) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '426a76aa93cea1dce724c63f7aee70f6') in 0.0227716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7919a36619858e5a903cc8d89525e535') in 0.0290192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '553a39a4df0c95d1e4e30543746a753b') in 0.0411225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Samples/Input System/1.17.0/On-Screen Controls/Button.prefab
+  artifactKey: Guid(05f32eddd3e41fd4597ada617b785928) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/Input System/1.17.0/On-Screen Controls/Button.prefab using Guid(05f32eddd3e41fd4597ada617b785928) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fc184394a360a39f579aad9050b6313') in 0.0680385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '83c9c71a8eac2ae0473854f080479fc1') in 0.0278056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcaf6a0a65800e9f78e28fe59ba01e06') in 0.0306232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_walk_0.controller
+  artifactKey: Guid(982e9c2d31343284ebfc91a6bff8750c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_walk_0.controller using Guid(982e9c2d31343284ebfc91a6bff8750c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9978fd891634aeefed565350e47155a') in 0.0288065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
+  artifactKey: Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph using Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7942baa99745f8e5814f91a36c7b1cf1') in 0.044459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
   path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
   artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48e0e05bb6799a57e99c5ed310f46ccf') in 0.0212699 seconds
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fcb83bf5f20841aa65700bf9a1652799') in 0.0202193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/malgun.ttf
+  artifactKey: Guid(b9a674e73d07528428126c6c9b475417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/malgun.ttf using Guid(b9a674e73d07528428126c6c9b475417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7adc68fb8aa0e0037669dae165b364c7') in 0.0441142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Animation/Player_walk/Chimchar/Chimchar_Right.anim
+  artifactKey: Guid(5dc539d49ab02a44da4d6ca8a5fb02e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Player_walk/Chimchar/Chimchar_Right.anim using Guid(5dc539d49ab02a44da4d6ca8a5fb02e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47462f574a11f71120cc686d2b7da382') in 0.0236622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Animation/Player_walk/Chimchar/player1.controller
+  artifactKey: Guid(f0f01c6ab90780744940c850fce2f56b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Player_walk/Chimchar/player1.controller using Guid(f0f01c6ab90780744940c850fce2f56b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd895cc30bbd165ad29c245010a29b1e') in 0.0307368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c3b6ad50d425cfb0a4b835ac7748585') in 0.0263161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Pokeon_Survivor/skills/PRAS- Aura Sphere.png
+  artifactKey: Guid(02d60e694a9fd78459a0b13828ac4031) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/PRAS- Aura Sphere.png using Guid(02d60e694a9fd78459a0b13828ac4031) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e2edf787c5e2747b0ab65982dfd9b618') in 0.0325039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pokeon_Survivor/bgm/Battle ball hit.ogg
+  artifactKey: Guid(c4dc58f3b0d27b941a5b758e99ce90bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/bgm/Battle ball hit.ogg using Guid(c4dc58f3b0d27b941a5b758e99ce90bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11a002d333694558578cba5412fb6c0e') in 0.0481138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/grass_field.prefab
+  artifactKey: Guid(0a633c2e0b39606419da272120f26b33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/grass_field.prefab using Guid(0a633c2e0b39606419da272120f26b33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd271ebfb17871b38cca465a478e8ca10') in 0.0463643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
+  artifactKey: Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph using Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '39a042021461b2081a8cad73dd74a6e7') in 0.0280615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/scripts/Spawner.cs
+  artifactKey: Guid(cd78005032bf4134baed27530526a60b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/scripts/Spawner.cs using Guid(cd78005032bf4134baed27530526a60b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45a4001fe6c05a426828024188e03072') in 0.0205129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '379af3b6c15842b15da180b3461fe779') in 0.0258131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Animation/Player_walk/MONFERNO/MONFERNO_Up.anim
+  artifactKey: Guid(2ec169340bffd384aa58f6da207e2b50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Player_walk/MONFERNO/MONFERNO_Up.anim using Guid(2ec169340bffd384aa58f6da207e2b50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64f0332ce46548e5313875c1db7a80a6') in 0.0244205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Animation/Exp_Animation.anim
+  artifactKey: Guid(3622c1d71bf507448beeb9e4e4e54dbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Exp_Animation.anim using Guid(3622c1d71bf507448beeb9e4e4e54dbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95801ab255adc60033ab8d24f47131ca') in 0.0237727 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- Rock.png
-  artifactKey: Guid(fbb47bb62fdc18b459b1601fd1081f1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- Rock.png using Guid(fbb47bb62fdc18b459b1601fd1081f1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87e89875c8bd68d02b4a70d05e21ab40') in 0.0580913 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/malgun.ttf
-  artifactKey: Guid(b9a674e73d07528428126c6c9b475417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/malgun.ttf using Guid(b9a674e73d07528428126c6c9b475417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd3ec71a15d4f28114e56159e21c86c5') in 0.050232 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Animation/Player_walk/Chimchar/Chimchar_Right.anim
-  artifactKey: Guid(5dc539d49ab02a44da4d6ca8a5fb02e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/Chimchar/Chimchar_Right.anim using Guid(5dc539d49ab02a44da4d6ca8a5fb02e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2bada02eac73c4cb663e0c96f186318') in 0.0264492 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Animation/Player_walk/Chimchar/Chimchar_down.anim
-  artifactKey: Guid(9392c5ac8bd227a469516f12a4a3f3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/Chimchar/Chimchar_down.anim using Guid(9392c5ac8bd227a469516f12a4a3f3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50f9d8ebe8e8dcbf5c323a1065211370') in 0.0232688 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/scripts/RecoveryItem.cs
-  artifactKey: Guid(67bdf384958159c40bbc9057a7783956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/RecoveryItem.cs using Guid(67bdf384958159c40bbc9057a7783956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e2f3af629a6d9fe615cd2795680d0529') in 0.0227109 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- Techno Blast.png
-  artifactKey: Guid(aa645461400af0240a633b83fb2ce585) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- Techno Blast.png using Guid(aa645461400af0240a633b83fb2ce585) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f530b39b37b59c8751f0cb18884ee11') in 0.1619181 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 132
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pokeon_Survivor/item/LUCKYEGG.png
-  artifactKey: Guid(33747b5232c8472408e1fee5d61cf518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/item/LUCKYEGG.png using Guid(33747b5232c8472408e1fee5d61cf518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16ed10f8e0ff3e36e88409903326a9a2') in 0.0261007 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- Slash.png
-  artifactKey: Guid(ff51a13042a16c445a610a76985f4a7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- Slash.png using Guid(ff51a13042a16c445a610a76985f4a7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49bfed6e928dc86577a4af3ca4aa8868') in 0.1430099 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 122
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/scripts/Weapon.cs
-  artifactKey: Guid(fd531600d8027c64bba56a5d5b2c7ce0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/Weapon.cs using Guid(fd531600d8027c64bba56a5d5b2c7ce0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd8b51374dbe59767be376ad0489c139') in 0.0252815 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Pokeon_Survivor/bgm/GUI sel decision.ogg
-  artifactKey: Guid(bee35b8759d291949a6815e8af8f79a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pokeon_Survivor/bgm/GUI sel decision.ogg using Guid(bee35b8759d291949a6815e8af8f79a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b41aba50432fa94c3fc3bc4c6ecfe882') in 0.1162295 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Animation/Exp_Animation.anim
-  artifactKey: Guid(3622c1d71bf507448beeb9e4e4e54dbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Exp_Animation.anim using Guid(3622c1d71bf507448beeb9e4e4e54dbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b27d651c47bcc1b1f50cece243b34ec') in 0.0246704 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
   path: Assets/Animation/skill_anim/PRAS- Psybeam_0.controller
   artifactKey: Guid(0798f5bad8d38264ba2b5a95904738f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/skill_anim/PRAS- Psybeam_0.controller using Guid(0798f5bad8d38264ba2b5a95904738f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40ba16a4eded9044dd07c7fe121fcf3e') in 0.0216582 seconds
+Start importing Assets/Animation/skill_anim/PRAS- Psybeam_0.controller using Guid(0798f5bad8d38264ba2b5a95904738f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3767f27826f7790347acf5bd1a3881d0') in 0.0237089 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
+  Time since last request: 0.000015 seconds.
   path: Assets/Pokeon_Survivor/skillIcon/animsheet_5.asset
   artifactKey: Guid(78d58c0a240d1e747bed8d6a592086b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skillIcon/animsheet_5.asset using Guid(78d58c0a240d1e747bed8d6a592086b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd28809a22805952e6ed8b083bc76cb7') in 0.023021 seconds
+Start importing Assets/Pokeon_Survivor/skillIcon/animsheet_5.asset using Guid(78d58c0a240d1e747bed8d6a592086b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab9005f310080aa5857a282b76083acc') in 0.0231032 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Pokeon_Survivor/skills/PRAS- Magma Storm.png
-  artifactKey: Guid(10462f6ffd0097446be0ff1fb2626aaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skills/PRAS- Magma Storm.png using Guid(10462f6ffd0097446be0ff1fb2626aaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd010f7776ed34091eb248dddfd7413ba') in 0.0648395 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ded745fe8a99a78ef57c041f22cfc9f') in 0.0274615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pokeon_Survivor/Tiles&Image/SmallHandle.png
-  artifactKey: Guid(ab85b10ed979aa044a54949844dfad18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Tiles&Image/SmallHandle.png using Guid(ab85b10ed979aa044a54949844dfad18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71909493260f7df2aad85c87a064efad') in 0.0319631 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Pokeon_Survivor/skillIcon/PRAS- Aura Sphere_0.asset
-  artifactKey: Guid(d52956440f1b5a6408ea875fb0bb8dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/skillIcon/PRAS- Aura Sphere_0.asset using Guid(d52956440f1b5a6408ea875fb0bb8dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6da972a7737b192a0170b2eeaa453df') in 0.0308668 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/SITRUSBERRY_0.prefab
-  artifactKey: Guid(624c1eee5c38e5a4ea674597b75a8191) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/SITRUSBERRY_0.prefab using Guid(624c1eee5c38e5a4ea674597b75a8191) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9749b77cc1927333a38d9eaea207d92') in 0.0273732 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
-  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e60136668670bc18b5a8a2c83ea5f74f') in 0.0477292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pokeon_Survivor/Prefabs/Exp.prefab
-  artifactKey: Guid(43735b96250c9464989fbd6ed5d47ae3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Pokeon_Survivor/Prefabs/Exp.prefab using Guid(43735b96250c9464989fbd6ed5d47ae3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f842addb36981857c30f2ca83c684c8b') in 0.0381205 seconds
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pokeon_Survivor/skills/Fakeout.png
+  artifactKey: Guid(7e4641e5f424b2c4b94b66f1bd8c0978) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/skills/Fakeout.png using Guid(7e4641e5f424b2c4b94b66f1bd8c0978) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28128241fc269fd016b6f27305d7084c') in 0.0402893 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Down.anim
-  artifactKey: Guid(d0e8017ce13dee741bab885df62a05e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/INFERNAPE/INFERNAPE_Down.anim using Guid(d0e8017ce13dee741bab885df62a05e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd922bfb4bfd0fa354e027505bb739c6a') in 0.0208071 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/scripts/ItemData.cs
+  artifactKey: Guid(47aa224b62b9f0147a22c34d1f001a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/scripts/ItemData.cs using Guid(47aa224b62b9f0147a22c34d1f001a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55dab6deb542fb596f76d84adc5b751f') in 0.0224424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55298927cba7ad875bb4e100cdd86264') in 0.0218981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+  artifactKey: Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader using Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9756bd3d3f3f03e593d2f8021ed46f12') in 0.023993 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
+  path: Assets/Pokeon_Survivor/enemy/RATTATA.png
+  artifactKey: Guid(35ae0998c176005409cd644f80bd9ae8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/enemy/RATTATA.png using Guid(35ae0998c176005409cd644f80bd9ae8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1871537b4c6f64f9c56e512d1a97a4eb') in 0.0480941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Exp.prefab
+  artifactKey: Guid(43735b96250c9464989fbd6ed5d47ae3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Exp.prefab using Guid(43735b96250c9464989fbd6ed5d47ae3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ffd04d9ac243ab26e4d6183084453a6') in 0.0335854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/HitMaterial.mat
+  artifactKey: Guid(680d3cb3ef974034d94e134670f2b61d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HitMaterial.mat using Guid(680d3cb3ef974034d94e134670f2b61d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8301840839633ab4624d3dd25981d59') in 0.0234859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
   path: Assets/Animation/enemy_walk/Enemy0.anim
   artifactKey: Guid(9ab501a5ab172104dada00185bfa9317) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy0.anim using Guid(9ab501a5ab172104dada00185bfa9317) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3107f8df773f0a710b8f61ef9ae55514') in 0.0247892 seconds
+Start importing Assets/Animation/enemy_walk/Enemy0.anim using Guid(9ab501a5ab172104dada00185bfa9317) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2aa0d3876810397e772e98965c0d6555') in 0.0237711 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Animation/Player_walk/MONFERNO/MONFERNO_Right.anim
-  artifactKey: Guid(d1476b26c1067e341800f243b70ed32a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/Player_walk/MONFERNO/MONFERNO_Right.anim using Guid(d1476b26c1067e341800f243b70ed32a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c6bc8b17fc17a80b943fdb27e00cbc6') in 0.0226302 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pokeon_Survivor/Prefabs/Weapon_scaryface.prefab
+  artifactKey: Guid(52cbf2a54d90b6b4198f9355751c46e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Pokeon_Survivor/Prefabs/Weapon_scaryface.prefab using Guid(52cbf2a54d90b6b4198f9355751c46e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40da2319b4f3e9366ebc33c7f04810ae') in 0.0258115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Animation/enemy_walk/Enemy5.anim
-  artifactKey: Guid(2f3b0272b56501e499b49173148ad425) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animation/enemy_walk/Enemy5.anim using Guid(2f3b0272b56501e499b49173148ad425) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '574bce08d25d4ffaff2491f54749cfd9') in 0.0251687 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  1.505 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.63 ms, found 4 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.362 seconds
-Domain Reload Profiling: 2867ms
-	BeginReloadAssembly (447ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (31ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (126ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (917ms)
-		LoadAssemblies (743ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (372ms)
-			TypeCache.Refresh (21ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (328ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1363ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1081ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (300ms)
-			ProcessInitializeOnLoadAttributes (620ms)
-			ProcessInitializeOnLoadMethodAttributes (124ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7280 unused Assets / (4.4 MB). Loaded Objects now: 8131.
-Memory consumption went from 163.7 MB to 159.2 MB.
-Total: 10.900800 ms (FindLiveObjects: 0.542400 ms CreateObjectMapping: 0.370800 ms MarkObjects: 6.761900 ms  DeleteObjects: 3.224000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (1.7 MB). Loaded Objects now: 8131.
-Memory consumption went from 156.2 MB to 154.5 MB.
-Total: 12.715100 ms (FindLiveObjects: 1.031100 ms CreateObjectMapping: 0.324600 ms MarkObjects: 10.879700 ms  DeleteObjects: 0.476900 ms)
-
-Prepare: number of updated asset objects reloaded= 179
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 52.40 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (1.7 MB). Loaded Objects now: 8131.
-Memory consumption went from 156.5 MB to 154.8 MB.
-Total: 47.172300 ms (FindLiveObjects: 5.652100 ms CreateObjectMapping: 0.700200 ms MarkObjects: 39.602800 ms  DeleteObjects: 1.214300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-[Licensing::Client] Successfully resolved entitlement details
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  1.382 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.89 ms, found 4 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.625 seconds
-Domain Reload Profiling: 3012ms
-	BeginReloadAssembly (342ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (112ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (911ms)
-		LoadAssemblies (572ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (471ms)
-			TypeCache.Refresh (264ms)
-				TypeCache.ScanAssembly (238ms)
-			BuildScriptInfoCaches (176ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1626ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1305ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (342ms)
-			ProcessInitializeOnLoadAttributes (750ms)
-			ProcessInitializeOnLoadMethodAttributes (179ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (30ms)
-Refreshing native plugins compatible for Editor in 2.49 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7280 unused Assets / (2.5 MB). Loaded Objects now: 8134.
-Memory consumption went from 161.5 MB to 159.0 MB.
-Total: 19.711000 ms (FindLiveObjects: 1.051300 ms CreateObjectMapping: 1.472600 ms MarkObjects: 11.743600 ms  DeleteObjects: 5.441000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

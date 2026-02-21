@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     public float expMultiplier = 1.0f; //경험치 추가배율
     public LevelUp uiLevelUp; //레벨업 시 연결할 UI변수
     public float damageBuff = 1.0f; //데미지 관리 기본 1배
-    
+    bool isBossPhase = false;
+
     public Slider expSlider;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI killText;
@@ -224,15 +225,19 @@ public class GameManager : MonoBehaviour
         isDanger = danger;
 
         if (danger) {
-            mainBgm.Pause(); // 일반 BGM 일시정지
+            if (mainBgm.isPlaying) mainBgm.Pause();
             if (bossBgm.isPlaying) bossBgm.Pause();
             dangerBgm.Play(); // 긴급 BGM 재생
         } else {
             dangerBgm.Stop(); // 긴급 BGM 정지
-            if (bossBgm.clip != null && !mainBgm.isPlaying) { 
+            if (isBossPhase) {
+                // 보스전이었다면 보스 브금 복구
                 bossBgm.UnPause();
+                if (!bossBgm.isPlaying) bossBgm.Play();
             } else {
+                // 일반 상황이었다면 메인 브금 복구
                 mainBgm.UnPause();
+                if (!mainBgm.isPlaying) mainBgm.Play();
             }
         }
     }
@@ -259,6 +264,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayBossBgm()
     {   
+        isBossPhase = true;
         if (mainBgm != null) mainBgm.Stop();
         if (isDanger) return;
 
@@ -270,7 +276,8 @@ public class GameManager : MonoBehaviour
     }
 
     public void PlayBossDeathSfx()
-    {
+    {   
+        isBossPhase = false;
         if (bossDeathSfx != null) {
             bossDeathSfx.Play(); 
         }
