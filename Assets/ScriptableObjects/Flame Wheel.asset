@@ -22,11 +22,11 @@ MonoBehaviour:
   baseDamage: 5
   baseCount: 1
   damages:
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
   counts: 0100000001000000010000000100000001000000
   projectile: {fileID: 5462467204441570806, guid: dc59705931ba99f41a2ce7eb8230211a, type: 3}
   itemPrefab: {fileID: 8016220021746060585, guid: 2922432d2c6a9354b9c09abc2b60426d, type: 3}

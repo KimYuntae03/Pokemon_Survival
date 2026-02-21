@@ -70,7 +70,7 @@ public class Weapon : MonoBehaviour
         switch(id){
             case 0: //화염자동차
                 this.count += 1;
-                this.damage += 3;
+                this.damage += 5;
                 Batch();
                 break;
             case 1: //파동탄
