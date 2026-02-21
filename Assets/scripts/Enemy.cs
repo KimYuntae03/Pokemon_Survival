@@ -1,6 +1,6 @@
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using System.Collections;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -34,12 +34,17 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         if (target == null) {
-            GameObject player = GameObject.FindWithTag("Player");
-        if (player != null) target = player.GetComponent<Rigidbody2D>();
+            if (GameManager.instance != null && GameManager.instance.player != null) {
+                target = GameManager.instance.player.GetComponent<Rigidbody2D>();
+            }
+            if (target == null) return; // 여전히 없으면 리턴
         }
 
         if (!isLive || (hitScript != null && hitScript.isKnockback)) return;
 
+        // float dist = Vector2.Distance(target.position, rigid.position);
+        // if (dist < 0.01f) return;
+        
          Vector2 dirVec = target.position - rigid.position;
         //방향은 (타켓위치 - 나(적)의위치)를 정규화 한것임
         // 플레이어는 계속 방향키를 누를거고 target.position값은 계속 바뀜
@@ -50,7 +55,6 @@ public class Enemy : MonoBehaviour
          rigid.MovePosition(rigid.position + nextVec);
         // MovePosition는 적이 겹치지 않고 모여있는 느낌과 물리적으로 이동하는 느낌을 줌
 
-        rigid.linearVelocity = Vector2.zero;
     }
 
     void LateUpdate()
@@ -76,7 +80,7 @@ public class Enemy : MonoBehaviour
         Vector3 dist = (Vector3)target.position - transform.position;
         
         //플레이어가 화면 밖으로 벗어나 거리가 15f보다 멀어지면 리스폰
-        if (!isGiratina && (Mathf.Abs(dist.x) > 15f || Mathf.Abs(dist.y) > 15f))
+        if (!isGiratina && (Mathf.Abs(dist.x) > 22f || Mathf.Abs(dist.y) > 18f))
         {
             RepositionEnemy(dist);
         }
@@ -95,41 +99,28 @@ public class Enemy : MonoBehaviour
             transform.position += Vector3.up * moveY;
         }
         
-        // 이동 후 튕김 방지
-        rigid.linearVelocity = Vector2.zero;
     }
 
     void OnEnable() // 풀에서 꺼내져서 활성화될 때마다 실행됨
     {
-        GameObject player = GameObject.FindWithTag("Player"); 
-        if (player != null) {
-            target = player.GetComponent<Rigidbody2D>();
+        if (GameManager.instance != null && GameManager.instance.player != null) {
+            target = GameManager.instance.player.GetComponent<Rigidbody2D>();
         }
-        anim.transform.localPosition = Vector3.zero; //전에 처치했던 기라티나 위치 초기화
 
+        anim.transform.localPosition = Vector3.zero; //전에 처치했던 기라티나 위치 초기화
         isLive = true;
         health = maxHealth; //죽어서 리스폰된 enemy의 체력을 max로 초기화
-        
         rigid.simulated = true;//전에 처치했던 기라티나 물리엔진 켜기
         GetComponent<Collider2D>().enabled = true;
 
         Transform mask = transform.Find("GiraMask");
+
         if (mask != null) mask.gameObject.SetActive(false);
 
         SpriteRenderer spr = GetComponent<SpriteRenderer>();
         if (spr != null) spr.maskInteraction = SpriteMaskInteraction.None;
 
         anim.transform.localPosition = Vector3.zero;
-        // if (bossHealthBar == null) {
-        //     BossHealthBar[] bars = Resources.FindObjectsOfTypeAll<BossHealthBar>();
-        //     foreach (BossHealthBar bar in bars) {
-        //         if (bar.gameObject.scene.name != null) { // 씬에 존재하는 것만 필터링
-        //             bossHealthBar = bar;
-        //             break;
-        //         }
-        //     }
-        // }
-        // if (bossHealthBar != null) bossHealthBar.gameObject.SetActive(false);
     }
     
     public void Init(SpawnData data)

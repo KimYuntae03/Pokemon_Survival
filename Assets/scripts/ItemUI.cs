@@ -12,7 +12,6 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     public bool isDescriptionActive = false;
 
     public ItemData data;           // 현재 슬롯이 배정받은 데이터
-    int level;
     public AudioClip selectSound;
 
     // LevelUp 스크립트에서 호출하여 슬롯 정보를 업데이트하는 함수
@@ -51,6 +50,15 @@ public class ItemUI : MonoBehaviour, ISelectHandler
     // 버튼이 클릭되었을 때 실행될 함수
     public void OnClick()
     {   
+        if (selectSound != null) 
+        {
+            Vector3 playPos = (Camera.main != null) ? Camera.main.transform.position : transform.position;
+            
+            float volume = 0.5f; 
+            AudioSource.PlayClipAtPoint(selectSound, playPos, volume);
+        }
+        if (data == null) return;
+
         if (!isDescriptionActive)
         {
             ItemUI[] allSlots = GetComponentInParent<LevelUp>().itemSlots;
@@ -64,20 +72,21 @@ public class ItemUI : MonoBehaviour, ISelectHandler
 
         //플레이어 참조를 가져옴
         Player_Controller player = GetComponentInParent<LevelUp>().player;
+        if (player != null){
+            switch (data.itemType) {
+                case ItemData.ItemType.Melee: // 근거리 무기
+                case ItemData.ItemType.Range: // 원거리 무기
+                    HandleWeaponUpgrade(player);
+                    break;
 
-        switch (data.itemType) {
-            case ItemData.ItemType.Melee: // 근거리 무기
-            case ItemData.ItemType.Range: // 원거리 무기
-                HandleWeaponUpgrade(player);
-                break;
+                case ItemData.ItemType.buff:
+                    HandleBuffItem(player);
+                    break;
 
-            case ItemData.ItemType.buff:
-                HandleBuffItem(player);
-                break;
-
-            case ItemData.ItemType.Heal:
-                // 추후 추가
-                break;
+                case ItemData.ItemType.Heal:
+                    // 추후 추가
+                    break;
+            }
         }
         isDescriptionActive = false;
         GetComponentInParent<LevelUp>().Hide(); //레벨업 창 닫기
